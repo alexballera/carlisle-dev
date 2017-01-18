@@ -35,7 +35,7 @@ var reloadOptions = {
 }
 
 gulp.task('styles', () => {
-  return gulp.src('./src/styles/scss/main.scss')
+  return gulp.src('./src/main.scss')
   .pipe(sassGlob())
   .pipe(sassLint())
   .pipe(sassLint.format())

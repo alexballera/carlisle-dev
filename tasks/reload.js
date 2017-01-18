@@ -2,8 +2,8 @@ import gulp from 'gulp'
 import browserSync from 'browser-sync'
 
 gulp.watch([
-  // './src/**/*.html',
-  './src/styles/scss/**/*.scss',
-  './src/scripts/main.js',
-  './src/scripts/lib/*.js'
+  './src/**/*.html',
+  './src/**/*.scss',
+  './src/main.js',
+  './src/header/*.js'
 ]).on('change', browserSync.reload)
