@@ -5,7 +5,6 @@ import sassGlob from 'gulp-sass-glob'
 import autoprefixer from 'gulp-autoprefixer'
 import cssnano from 'gulp-cssnano'
 import rename from 'gulp-rename'
-import uncss from 'gulp-uncss'
 import notify from 'gulp-notify'
 import plumber from 'gulp-plumber'
 
