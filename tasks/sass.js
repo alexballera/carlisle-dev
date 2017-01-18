@@ -7,6 +7,8 @@ import cssnano from 'gulp-cssnano'
 import rename from 'gulp-rename'
 import notify from 'gulp-notify'
 import plumber from 'gulp-plumber'
+import sassLint from 'gulp-sass-lint'
+import 'sass-lint'
 
 var onError = function (err) {
   notify.onError({
@@ -35,6 +37,9 @@ var reloadOptions = {
 gulp.task('styles', () => {
   return gulp.src('./src/styles/scss/main.scss')
   .pipe(sassGlob())
+  .pipe(sassLint())
+  .pipe(sassLint.format())
+  .pipe(sassLint.failOnError())
   .pipe(autoprefixer(autoprefixerOptions))
   .pipe(sass(sassOptions).on('error', sass.logError))
   .pipe(plumber(plumberOptions))
