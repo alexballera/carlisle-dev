@@ -3,8 +3,9 @@
   .navbar {
     background-color: $color-principal;
     justify-content: center;
+    padding: 0;
 
-    .navbar__button {
+    .navbar-button {
       border: 0;
       margin-right: 6rem;
 
@@ -18,28 +19,33 @@
       }
     }
 
-    .navbar__top {
-      height: $height-navbar;
-      margin-right: 6rem;
+    .navbar-top {
+      @media (min-width: 992px) {
+        margin-right: 6rem;
+      }
     }
 
     .nav-link,
-    .navbar__button {
+    .navbar-button {
       color: $color-fonts;
     }
 
     .nav-link {
       line-height: ($height-navbar)-16px;
-      &:hover {
+      padding: .5rem 1rem;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $background-color-hover;
         color: $color-hover;
       }
     }
 
     .navbar-brand {
-      width: 10%;
-      text-align: center;
-      margin-right: 0;
       margin-left: 6rem;
+      margin-right: 0;
+      text-align: center;
+      width: 10%;
 
       >img {
         width: 100%;
