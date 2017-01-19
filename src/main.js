@@ -1,4 +1,6 @@
 import header from './header'
+import footer from './footer'
+
 (() => {
   'use strict'
 
@@ -6,5 +8,6 @@ import header from './header'
 
   function onDOMLoad () {
     header()
+    footer()
   }
 })()
