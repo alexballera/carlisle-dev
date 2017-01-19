@@ -1,5 +1,10 @@
-$red: red;
-
-body {
-  color: $red;
+.header {
+  .navbar__button{
+    line-height: 100px;
+    border: none;
+    &:focus,
+    &:visited{
+      outline: none;
+    }
+  }
 }
