@@ -1,10 +1,31 @@
 .header {
-  .navbar__button{
-    line-height: 100px;
-    border: none;
-    &:focus,
-    &:visited{
-      outline: none;
+
+  .navbar {
+    background-color: $color-principal;
+
+    .navbar__button {
+      border: 0;
+      line-height: 100px;
+
+      &:focus,
+      &:visited {
+        outline: none;
+      }
     }
+
+    .nav-link,
+    .navbar__button,
+    .navbar__button>.navbar-toggler-icon {
+      color: $color-fonts;
+    }
+
+    .navbar-brand {
+
+      >img {
+        width: 7%;
+      }
+    }
+
   }
+
 }
