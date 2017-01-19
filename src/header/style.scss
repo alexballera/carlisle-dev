@@ -2,10 +2,15 @@
 
   .navbar {
     background-color: $color-principal;
+    justify-content: center;
 
     .navbar__button {
       border: 0;
-      line-height: 100px;
+      margin-right: 6rem;
+
+      &:hover {
+        color: $color-hover;
+      }
 
       &:focus,
       &:visited {
@@ -13,16 +18,31 @@
       }
     }
 
+    .navbar__top {
+      height: $height-navbar;
+      margin-right: 6rem;
+    }
+
     .nav-link,
-    .navbar__button,
-    .navbar__button>.navbar-toggler-icon {
+    .navbar__button {
       color: $color-fonts;
     }
 
+    .nav-link {
+      line-height: ($height-navbar)-16px;
+      &:hover {
+        color: $color-hover;
+      }
+    }
+
     .navbar-brand {
+      width: 10%;
+      text-align: center;
+      margin-right: 0;
+      margin-left: 6rem;
 
       >img {
-        width: 7%;
+        width: 100%;
       }
     }
 
