@@ -1,9 +1,43 @@
 .home {
 
   &-header {
+    position: relative;
+  }
+
+  &-picture {
+    background-color: $color-principal;
 
     img {
       width: 100%;
+    }
+
+    &-contenido {
+      background-color: $background-color-transparent;
+      box-sizing: border-box;
+      height: 100%;
+      left: 0;
+      padding-left: 125px;
+      position: absolute;
+      top: 0;
+      width: 60%;
+      z-index: 2;
+    }
+
+    &-title {
+      font-size: 2.2rem;
+      font-weight: bolder;
+      margin-top: 7rem;
+      text-transform: uppercase;
+    }
+
+    &-parrafo {
+      font-size: 90%;
+    }
+
+
+    &-boton {
+      @extend %boton;
+      margin-left: 15px;
     }
   }
 }

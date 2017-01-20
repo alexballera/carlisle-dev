@@ -30,18 +30,7 @@
   }
 
   &-boton {
-    background-color: transparent;
-    border: solid 1px $white;
-    color: $white;
-    @media (min-width: 992px) {
-      padding: .5rem 2rem;
-    }
-
-    &:hover {
-      background-color: $color-secundario-hover;
-      border-color: $color-secundario-hover;
-      cursor: pointer;
-    }
+    @extend %boton;
   }
 
   &-form {
@@ -70,7 +59,7 @@
         }
       }
 
-      @extend %placeholder
+      @extend %placeholder;
     }
 
     .form-group {
