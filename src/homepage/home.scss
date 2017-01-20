@@ -16,22 +16,33 @@
       box-sizing: border-box;
       height: 100%;
       left: 0;
-      padding-left: 125px;
+      padding-left: 25px;
       position: absolute;
       top: 0;
-      width: 60%;
+      width: 90%;
       z-index: 2;
+      @media (min-width: 992px) {
+        padding-left: 125px;
+        width: 60%;
+      }
     }
 
     &-title {
-      font-size: 2.2rem;
+      font-size: 1.4rem;
       font-weight: bolder;
-      margin-top: 7rem;
+      margin-top: .4rem;
       text-transform: uppercase;
+      @media (min-width: 992px) {
+        font-size: 2.2rem;
+        margin-top: 7rem;
+      }
     }
 
     &-parrafo {
-      font-size: 90%;
+      font-size: 80%;
+      @media (min-width: 992px) {
+        font-size: 90%;
+      }
     }
 
 
