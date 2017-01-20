@@ -1,4 +1,5 @@
 import header from './header'
+import homepage from './homepage'
 import footer from './footer'
 
 (() => {
@@ -8,6 +9,7 @@ import footer from './footer'
 
   function onDOMLoad () {
     header()
+    homepage()
     footer()
   }
 })()
