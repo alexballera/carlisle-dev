@@ -5,12 +5,13 @@
     justify-content: center;
     padding: 0;
 
-    .navbar-button {
+    &-button {
       border: 0;
       margin-right: 6rem;
 
       &:hover {
         color: $color-hover;
+        cursor: pointer;
       }
 
       &:focus,
@@ -19,7 +20,7 @@
       }
     }
 
-    .navbar-top {
+    &-top {
       @media (min-width: 992px) {
         margin-right: 6rem;
       }
@@ -33,15 +34,16 @@
     .nav-link {
       line-height: ($height-navbar)-16px;
       padding: .5rem 1rem;
-      &:hover,
+
       &:active,
-      &:focus {
+      &:focus,
+      &:hover {
         background-color: $background-color-hover;
         color: $color-hover;
       }
     }
 
-    .navbar-brand {
+    &-brand {
       margin-left: 6rem;
       margin-right: 0;
       text-align: center;
@@ -51,7 +53,5 @@
         width: 100%;
       }
     }
-
   }
-
 }

@@ -35,6 +35,12 @@
     @media (min-width: 992px) {
       padding: .5rem 2rem;
     }
+
+    &:hover {
+      background-color: $color-secundario-hover;
+      border-color: $color-secundario-hover;
+      cursor: pointer;
+    }
   }
 
   &-form {
@@ -55,6 +61,12 @@
         border-color: $color-secundario;
         border-radius: 0;
         color: $white;
+
+        &:hover {
+          background-color: $color-secundario-hover;
+          border-color: $color-secundario-hover;
+          cursor: pointer;
+        }
       }
 
       @extend %placeholder
