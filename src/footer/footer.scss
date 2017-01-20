@@ -1,8 +1,17 @@
 .footer {
   background-color: $color-principal;
+  padding-bottom: 3rem;
 
   &-image {
     width: 100px;
+  }
+
+  &-content {
+    border: 1px solid $color-secundario;
+  }
+
+  &-logo{
+    padding-left: 0;
   }
 
   &-contenido,
@@ -28,4 +37,43 @@
     }
   }
 
+  &-form {
+    margin: 3rem 0;
+    text-align: center;
+
+    form {
+      input[type='email'] {
+        background-color: transparent;
+        border-color: $white;
+        border-radius: 0;
+        box-sizing: border-box;
+        color: $white;
+      }
+
+      button[type='submit'] {
+        background-color: $color-secundario;
+        border-color: $color-secundario;
+        border-radius: 0;
+        color: $white;
+      }
+
+      @extend %placeholder
+    }
+
+    .form-group {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  &-menu {
+    .nav-link {
+      color: $white;
+
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
 }
