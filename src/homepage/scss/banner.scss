@@ -27,11 +27,11 @@
         padding-left: 75px;
         width: 70%;
       }
-      @media (min-width: 992px) {
+      @include media-breakpoint-up(lg) {
         padding-left: 125px;
         width: 65%;
       }
-      @media (min-width: 1200px) {
+      @include media-breakpoint-up(xl) {
         padding-left: 125px;
         width: 60%;
       }
@@ -46,11 +46,11 @@
         font-size: 2rem;
         margin-top: 1.5rem;
       }
-      @media (min-width: 992px) {
+      @include media-breakpoint-up(lg) {
         font-size: 2.1rem;
         margin-top: 3rem;
       }
-      @media (min-width: 1200px) {
+      @include media-breakpoint-up(xl) {
         font-size: 2.2rem;
         margin-top: 7rem;
       }
@@ -61,7 +61,7 @@
       @media (min-width: 843px) {
         font-size: 90%;
       }
-      @media (min-width: 992px) {
+      @include media-breakpoint-up(lg) {
         font-size: 95%;
       }
     }

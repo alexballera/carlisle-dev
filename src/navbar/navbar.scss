@@ -21,7 +21,7 @@
     }
 
     &-top {
-      @media (min-width: 992px) {
+      @include media-breakpoint-up(lg) {
         margin-right: 6rem;
       }
     }
