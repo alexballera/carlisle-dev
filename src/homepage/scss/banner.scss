@@ -66,10 +66,15 @@
       }
     }
 
-
     &-boton {
       @extend %boton;
       margin-left: 15px;
     }
+  }
+
+  &-bg-bottom {
+    background-color: $color-principal;
+    height: 50px;
+    width: 100%;
   }
 }
