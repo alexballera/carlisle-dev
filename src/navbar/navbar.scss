@@ -46,11 +46,12 @@
     &-brand {
       margin-left: 6rem;
       margin-right: 0;
+      padding: 0;
       text-align: center;
       width: 10%;
 
       >img {
-        width: 72.55px;
+        height: $height-navbar;
       }
     }
   }

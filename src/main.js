@@ -1,4 +1,4 @@
-import header from './header'
+import navbar from './navbar'
 import homepage from './homepage'
 import footer from './footer'
 
@@ -8,7 +8,7 @@ import footer from './footer'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    header()
+    navbar()
     homepage()
     footer()
   }
