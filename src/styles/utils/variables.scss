@@ -6,7 +6,7 @@ $color-secundario-rgb: rgb(127, 22, 37);
 $color-secundario-hover: #4f1626;
 $color-hover: #bfbfbf;
 
-$white: #ffffff;
+$white: #fff;
 
 $background-color: #e5e4e0;
 $background-color-rgb: rgb(229, 228, 224);
@@ -17,28 +17,28 @@ $background-color-transparent: rgba(5, 5, 5, .6);
 $height-navbar: 100px;
 
 %placeholder {
-    ::-webkit-input-placeholder {
+  ::-webkit-input-placeholder {
     color: $white;
-    }
+  }
 
-    :-moz-placeholder {
+  :-moz-placeholder {
     color: $white;
-    }
+  }
 
-    ::-moz-placeholder {
+  ::-moz-placeholder {
     color: $white;
-    }
+  }
 
-    :-ms-input-placeholder {
+  :-ms-input-placeholder {
     color: $white;
-    }
+  }
 }
 
 %boton {
   background-color: transparent;
   border: solid 1px $white;
   color: $white;
-  padding: 0.3rem;
+  padding: .3rem;
   @media (min-width: 992px) {
     padding: .5rem 2rem;
   }
