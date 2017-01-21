@@ -1,0 +1,46 @@
+.team {
+
+  &-principal {
+
+    &-avatar {
+      text-align: center;
+
+      img {
+        margin: 1rem;
+        width: 90%;
+      }
+    }
+
+    &-innerContainer {
+      .red-social {
+        border: 1px solid $color-secundario;
+        color: $color-secundario;
+        display: inline-block;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        width: 35px;
+
+        &:hover {
+          background-color: $color-secundario;
+          border-color: $color-secundario;
+          color: $white;
+        }
+
+        &.linkedin {
+          margin-right: .7rem;
+        }
+
+        i {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &-title {
+      color: $color-principal;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

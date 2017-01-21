@@ -26,7 +26,7 @@ var banner = yo `
             </div>
         </picture>
     </div>
-    <div class="home-bg-bottom"></div>
+    <div class="home-bg-bottom hidden-xs-down"></div>
 </div>`
 
 export default () => {
