@@ -34,10 +34,6 @@
       @include media-breakpoint-up(lg) {
         padding-left: 50px;
       }
-      /*@include media-breakpoint-up(xl){
-        padding-left: 125px;
-        width: 60%;
-      }*/
     }
 
     &-title {
@@ -49,24 +45,10 @@
         font-size: 1.5rem;
         margin-top: 1.5rem;
       }
-      @include media-breakpoint-up(lg) {
-        // font-size: 1.75rem;
-        // margin-top: 3rem;
-      }
-      /*@include media-breakpoint-up(xl) {
-        font-size: 2.2rem;
-        margin-top: 5rem;
-      }*/
-    }
 
-    &-parrafo {
-      font-size: 100%;
-      /*@media (min-width: 843px) {
-        font-size: 90%;
+      &-parrafo {
+        font-size: 100%;
       }
-      @media (min-width: 992px) {
-        font-size: 95%;
-      }*/
     }
 
     &-boton {
@@ -74,15 +56,21 @@
     }
   }
 
-  &-bg-bottom {
-    background-color: $color-principal;
-    height: 50px;
-    width: 100%;
-  }
-
   &-work {
-    margin-top: 3rem;
     background: url('http://lorempixel.com/1400/400/city/')no-repeat center;
     background-size: cover;
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+
+    &-testimonio {
+    }
+
+    &-image {
+      img {
+        border: 2px solid $white;
+        width: 100px;
+        height: 100px;
+      }
+    }
   }
 }
