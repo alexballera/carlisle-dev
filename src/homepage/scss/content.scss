@@ -1,0 +1,12 @@
+.content {
+  &-title {
+    border-bottom: 1px solid $color-principal;
+    color: $color-principal;
+    margin: 3rem 0 2rem 1rem;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+    @include media-breakpoint-up(xl) {
+      margin-left: 15%;
+    }
+  }
+}
