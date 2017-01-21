@@ -1,0 +1,79 @@
+.content {
+
+  &-opportunities {
+    position: relative;
+  }
+
+  &-picture {
+    background-color: $color-principal;
+
+    img {
+      max-height: 450px;
+      min-height: 350px;
+      width: 100%;
+    }
+
+    &-contenido {
+      background-color: $background-color-transparent;
+      box-sizing: border-box;
+      height: 100%;
+      left: 0;
+      padding-left: 50px;
+      position: absolute;
+      top: 0;
+      width: 80%;
+      z-index: 2;
+      @media (min-width: 843px) {
+        padding-left: 75px;
+        width: 70%;
+      }
+      @media (min-width: 992px) {
+        padding-left: 125px;
+        width: 65%;
+      }
+      @media (min-width: 1200px) {
+        padding-left: 125px;
+        width: 60%;
+      }
+    }
+
+    &-title {
+      font-size: 1.8rem;
+      font-weight: bolder;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      @media (min-width: 843px) {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+      }
+      @media (min-width: 992px) {
+        font-size: 2.1rem;
+        margin-top: 3rem;
+      }
+      @media (min-width: 1200px) {
+        font-size: 2.2rem;
+        margin-top: 7rem;
+      }
+    }
+
+    &-parrafo {
+      font-size: 85%;
+      @media (min-width: 843px) {
+        font-size: 90%;
+      }
+      @media (min-width: 992px) {
+        font-size: 95%;
+      }
+    }
+
+    &-boton {
+      @extend %boton;
+    }
+  }
+
+  &-bg-bottom {
+    background-color: $color-principal;
+    height: 50px;
+    width: 100%;
+  }
+}
