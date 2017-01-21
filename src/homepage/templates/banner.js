@@ -5,12 +5,12 @@ import empty from 'empty-element'
 
 var header = document.getElementById('banner')
 
-var banner = yo`
+var banner = yo `
 <div class="banner-container">
     <div class="home-header hidden-xs-down">
         <picture class="home-picture">
             <img src="http://lorempixel.com/1440/500/city/" alt="" class="home-picture-img">
-            <div class="home-picture-contenido row align-items-center">
+            <div class="home-picture-contenido row align-items-center no-gutters">
                 <h2 class="home-picture-title col-12">
                     Innovations diversified investment solutions
                 </h2>
