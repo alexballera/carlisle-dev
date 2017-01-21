@@ -79,4 +79,10 @@
     height: 50px;
     width: 100%;
   }
+
+  &-work {
+    margin-top: 3rem;
+    background: url('http://lorempixel.com/1400/400/city/')no-repeat center;
+    background-size: cover;
+  }
 }
