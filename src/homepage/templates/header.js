@@ -20,9 +20,9 @@ var banner = yo `
                     strategies provate equity, credit, liquid markets and traditional fixed income - on behalf of
                     investors and private clients wordwide.
                 </p>
-                <button class="home-picture-boton col-4">
+                <a href="#" class="home-picture-boton col-4">
                     Learn More
-                </button>
+                </a>
             </div>
         </picture>
     </div>

@@ -39,6 +39,7 @@ $height-navbar: 100px;
   border: solid 1px $white;
   color: $white;
   padding: .3rem;
+  text-align: center;
   @media (min-width: 992px) {
     padding: .5rem 2rem;
   }
@@ -46,6 +47,8 @@ $height-navbar: 100px;
   &:hover {
     background-color: $color-secundario;
     border-color: $color-secundario;
+    color: $white;
     cursor: pointer;
+    text-decoration: none;
   }
 }

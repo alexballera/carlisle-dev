@@ -2,6 +2,7 @@
 
   &-opportunities {
     position: relative;
+    margin-bottom: 2rem;
     @include media-breakpoint-up(xl) {
       &:first-child {
         margin-right: 2rem;
@@ -60,8 +61,6 @@
     background: url('http://lorempixel.com/1400/400/city/')no-repeat center;
     background-size: cover;
     box-sizing: border-box;
-    // height: 200px;
-    margin-top: 3rem;
     min-height: 250px;
     padding: 2rem 1rem;
 

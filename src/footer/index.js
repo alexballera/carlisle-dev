@@ -18,7 +18,7 @@ var el = yo`
             </p>
         </div>
         <div class="col-4 col-md-3">
-            <button type="" class="footer-boton" >Get in touch</button>
+            <a href="#" type="" class="footer-boton" >Get in touch</a>
         </div>
     </div>
     <div class="row align-items-center justify-content-around">

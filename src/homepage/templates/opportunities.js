@@ -27,9 +27,9 @@ var el = yo `
                       patience to identify opportunities with
                       consistence absolute returns.
                   </p>
-                  <button class="content-picture-boton col-6">
+                  <a href="#" class="content-picture-boton col-6">
                       Get in touch
-                  </button>
+                  </a>
               </div>
           </picture>
       </div>
@@ -45,9 +45,9 @@ var el = yo `
                       consulting firm specializing in alternative
                       asset classes.
                   </p>
-                  <button class="content-picture-boton col-6">
+                  <a href="#" class="content-picture-boton col-6">
                       Get in touch
-                  </button>
+                  </a>
               </div>
           </picture>
       </div>
