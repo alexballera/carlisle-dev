@@ -4,9 +4,14 @@ body {
 }
 
 a {
+  color: $white;
   text-decoration: none;
 
-  :hover {
+  &:hover,
+  &:visited,
+  &:focus,
+  &:active {
+    color: $white;
     text-decoration: none;
   }
 }

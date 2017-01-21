@@ -9,13 +9,13 @@
       border: 0;
       margin-right: 6rem;
 
-      :hover {
+      &:hover {
         color: $color-hover;
         cursor: pointer;
       }
 
-      :focus,
-      :visited {
+      &:focus,
+      &:visited {
         outline: none;
       }
     }
@@ -35,9 +35,9 @@
       line-height: ($height-navbar)-16px;
       padding: .5rem 1rem;
 
-      :active,
-      :focus,
-      :hover {
+      &:active,
+      &:focus,
+      &:hover {
         background-color: $color-secundario;
         color: $white;
       }
