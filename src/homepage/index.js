@@ -1,7 +1,7 @@
 'use strict'
 
-import banner from './templates/banner'
+import header from './templates/header'
 
 export default () => {
-  banner()
+  header()
 }

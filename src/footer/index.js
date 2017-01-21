@@ -11,13 +11,13 @@ var el = yo`
         <div class="col-3 footer-logo">
             <img src="./images/logo-only.png"  alt="Carlisle Logo" class="footer-image">
         </div>
-        <div class="col-6">
+        <div class="col-5 col-md-6">
             <p class="footer-contenido">
                 When you need an investment solution for your next business opportunity or 
                 challenge, please get in touch
             </p>
         </div>
-        <div class="col-3">
+        <div class="col-4 col-md-3">
             <button type="" class="footer-boton" >Get in touch</button>
         </div>
     </div>
