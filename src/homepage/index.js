@@ -1,5 +1,7 @@
 'use strict'
 
+import banner from './templates/banner'
+
 export default () => {
-  console.log('Estoy en Homepage')
+  banner()
 }
