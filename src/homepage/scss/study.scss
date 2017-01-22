@@ -2,6 +2,14 @@
 
   &-video {
     margin-bottom: 2rem;
+    @include media-breakpoint-up(md) {
+      margin: 1rem;
+    }
+    @include media-breakpoint-up(xl) {
+      flex: 0 0 22%;
+      margin: .5%;
+      max-width: 22%;
+    }
   }
 
   &-boton {
