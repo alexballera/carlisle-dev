@@ -3,10 +3,10 @@
 import yo from 'yo-yo'
 import empty from 'empty-element'
 import header from '../components/banner-header'
-import opportunities from './templates/opportunities'
-import team from './templates/team'
-import study from './templates/study'
-import footer from './templates/footer'
+import opportunities from './components/opportunities'
+import team from './components/team'
+import study from './components/study'
+import footer from './components/footer'
 
 var el = yo`
 <section class="home" id="home">

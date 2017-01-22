@@ -1,7 +1,7 @@
 'use strict'
 
 import yo from 'yo-yo'
-import banner from '../../components/banner-staff'
+import banner from '../../../components/banner-staff'
 
 module.exports = {
   template: yo `
