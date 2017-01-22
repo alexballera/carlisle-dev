@@ -4,8 +4,5 @@
 @import '../node_modules/font-awesome/scss/font-awesome';
 @import './styles/utils/variables';
 @import './styles/base/base';
-@import './navbar/navbar';
-@import './homepage/scss/**';
-@import './footer/footer';
-@import './components/**/**'
-
+@import './components/**/**';
+@import './homepage/**/**';

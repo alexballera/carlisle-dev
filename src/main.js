@@ -1,6 +1,6 @@
-import navbar from './navbar'
+import header from './components/navbar'
 import homepage from './homepage'
-import footer from './footer'
+import footer from './components/footer'
 
 (() => {
   'use strict'
@@ -8,7 +8,7 @@ import footer from './footer'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    navbar()
+    header()
     homepage()
     footer()
   }
