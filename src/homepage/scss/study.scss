@@ -1,0 +1,23 @@
+.study {
+
+  &-video {
+    margin-bottom: 2rem;
+  }
+
+  &-boton {
+    @extend %boton;
+    border-color: $color-principal;
+    color: $color-principal;
+    margin-top: 2rem;
+
+    a {
+      color: $color-principal;
+    }
+
+    &:hover {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
