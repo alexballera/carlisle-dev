@@ -1,5 +1,12 @@
+.team {
+  margin-bottom: 3rem;
+}
+
 .team-principal {
   margin-bottom: 3rem;
+  @include media-breakpoint-up(lg) {
+    height: 400px;
+  }
   @include media-breakpoint-up(xl) {
     height: 450px;
   }
