@@ -1,0 +1,69 @@
+$height-banner: 250px;
+
+.content-work {
+  height: $height-banner;
+}
+
+.banner-work {
+  height: $height-banner;
+  position: relative;
+
+
+  &-bgimage {
+    img {
+      height: $height-banner;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &-parrafo {
+    font-style: italic;
+    text-transform: uppercase;
+
+    i {
+      color: $color-secundario;
+
+      &.fa-quote-left {
+        margin-right: 1rem;
+      }
+
+      &.fa-quote-right {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &-name {
+    .name,
+    .cargo {
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .cargo {
+      font-size: 80%;
+      font-weight: 700;
+    }
+  }
+
+  &-image {
+    img {
+      border: 2px solid $white;
+      box-sizing: border-box;
+      height: 100px;
+      width: 100px;
+
+      &:hover {
+        border-color: $color-secundario;
+      }
+      @include media-breakpoint-up(xl) {
+        height: 150px;
+        position: absolute;
+        right: 0;
+        top: -125px;
+        width: 150px;
+      }
+    }
+  }
+}
