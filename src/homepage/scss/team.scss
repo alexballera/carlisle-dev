@@ -53,7 +53,11 @@
   &-boton {
     @extend %boton;
     border-color: $color-principal;
-    color: $color-principal;
+    color: $color-principal !important;
+
+    &:hover {
+      color: $white !important;
+    }
   }
 }
 
@@ -67,6 +71,27 @@
     img {
       height: 100%;
       width: 100%;
+    }
+
+    .staff-miembro {
+      position: relative;
+      top: -50px;
+
+      &-nombre,
+      &-cargo {
+        display: block;
+        padding: 2px 0 2px 5px;
+      }
+
+      &-nombre {
+        background-color: $color-principal;
+        text-transform: uppercase;
+      }
+
+      &-cargo {
+        background-color: $color-secundario;
+        font-size: 75%;
+      }
     }
   }
 }
