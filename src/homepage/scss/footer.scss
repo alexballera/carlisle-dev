@@ -1,0 +1,47 @@
+$height: 250px;
+
+.home-footer {
+  margin-top: 3rem;
+
+  &-banner {
+    background: url('http://lorempixel.com/1400/400/city/') no-repeat center;
+    background-size: cover;
+    height: $height;
+  }
+
+  &-opacity {
+    background-color: rgba(0, 0, 0, .7);
+    height: $height;
+    position: relative;
+  }
+
+  &-contenido {
+    font-weight: 300;
+    height: $height;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+  }
+
+  &-title {
+    font-size: 1.2rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &-content {
+    font-size: 80%;
+    @include media-breakpoint-up(lg) {
+      font-size: 90%;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 95%;
+    }
+  }
+}
