@@ -2,7 +2,7 @@
 
 import yo from 'yo-yo'
 import empty from 'empty-element'
-import header from './templates/header'
+import header from '../components/banner-header'
 import opportunities from './templates/opportunities'
 import team from './templates/team'
 import study from './templates/study'
@@ -29,6 +29,19 @@ export default () => {
   let avatarBanner = document.getElementById('avatarBanner')
   let bannerWorkBgimage = document.getElementById('banner-work-bgimage')
 
+  let bannerHeaderImage = document.getElementById('banner-header-image')
+  let bannerHeader = document.getElementById('banner-header-title')
+  let bannerHeaderContenido = document.getElementById('banner-header-contenido')
+
+  // Banner Header
+  bannerHeaderImage.setAttribute('src', 'http://lorempixel.com/1440/500/city/')
+  bannerHeader.innerHTML = 'Innovations diversified investment solutions'
+  bannerHeaderContenido.innerHTML = `Carlisle is a leading, highly diversified global investment management firm,
+                      Carlisle applies its deep experience and specialized expertise across a range of investment
+                      strategies provate equity, credit, liquid markets and traditional fixed income - on behalf of
+                      investors and private clients wordwide.`
+
+  // Banner Staff
   nameBanner.innerHTML = 'Lucy Mcnazza'
   cargoBanner.innerHTML = 'Chief Developer At Company'
   avatarBanner.setAttribute('src', './images/lucy-mcnazza.jpg')
