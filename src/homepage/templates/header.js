@@ -5,7 +5,7 @@ import empty from 'empty-element'
 
 var header = document.getElementById('banner')
 
-var banner = yo `
+var el = yo `
 <div class="banner-container">
     <div class="home-header hidden-xs-down">
         <picture class="home-picture">
@@ -30,5 +30,5 @@ var banner = yo `
 </div>`
 
 export default () => {
-  empty(header).appendChild(banner)
+  empty(header).appendChild(el)
 }
