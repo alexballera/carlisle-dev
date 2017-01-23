@@ -8,8 +8,7 @@
     }
 
     &:active,
-    &:focus,
-    &:visited {
+    &:focus {
       color: $orange;
     }
   }
