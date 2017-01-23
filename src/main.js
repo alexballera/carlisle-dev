@@ -1,6 +1,6 @@
 import header from './components/navbar-top'
-import homepage from './homepage'
-// import about from './about'
+// import homepage from './homepage'
+import about from './about'
 import footer from './components/footer'
 
 (() => {
@@ -10,8 +10,8 @@ import footer from './components/footer'
 
   function onDOMLoad () {
     header()
-    homepage()
-    // about()
+    // homepage()
+    about()
     footer()
   }
 })()
