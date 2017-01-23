@@ -1,0 +1,16 @@
+.navbar-header {
+  background-color: $grey;
+
+  .nav-link {
+
+    &:hover {
+      color: $color-secundario;
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
+      color: $orange;
+    }
+  }
+}
