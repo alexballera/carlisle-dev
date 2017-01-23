@@ -2,6 +2,7 @@
   background-color: $grey;
 
   .nav-link {
+    text-transform: uppercase;
 
     &:hover {
       color: $color-secundario;

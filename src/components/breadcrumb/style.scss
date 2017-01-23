@@ -1,0 +1,17 @@
+.breadcrumb-header {
+  background-color: $color-principal;
+
+  .breadcrumb {
+    background-color: $color-principal;
+    margin-bottom: 0;
+
+    &-link,
+    &-item {
+      text-transform: uppercase;
+    }
+
+    &-link:hover {
+      color: $color-secundario;
+    }
+  }
+}
