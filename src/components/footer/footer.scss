@@ -1,3 +1,6 @@
+$height-nav-link: 24px;
+$line-height-nav-link: ($height-nav-link)-16px;
+
 .footer {
   background-color: $color-principal;
   padding-bottom: 1rem;
@@ -70,11 +73,18 @@
   }
 
   &-menu {
+
+    .nav-item {
+      height: $height-nav-link;
+    }
     .nav-link {
       color: $white;
+      height: $height-nav-link;
+      line-height: $line-height-nav-link;
 
       &:hover {
-        color: $color-hover;
+        color: $color-secundario;
+        text-decoration: underline;
       }
     }
   }
