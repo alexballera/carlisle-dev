@@ -7,6 +7,7 @@ import opportunities from './components/opportunities'
 import team from './components/team'
 import study from './components/study'
 import footer from './components/footer'
+import staff from '../data/team.js'
 
 var el = yo`
 <section class="home" id="home">
@@ -33,6 +34,10 @@ export default () => {
   let bannerHeader = document.getElementById('banner-header-title')
   let bannerHeaderContenido = document.getElementById('banner-header-contenido')
 
+  let staffImage = document.querySelectorAll('img.staff-miembro-img')
+  let staffNombre = document.querySelectorAll('span.staff-miembro-nombre')
+  let staffCargo = document.querySelectorAll('span.staff-miembro-cargo')
+
   // Banner Header
   bannerHeaderImage.setAttribute('src', 'http://lorempixel.com/1440/500/city/')
   bannerHeader.innerHTML = 'Innovations diversified investment solutions'
@@ -42,8 +47,27 @@ export default () => {
                       investors and private clients wordwide.`
 
   // Banner Staff
-  nameBanner.innerHTML = 'Lucy Mcnazza'
-  cargoBanner.innerHTML = 'Chief Developer At Company'
-  avatarBanner.setAttribute('src', './images/lucy-mcnazza.jpg')
+  nameBanner.innerHTML = `${staff.lucy.nombre}`
+  cargoBanner.innerHTML = `${staff.lucy.cargo}`
+  avatarBanner.setAttribute('src', `${staff.lucy.avatar}`)
   bannerWorkBgimage.setAttribute('src', 'http://lorempixel.com/1400/400/city/')
+
+  // Team Avatar
+  staffImage[0].setAttribute('src', `${staff.victor.avatar}`)
+  staffImage[1].setAttribute('src', `${staff.jose.avatar}`)
+  staffImage[2].setAttribute('src', `${staff.phillip.avatar}`)
+  staffImage[3].setAttribute('src', `${staff.tim.avatar}`)
+  staffImage[4].setAttribute('src', `${staff.xavier.avatar}`)
+
+  // Team Nombre
+  staffNombre[0].innerHTML = `${staff.jose.nombre}`
+  staffNombre[1].innerHTML = `${staff.phillip.nombre}`
+  staffNombre[2].innerHTML = `${staff.tim.nombre}`
+  staffNombre[3].innerHTML = `${staff.xavier.nombre}`
+
+  // Team Cargo
+  staffCargo[0].innerHTML = `${staff.jose.cargo}`
+  staffCargo[1].innerHTML = `${staff.phillip.cargo}`
+  staffCargo[2].innerHTML = `${staff.tim.cargo}`
+  staffCargo[3].innerHTML = `${staff.xavier.cargo}`
 }
