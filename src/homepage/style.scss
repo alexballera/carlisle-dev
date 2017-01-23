@@ -5,6 +5,7 @@
     margin: 3rem 0 2rem 1rem;
     padding-bottom: .5rem;
     text-transform: uppercase;
+    font-weight: bold;
     @include media-breakpoint-up(xl) {
       margin-left: 15%;
     }

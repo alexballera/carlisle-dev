@@ -25,7 +25,11 @@ var el = yo`
         value with personalized service and a relentless commitment to quality and responsiveness. 
       </p>
     </article>
-    <article class="team" id="team"></article>
+    <article class="row no-gutters about-items" id="about-items">
+      <div class="col-12 about-banner-item" id="about-banner-why"></div>
+      <div class="col-12 about-banner-item" id="about-banner-difference"></div>
+      <div class="col-12 about-banner-item" id="about-banner-community"></div>
+    </article>
     <article class="study" id="study"></article>
   </section>
   <footer class="home-footer" id="about-footer"></footer>
