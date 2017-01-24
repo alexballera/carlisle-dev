@@ -40,6 +40,8 @@ export default () => {
 
   let pictureSlide = document.querySelectorAll('picture.content-picture')
 
+  let picturesAbout = document.getElementById('opportunities-carousel').childNodes
+
   // Banner Header
   bannerHeaderImage.setAttribute('src', 'http://lorempixel.com/1440/500/city/')
   bannerHeader.innerHTML = 'Innovations diversified investment solutions'
@@ -55,6 +57,14 @@ export default () => {
   pictureSlide[3].classList.add('col-6', 'col-xl-5')
   pictureSlide[4].classList.add('col-6', 'col-xl-5')
   pictureSlide[5].classList.add('col-6', 'col-xl-5')
+
+  // Pictures About
+  picturesAbout[1].classList.remove('col-6', 'col-xl-5')
+  picturesAbout[3].classList.remove('col-6', 'col-xl-5')
+  picturesAbout[5].classList.remove('col-6', 'col-xl-5')
+  picturesAbout[1].classList.add('col-10')
+  picturesAbout[3].classList.add('col-10')
+  picturesAbout[5].classList.add('col-10')
 
   // Banner Staff
   nameBanner.innerHTML = `${data.staff.lucy.nombre}`
