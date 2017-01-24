@@ -4,7 +4,7 @@ import yo from 'yo-yo'
 
 module.exports = {
   why: yo`
-  <picture class="content-picture content-picture-left col-6">
+  <picture class="content-picture">
       <img class="d-block img-fluid" src="http://lorempixel.com/400/400/city/" alt="" class="content-picture-img">
       <div class="content-picture-contenido row align-items-center no-gutters">
       <h2 class="content-picture-title col-12">
@@ -19,7 +19,7 @@ module.exports = {
       </div>
   </picture>`,
   difference: yo`
-  <picture class="content-picture content-picture-rigth col-6">
+  <picture class="content-picture">
     <img class="d-block img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" class="content-picture-img">
     <div class="content-picture-contenido row align-items-center no-gutters">
     <h2 class="content-picture-title col-12">
@@ -34,7 +34,7 @@ module.exports = {
     </div>
   </picture>`,
   community: yo`
-  <picture class="content-picture content-picture-rigth col-6">
+  <picture class="content-picture">
     <img class="d-block img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" class="content-picture-img">
     <div class="content-picture-contenido row align-items-center no-gutters">
     <h2 class="content-picture-title col-12">
@@ -51,7 +51,7 @@ module.exports = {
     </div>
   </picture>`,
   why2: yo`
-  <picture class="content-picture content-picture-left col-6">
+  <picture class="content-picture">
       <img class="d-block img-fluid" src="http://lorempixel.com/400/400/city/" alt="" class="content-picture-img">
       <div class="content-picture-contenido row align-items-center no-gutters">
       <h2 class="content-picture-title col-12">
@@ -66,7 +66,7 @@ module.exports = {
       </div>
   </picture>`,
   difference2: yo`
-  <picture class="content-picture content-picture-rigth col-6">
+  <picture class="content-picture">
     <img class="d-block img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" class="content-picture-img">
     <div class="content-picture-contenido row align-items-center no-gutters">
     <h2 class="content-picture-title col-12">
@@ -81,7 +81,7 @@ module.exports = {
     </div>
   </picture>`,
   community2: yo`
-  <picture class="content-picture content-picture-rigth col-6">
+  <picture class="content-picture">
     <img class="d-block img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" class="content-picture-img">
     <div class="content-picture-contenido row align-items-center no-gutters">
     <h2 class="content-picture-title col-12">

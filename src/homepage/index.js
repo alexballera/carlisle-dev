@@ -38,6 +38,8 @@ export default () => {
   let staffNombre = document.querySelectorAll('span.staff-miembro-nombre')
   let staffCargo = document.querySelectorAll('span.staff-miembro-cargo')
 
+  let pictureSlide = document.querySelectorAll('picture.content-picture')
+
   // Banner Header
   bannerHeaderImage.setAttribute('src', 'http://lorempixel.com/1440/500/city/')
   bannerHeader.innerHTML = 'Innovations diversified investment solutions'
@@ -45,6 +47,14 @@ export default () => {
                       Carlisle applies its deep experience and specialized expertise across a range of investment
                       strategies provate equity, credit, liquid markets and traditional fixed income - on behalf of
                       investors and private clients wordwide.`
+
+  // Slider opportunities
+  pictureSlide[0].classList.add('col-6', 'col-xl-5')
+  pictureSlide[1].classList.add('col-6', 'col-xl-5')
+  pictureSlide[2].classList.add('col-6', 'col-xl-5')
+  pictureSlide[3].classList.add('col-6', 'col-xl-5')
+  pictureSlide[4].classList.add('col-6', 'col-xl-5')
+  pictureSlide[5].classList.add('col-6', 'col-xl-5')
 
   // Banner Staff
   nameBanner.innerHTML = `${data.staff.lucy.nombre}`

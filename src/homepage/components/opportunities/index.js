@@ -13,7 +13,7 @@ module.exports = {
     <div class="opportunities-carousel">
       ${carousel.template}
     </div>
-    <div class="opportunities-banner"
+    <div class="opportunities-banner">
       ${banner.template}
     </div>
   </div>`

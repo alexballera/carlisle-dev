@@ -7,8 +7,10 @@
   @include media-breakpoint-up(xl) {
     margin-left: 10%;
     width: 80%;
+  }
 
-    &:first-child {
+  .content-picture:first-child {
+    @include media-breakpoint-up(xl) {
       margin-right: 2rem;
     }
   }

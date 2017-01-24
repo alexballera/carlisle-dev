@@ -7,15 +7,15 @@ module.exports = {
   template: yo`
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active content-opportunities row no-gutters">
+      <div class="carousel-item active content-opportunities row no-gutters justify-content-center">
         ${picture.why}
         ${picture.difference}
       </div>
-      <div class="carousel-item content-opportunities row no-gutters">
+      <div class="carousel-item content-opportunities row no-gutters justify-content-center">
         ${picture.community}
         ${picture.why2}
       </div>
-      <div class="carousel-item content-opportunities row no-gutters">
+      <div class="carousel-item content-opportunities row no-gutters justify-content-center">
         ${picture.difference2}
         ${picture.community2}
       </div>

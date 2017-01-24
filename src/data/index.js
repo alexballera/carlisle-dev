@@ -5,37 +5,59 @@ module.exports = {
     lucy: {
       nombre: 'Lucy Mcnazza',
       cargo: 'Chief Developer At Company',
-      avatar: './images/lucy-mcnazza.jpg'
+      avatar: './images/staff-lucy-mcnazza.jpg'
     },
     brandom: {
       nombre: 'Brandom Semenuk',
       cargo: 'Leader Operator At Company',
-      avatar: './images/brandom-Semenuk.jpg'
+      avatar: './images/staff-brandom-Semenuk.jpg'
     },
     victor: {
       nombre: 'Victor Haggelman',
       cargo: 'Chief Developer At Company',
-      avatar: './images/victor-haggelman.jpg'
+      avatar: './images/staff-victor-haggelman.jpg'
     },
     jose: {
       nombre: 'José García',
       cargo: 'Chief Excecutive Officer',
-      avatar: './images/jose-garcia.jpg'
+      avatar: './images/staff-jose-garcia.jpg'
     },
     phillip: {
       nombre: 'Phillip Neuman',
       cargo: 'President',
-      avatar: './images/phillip-neuman.jpg'
+      avatar: './images/staff-phillip-neuman.jpg'
     },
     tim: {
       nombre: 'Tim Mol',
       cargo: 'Chief Operating Officer',
-      avatar: './images/tim-mol.jpg'
+      avatar: './images/staff-tim-mol.jpg'
     },
     xavier: {
       nombre: 'Xavier Deu',
       cargo: 'Chief Marketing Officer',
-      avatar: './images/xavier-deu.jpg'
+      avatar: './images/staff-xavier-deu.jpg'
+    }
+  },
+  pictures: {
+    banners: {
+      header: {
+        home: './images/banner-header-home.jpg',
+        about_us: './images/banner-header-about-us.jpg',
+        about_why: './images/banner-header-about-why.jpg',
+        carrera: './images/banner-header-carrera.jpg',
+        contact: './images/banner-header-contact.jpg',
+        our_service: './images/banner-header-our-service.jpg',
+        team: './images/banner-header-team.jpg'
+      },
+      slide: {
+        slide1: '',
+        slide2: ''
+      }
+    },
+    about: {
+      why: '',
+      difference: '',
+      community: ''
     }
   }
 }
