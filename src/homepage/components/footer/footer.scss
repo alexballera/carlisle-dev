@@ -4,15 +4,21 @@ $height: 250px;
   margin-top: 3rem;
 
   &-banner {
-    background: url('http://lorempixel.com/1400/400/city/') no-repeat center;
-    background-size: cover;
     height: $height;
+
+    img {
+      height: $height;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
   }
 
   &-opacity {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: $background-color-transparent;
     height: $height;
     position: relative;
+    z-index: 1;
   }
 
   &-contenido {
@@ -23,6 +29,7 @@ $height: 250px;
     text-align: center;
     text-transform: uppercase;
     top: 0;
+    z-index: 2;
   }
 
   &-title {

@@ -8,6 +8,7 @@ gulp.task('watch', () => {
     './src/main.js',
     './src/homepage/**/*.js',
     './src/about/**/*.js',
-    './src/components/**/*.js'
+    './src/components/**/*.js',
+    './src/data/**/*.js'
   ], ['scripts'])
 })

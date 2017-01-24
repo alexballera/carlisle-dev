@@ -16,7 +16,7 @@ module.exports = {
             <div class="col-12 col-xl-7 team-principal">
                 <div class="row no-gutters justify-content-center">
                     <div class="col-10 col-lg-6 team-principal-avatar">
-                        <img src="http://lorempixel.com/500/500/people/" alt="">
+                        <img class="staff-miembro-img" src="http://lorempixel.com/500/500/people/" alt="">
                     </div>
                     <div class="col-12 col-lg-6 team-principal-info">
                         <div class="row no-gutters">
@@ -50,28 +50,28 @@ module.exports = {
             <div class="col-12 col-xl-4 staff">
                 <div class="row no-gutters team-staff justify-content-center">
                     <div class="col-5 team-staff-item">
-                        <img src="http://lorempixel.com/400/400/people/" alt="">
+                        <img class="staff-miembro-img" src="http://lorempixel.com/400/400/people/" alt="">
                         <p class="staff-miembro">
                             <span class="staff-miembro-nombre">José García</span>
                             <span class="staff-miembro-cargo">Chief Excecutive Officer</span>
                         </p>
                     </div>
                     <div class="col-5 team-staff-item">
-                        <img src="http://lorempixel.com/400/400/people/" alt="">
+                        <img class="staff-miembro-img" src="http://lorempixel.com/400/400/people/" alt="">
                         <p class="staff-miembro">
                             <span class="staff-miembro-nombre">Phillip Neuman</span>
                             <span class="staff-miembro-cargo">President</span>
                         </p>                                
                     </div>
                     <div class="col-5 team-staff-item">
-                        <img src="http://lorempixel.com/400/400/people/" alt="">
+                        <img class="staff-miembro-img" src="http://lorempixel.com/400/400/people/" alt="">
                         <p class="staff-miembro">
                             <span class="staff-miembro-nombre">Tim Mol</span>
                             <span class="staff-miembro-cargo">Chief Operating Officer</span>
                         </p>
                     </div>
                     <div class="col-5 team-staff-item">
-                        <img src="http://lorempixel.com/400/400/people/" alt="">
+                        <img class="staff-miembro-img" src="http://lorempixel.com/400/400/people/" alt="">
                         <p class="staff-miembro">
                             <span class="staff-miembro-nombre">Xavier Deu</span>
                             <span class="staff-miembro-cargo">Chief Marketing Officer</span>

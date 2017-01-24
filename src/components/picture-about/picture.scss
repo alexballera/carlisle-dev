@@ -1,0 +1,52 @@
+.content-picture {
+  background-color: $color-principal;
+  position: relative;
+
+  img {
+    max-height: 400px;
+    min-height: 300px;
+    width: 100%;
+  }
+
+  &-contenido {
+    background-color: $background-color-transparent;
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    padding-left: 50px;
+    padding-right: 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    @include media-breakpoint-up(md) {
+      padding-left: 35px;
+      width: 70%;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 50px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 85%;
+    }
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    @media (min-width: 843px) {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    &-parrafo {
+      font-size: 100%;
+    }
+  }
+
+  &-boton {
+    @extend %boton;
+  }
+}
