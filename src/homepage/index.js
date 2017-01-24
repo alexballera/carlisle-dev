@@ -25,10 +25,6 @@ var main = document.getElementById('main')
 
 export default () => {
   empty(main).appendChild(el)
-  let nameBanner = document.getElementById('nameBanner')
-  let cargoBanner = document.getElementById('cargoBanner')
-  let avatarBanner = document.getElementById('avatarBanner')
-  let bannerWorkBgimage = document.getElementById('banner-work-bgimage')
 
   let bannerHeaderImage = document.getElementById('banner-header-image')
   let bannerHeader = document.getElementById('banner-header-title')
@@ -74,12 +70,6 @@ export default () => {
   pictureSlide[6].childNodes[1].setAttribute('src', `${data.pictures.home.about.why}`)
   pictureSlide[7].childNodes[1].setAttribute('src', `${data.pictures.home.about.difference}`)
   pictureSlide[8].childNodes[1].setAttribute('src', `${data.pictures.home.about.community}`)
-
-  // Banner Staff
-  nameBanner.innerHTML = `${data.staff.lucy.nombre}`
-  cargoBanner.innerHTML = `${data.staff.lucy.cargo}`
-  avatarBanner.setAttribute('src', `${data.staff.lucy.avatar}`)
-  bannerWorkBgimage.setAttribute('src', 'http://lorempixel.com/1400/400/city/')
 
   // Team Avatar
   staffImage[0].setAttribute('src', `${data.staff.victor.avatar}`)

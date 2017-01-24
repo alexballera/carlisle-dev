@@ -4,15 +4,20 @@ $height-banner: 250px;
   height: $height-banner;
 }
 
+.carousel-testimonial {
+  height: $height-banner;
+  margin-bottom: 2rem;
+}
+
 .banner-work {
   height: $height-banner;
-  position: relative;
+  position: absolute;
+  top: 0;
 
 
   &-bgimage {
     img {
       height: $height-banner;
-      position: absolute;
       width: 100%;
     }
   }

@@ -50,8 +50,8 @@ module.exports = {
         team: './images/banner-header-team.jpg'
       },
       slide: {
-        slide1: '',
-        slide2: ''
+        slide1: 'http://lorempixel.com/1400/400/city/',
+        slide2: 'http://lorempixel.com/1400/400/business/'
       }
     },
     home: {
