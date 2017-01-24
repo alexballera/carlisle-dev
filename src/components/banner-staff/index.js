@@ -26,6 +26,7 @@ module.exports = {
             <img src='${data.staff.lucy.avatar}' alt="" id="avatarBanner" class="rounded-circle">
         </div>
       </div>
+      <div class="col-12 carousel-item-background"></div>
     </div>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item carousel-testimonial row no-gutters justify-content-center">
@@ -48,6 +49,7 @@ module.exports = {
               <img src='${data.staff.brandom.avatar}' alt="" id="avatarBanner" class="rounded-circle">
           </div>
         </div>
+        <div class="col-12 carousel-item-background"></div>
       </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

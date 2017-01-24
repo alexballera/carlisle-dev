@@ -1,5 +1,16 @@
 $height-banner: 250px;
 
+.carousel-item-background {
+  background-color: $background-color-transparent;
+  height: $height-banner;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+
 .content-work {
   height: $height-banner;
 }
@@ -13,7 +24,7 @@ $height-banner: 250px;
   height: $height-banner;
   position: absolute;
   top: 0;
-
+  z-index: 2;
 
   &-bgimage {
     img {
