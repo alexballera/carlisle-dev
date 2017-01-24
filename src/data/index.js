@@ -53,7 +53,7 @@ module.exports = {
         slide1: './images/banner-content-staff.jpg',
         slide2: './images/banner-content-staff2.jpg'
       },
-      footer: 'http://lorempixel.com/1400/400/city/'
+      footer: './images/banner-footer.jpg'
     },
     home: {
       about: {

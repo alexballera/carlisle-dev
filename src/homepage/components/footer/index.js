@@ -1,12 +1,14 @@
 'use strict'
 
 import yo from 'yo-yo'
+import data from '../../../data'
 
 module.exports = {
   template: yo `
   <div class="row no-gutters home-footer-container">
-      <div class="col-12 home-footer-banner">
+      <picture class="col-12 home-footer-banner">
           <div class="home-footer-opacity"></div>
+          <img src="${data.pictures.banners.footer}" alt="">
           <div class="home-footer-contenido row no-gutters justify-content-center align-items-center">
               <h3 class="col-10 col-md-9 col-xl-11 home-footer-title">
                   Carlisle is a leading, highly diversified
@@ -19,6 +21,6 @@ module.exports = {
                   on behalf of investors and private clients wordwide.
               </p>
           </div>
-      </div>
+      </picture>
   </div>`
 }
