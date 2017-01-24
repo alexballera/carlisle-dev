@@ -29,13 +29,10 @@ export default () => {
   let bannerHeaderImage = document.getElementById('banner-header-image')
   let bannerHeader = document.getElementById('banner-header-title')
   let bannerHeaderContenido = document.getElementById('banner-header-contenido')
-
   let staffImage = document.querySelectorAll('img.staff-miembro-img')
   let staffNombre = document.querySelectorAll('span.staff-miembro-nombre')
   let staffCargo = document.querySelectorAll('span.staff-miembro-cargo')
-
   let pictureSlide = document.querySelectorAll('picture.content-picture')
-
   let picturesAbout = document.getElementById('opportunities-carousel').childNodes
 
   // Banner Header
@@ -46,19 +43,16 @@ export default () => {
                       strategies provate equity, credit, liquid markets and traditional fixed income - on behalf of
                       investors and private clients wordwide.`
 
-  // Slider opportunities
+  // Carousel opportunities
   pictureSlide[0].classList.add('col-6', 'col-xl-5')
   pictureSlide[1].classList.add('col-6', 'col-xl-5')
   pictureSlide[2].classList.add('col-6', 'col-xl-5')
   pictureSlide[3].classList.add('col-6', 'col-xl-5')
-  pictureSlide[4].classList.add('col-6', 'col-xl-5')
-  pictureSlide[5].classList.add('col-6', 'col-xl-5')
+
   pictureSlide[0].childNodes[1].setAttribute('src', `${data.pictures.home.slide.why}`)
   pictureSlide[1].childNodes[1].setAttribute('src', `${data.pictures.home.slide.difference}`)
   pictureSlide[2].childNodes[1].setAttribute('src', `${data.pictures.home.slide.community}`)
   pictureSlide[3].childNodes[1].setAttribute('src', `${data.pictures.home.slide.why1}`)
-  pictureSlide[4].childNodes[1].setAttribute('src', `${data.pictures.home.slide.difference1}`)
-  pictureSlide[5].childNodes[1].setAttribute('src', `${data.pictures.home.slide.community1}`)
 
   // Pictures About
   picturesAbout[1].classList.remove('col-6', 'col-xl-5')
@@ -67,9 +61,10 @@ export default () => {
   picturesAbout[1].classList.add('col-10')
   picturesAbout[3].classList.add('col-10')
   picturesAbout[5].classList.add('col-10')
-  pictureSlide[6].childNodes[1].setAttribute('src', `${data.pictures.home.about.why}`)
-  pictureSlide[7].childNodes[1].setAttribute('src', `${data.pictures.home.about.difference}`)
-  pictureSlide[8].childNodes[1].setAttribute('src', `${data.pictures.home.about.community}`)
+
+  pictureSlide[4].childNodes[1].setAttribute('src', `${data.pictures.home.about.why}`)
+  pictureSlide[5].childNodes[1].setAttribute('src', `${data.pictures.home.about.difference}`)
+  pictureSlide[6].childNodes[1].setAttribute('src', `${data.pictures.home.about.community}`)
 
   // Team Avatar
   staffImage[0].setAttribute('src', `${data.staff.victor.avatar}`)

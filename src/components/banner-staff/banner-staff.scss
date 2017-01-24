@@ -1,5 +1,14 @@
 $height-banner: 250px;
 
+.carousel-picture {
+  height: $height-banner;
+
+  img {
+    height: $height-banner;
+    width: 100%;
+  }
+}
+
 .carousel-item-background {
   background-color: $background-color-transparent;
   height: $height-banner;
@@ -13,11 +22,6 @@ $height-banner: 250px;
 
 .content-work {
   height: $height-banner;
-}
-
-.carousel-testimonial {
-  height: $height-banner;
-  margin-bottom: 2rem;
 }
 
 .banner-work {

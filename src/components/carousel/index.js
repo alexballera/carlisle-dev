@@ -5,15 +5,11 @@ import picture from '../picture-about'
 
 module.exports = {
   template: yo`
-  <div id="carouselAbout" class="carousel slide" data-ride="carousel">
+  <div id="carouselAbout" class="carousel carouselAbout carousel-opportunities slide" data-ride="carouselAbout" data-interval="7000">
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active content-opportunities row no-gutters justify-content-center">
         ${picture.why}
         ${picture.difference}
-      </div>
-      <div class="carousel-item content-opportunities row no-gutters justify-content-center">
-        ${picture.community}
-        ${picture.why2}
       </div>
       <div class="carousel-item content-opportunities row no-gutters justify-content-center">
         ${picture.difference2}
