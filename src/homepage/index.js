@@ -43,7 +43,7 @@ export default () => {
   let picturesAbout = document.getElementById('opportunities-carousel').childNodes
 
   // Banner Header
-  bannerHeaderImage.setAttribute('src', 'http://lorempixel.com/1440/500/city/')
+  bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.home}`)
   bannerHeader.innerHTML = 'Innovations diversified investment solutions'
   bannerHeaderContenido.innerHTML = `Carlisle is a leading, highly diversified global investment management firm,
                       Carlisle applies its deep experience and specialized expertise across a range of investment
