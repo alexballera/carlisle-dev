@@ -60,6 +60,3 @@ module.exports = {
   </a>    
 </div>`
 }
-
-    
-    

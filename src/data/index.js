@@ -52,7 +52,8 @@ module.exports = {
       slide: {
         slide1: 'http://lorempixel.com/1400/400/city/',
         slide2: 'http://lorempixel.com/1400/400/business/'
-      }
+      },
+      footer: 'http://lorempixel.com/1400/400/city/'
     },
     home: {
       about: {
