@@ -50,24 +50,24 @@ module.exports = {
         team: './images/banner-header-team.jpg'
       },
       slide: {
-        slide1: 'http://lorempixel.com/1400/400/city/',
-        slide2: 'http://lorempixel.com/1400/400/business/'
+        slide1: './images/banner-content-staff.jpg',
+        slide2: './images/banner-content-staff2.jpg'
       },
       footer: 'http://lorempixel.com/1400/400/city/'
     },
     home: {
       about: {
-        why: 'http://lorempixel.com/400/400/city/',
-        difference: 'http://lorempixel.com/400/400/sports/',
-        community: 'http://lorempixel.com/400/400/sports/'
+        why: './images/about-why.jpg',
+        difference: './images/about-difference.jpg',
+        community: './images/about-community.jpg'
       },
       slide: {
-        why: 'http://lorempixel.com/400/400/city/',
-        difference: 'http://lorempixel.com/400/400/sports/',
-        community: 'http://lorempixel.com/400/400/sports/',
-        why1: 'http://lorempixel.com/400/400/city/',
-        difference1: 'http://lorempixel.com/400/400/sports/',
-        community1: 'http://lorempixel.com/400/400/sports/'
+        why: './images/about-why.jpg',
+        difference: './images/about-difference.jpg',
+        community: './images/about-community.jpg',
+        why1: './images/about-why.jpg',
+        difference1: './images/about-difference.jpg',
+        community1: './images/about-community.jpg'
       }
     }
   }
