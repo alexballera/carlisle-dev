@@ -57,6 +57,12 @@ export default () => {
   pictureSlide[3].classList.add('col-6', 'col-xl-5')
   pictureSlide[4].classList.add('col-6', 'col-xl-5')
   pictureSlide[5].classList.add('col-6', 'col-xl-5')
+  pictureSlide[0].childNodes[1].setAttribute('src', `${data.pictures.home.slide.why}`)
+  pictureSlide[1].childNodes[1].setAttribute('src', `${data.pictures.home.slide.difference}`)
+  pictureSlide[2].childNodes[1].setAttribute('src', `${data.pictures.home.slide.community}`)
+  pictureSlide[3].childNodes[1].setAttribute('src', `${data.pictures.home.slide.why1}`)
+  pictureSlide[4].childNodes[1].setAttribute('src', `${data.pictures.home.slide.difference1}`)
+  pictureSlide[5].childNodes[1].setAttribute('src', `${data.pictures.home.slide.community1}`)
 
   // Pictures About
   picturesAbout[1].classList.remove('col-6', 'col-xl-5')
@@ -65,6 +71,9 @@ export default () => {
   picturesAbout[1].classList.add('col-10')
   picturesAbout[3].classList.add('col-10')
   picturesAbout[5].classList.add('col-10')
+  pictureSlide[6].childNodes[1].setAttribute('src', `${data.pictures.home.about.why}`)
+  pictureSlide[7].childNodes[1].setAttribute('src', `${data.pictures.home.about.difference}`)
+  pictureSlide[8].childNodes[1].setAttribute('src', `${data.pictures.home.about.community}`)
 
   // Banner Staff
   nameBanner.innerHTML = `${data.staff.lucy.nombre}`

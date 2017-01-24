@@ -52,7 +52,7 @@ module.exports = {
   </picture>`,
   why2: yo`
   <picture class="content-picture">
-      <img class="d-block img-fluid" src="http://lorempixel.com/400/400/city/" alt="" class="content-picture-img">
+      <img class="d-block img-fluid" src="" alt="" class="content-picture-img">
       <div class="content-picture-contenido row align-items-center no-gutters">
       <h2 class="content-picture-title col-12">
           Why Carlisle?
@@ -67,7 +67,7 @@ module.exports = {
   </picture>`,
   difference2: yo`
   <picture class="content-picture">
-    <img class="d-block img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" class="content-picture-img">
+    <img class="d-block img-fluid" src="" alt="" class="content-picture-img">
     <div class="content-picture-contenido row align-items-center no-gutters">
     <h2 class="content-picture-title col-12">
         Our difference
@@ -82,7 +82,7 @@ module.exports = {
   </picture>`,
   community2: yo`
   <picture class="content-picture">
-    <img class="d-block img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" class="content-picture-img">
+    <img class="d-block img-fluid" src="" alt="" class="content-picture-img">
     <div class="content-picture-contenido row align-items-center no-gutters">
     <h2 class="content-picture-title col-12">
         Community Reach
@@ -99,7 +99,7 @@ module.exports = {
   </picture>`,
   why3: yo`
   <picture class="content-picture">
-      <img class="d-block img-fluid" src="http://lorempixel.com/400/400/city/" alt="" class="content-picture-img">
+      <img class="d-block img-fluid" src="" alt="" class="content-picture-img">
       <div class="content-picture-contenido row align-items-center no-gutters">
       <h2 class="content-picture-title col-12">
           Why Carlisle?
@@ -114,7 +114,7 @@ module.exports = {
   </picture>`,
   difference3: yo`
   <picture class="content-picture">
-    <img class="d-block img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" class="content-picture-img">
+    <img class="d-block img-fluid" src="" alt="" class="content-picture-img">
     <div class="content-picture-contenido row align-items-center no-gutters">
     <h2 class="content-picture-title col-12">
         Our difference
@@ -129,7 +129,7 @@ module.exports = {
   </picture>`,
   community3: yo`
   <picture class="content-picture">
-    <img class="d-block img-fluid" src="http://lorempixel.com/400/400/sports/" alt="" class="content-picture-img">
+    <img class="d-block img-fluid" src="" alt="" class="content-picture-img">
     <div class="content-picture-contenido row align-items-center no-gutters">
     <h2 class="content-picture-title col-12">
         Community Reach

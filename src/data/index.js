@@ -54,10 +54,20 @@ module.exports = {
         slide2: ''
       }
     },
-    about: {
-      why: '',
-      difference: '',
-      community: ''
+    home: {
+      about: {
+        why: 'http://lorempixel.com/400/400/city/',
+        difference: 'http://lorempixel.com/400/400/sports/',
+        community: 'http://lorempixel.com/400/400/sports/'
+      },
+      slide: {
+        why: 'http://lorempixel.com/400/400/city/',
+        difference: 'http://lorempixel.com/400/400/sports/',
+        community: 'http://lorempixel.com/400/400/sports/',
+        why1: 'http://lorempixel.com/400/400/city/',
+        difference1: 'http://lorempixel.com/400/400/sports/',
+        community1: 'http://lorempixel.com/400/400/sports/'
+      }
     }
   }
 }
