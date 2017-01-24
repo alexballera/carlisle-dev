@@ -5,6 +5,7 @@ import empty from 'empty-element'
 import bannerHeader from '../components/banner-header'
 import navbarHeader from '../components/navbar-header'
 import breadcrumb from '../components/breadcrumb'
+import data from '../data'
 
 var el = yo`
 <section class="about" id="about">
@@ -56,11 +57,11 @@ export default () => {
   let breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link')
 
   // Banner Header
-  bannerHeaderImage.setAttribute('src', 'http://lorempixel.com/1440/500/city/')
+  bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_us}`)
   bannerHeader.innerHTML = 'About us'
   bannerHeaderContenido.innerHTML = `Carlisle was established to provide minimally
                                     correlated fund options in the alternative asset space`
-  bannerHeaderImage.style.minHeight = '250px'
+  bannerHeaderImage.style.height = '200px'
   bannerHeaderBoton.style.display = 'none'
   BannerHeaderBgBottom.style.display = 'none'
 
