@@ -21,19 +21,13 @@ export default () => {
   hiDefault()
 
   function showAbout () {
-    setTimeout(() => {
-      home.hide('slow')
-      about.show('slow')
-      // ul.hide('slow')
-    }, 700)
+    about.show('slow')
+    home.hide()
   }
 
   function showHome () {
-    setTimeout(() => {
-      home.show('slow')
-      about.hide('slow')
-      // ul.hide('slow')
-    }, 700)
+    home.show('slow')
+    about.hide()
   }
 
   linkAbout.on('click', (e) => {
