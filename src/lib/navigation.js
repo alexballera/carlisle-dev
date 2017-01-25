@@ -7,7 +7,7 @@ export default () => {
   // var mq = mediaQuery.matches
   var main = $('#main')
   var topNavbar = $('#topNavbar')
-  // var ul = navbarNav.find('ul.navbar-nav')
+  var navbarNav = topNavbar.find('#navbarNav')
   var linkHome = topNavbar.find('#linkHome')
   var linkAbout = topNavbar.find('a#linkAbout')
   var about = main.find('#about')
@@ -23,11 +23,13 @@ export default () => {
   function showAbout () {
     about.show('slow')
     home.hide()
+    navbarNav.removeClass('show')
   }
 
   function showHome () {
     home.show('slow')
     about.hide()
+    navbarNav.removeClass('show')
   }
 
   linkAbout.on('click', (e) => {

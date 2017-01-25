@@ -21,6 +21,7 @@
     }
 
     &-top {
+      transition: all 1s ease;
       @include media-breakpoint-up(lg) {
         margin-right: 6rem;
       }
