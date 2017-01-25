@@ -21,23 +21,27 @@ export default () => {
   hiDefault()
 
   function showAbout () {
-    home.hide('slow')
-    about.show('slow')
-    // ul.hide('slow')
+    setTimeout(() => {
+      home.hide('slow')
+      about.show('slow')
+      // ul.hide('slow')
+    }, 700)
   }
 
   function showHome () {
-    home.show('slow')
-    about.hide('slow')
-    // ul.hide('slow')
+    setTimeout(() => {
+      home.show('slow')
+      about.hide('slow')
+      // ul.hide('slow')
+    }, 700)
   }
 
-  linkAbout.click((e) => {
+  linkAbout.on('click', (e) => {
     e.preventDefault()
     showAbout()
   })
 
-  linkHome.click((e) => {
+  linkHome.on('click', (e) => {
     e.preventDefault()
     showHome()
   })
