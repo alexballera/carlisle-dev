@@ -15,9 +15,9 @@ module.exports = {
       ${carousel.template}
     </div>
     <div id="opportunities-carousel" class="opportunities-carousel opportunities-carousel-mobile hidden-md-up row no-gutters justify-content-center">
-      ${picture.why3}
-      ${picture.difference3}
-      ${picture.community3}
+      ${picture.home.why}
+      ${picture.home.difference}
+      ${picture.home.community}
     </div>
     <div class="opportunities-banner">
       ${banner.template}

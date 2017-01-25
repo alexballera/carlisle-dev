@@ -30,14 +30,12 @@ var el = yo`
     </article>
     <article class="row no-gutters about-items" id="about-items">
       <div class="col-12 about-banner-item" id="about-banner-why">
-        ${picture.why}
-      </div>
-      <div class="col-12 about-banner-item" id="about-banner-difference">
-        ${picture.difference}
-      </div>
-      <div class="col-12 about-banner-item" id="about-banner-community">
-        ${picture.community}
-      </div>
+        <div class="row no-gutters justify-content-center">
+          ${picture.about.why}
+          ${picture.about.difference}
+          ${picture.about.community}
+        </div>
+      </div>      
     </article>
     <article class="study" id="study"></article>
   </section>
@@ -88,6 +86,11 @@ export default () => {
   breadcrumbItems[3].style.display = 'none'
   breadcrumbItems[4].style.display = 'none'
   breadcrumbItems[5].style.display = 'none'
+
+  // Section why - difference - community
+  document.getElementById('about-why').setAttribute('src', `${data.pictures.about.why}`)
+  document.getElementById('about-difference').setAttribute('src', `${data.pictures.about.difference}`)
+  document.getElementById('about-community').setAttribute('src', `${data.pictures.about.community}`)
 
   // Banner Staff
 /*

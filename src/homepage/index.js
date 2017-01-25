@@ -51,10 +51,10 @@ export default () => {
 
   pictureSlide[0].childNodes[1].setAttribute('src', `${data.pictures.home.slide.why}`)
   pictureSlide[1].childNodes[1].setAttribute('src', `${data.pictures.home.slide.difference}`)
-  pictureSlide[2].childNodes[1].setAttribute('src', `${data.pictures.home.slide.community}`)
-  pictureSlide[3].childNodes[1].setAttribute('src', `${data.pictures.home.slide.why1}`)
+  pictureSlide[2].childNodes[1].setAttribute('src', `${data.pictures.home.slide.difference}`)
+  pictureSlide[3].childNodes[1].setAttribute('src', `${data.pictures.home.slide.community}`)
 
-  // Pictures About
+  // Section why - difference - community
   picturesAbout[1].classList.remove('col-6', 'col-xl-5')
   picturesAbout[3].classList.remove('col-6', 'col-xl-5')
   picturesAbout[5].classList.remove('col-6', 'col-xl-5')
@@ -62,9 +62,9 @@ export default () => {
   picturesAbout[3].classList.add('col-10')
   picturesAbout[5].classList.add('col-10')
 
-  pictureSlide[4].childNodes[1].setAttribute('src', `${data.pictures.home.about.why}`)
-  pictureSlide[5].childNodes[1].setAttribute('src', `${data.pictures.home.about.difference}`)
-  pictureSlide[6].childNodes[1].setAttribute('src', `${data.pictures.home.about.community}`)
+  document.getElementById('home-why').setAttribute('src', `${data.pictures.home.about.why}`)
+  document.getElementById('home-difference').setAttribute('src', `${data.pictures.home.about.difference}`)
+  document.getElementById('home-community').setAttribute('src', `${data.pictures.home.about.community}`)
 
   // Team Avatar
   staffImage[0].setAttribute('src', `${data.staff.victor.avatar}`)
