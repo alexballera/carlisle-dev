@@ -15,10 +15,10 @@ export default () => {
 
   // mediaQuery.addListener()
 
-  function hiDefault () {
+ /* function hiDefault () {
     about.hide()
   }
-  hiDefault()
+  hiDefault() */
 
   function showAbout () {
     about.show('slow')

@@ -69,8 +69,8 @@ module.exports = {
   },
   about: {
     why: yo`
-        <picture class="content-picture">
-            <img class="d-block img-fluid" src="" alt="" id="about-why">
+        <picture class="content-picture" id="about-why">
+            <img class="d-block img-fluid" src="" alt="" id="about-why-img">
             <div class="content-picture-contenido row align-items-center no-gutters">
             <h2 class="content-picture-title col-12">
                 Why Carlisle?
@@ -84,8 +84,8 @@ module.exports = {
             </div>
         </picture>`,
     difference: yo`
-        <picture class="content-picture">
-            <img class="d-block img-fluid" src="" alt="" id="about-difference">
+        <picture class="content-picture" id="about-difference">
+            <img class="d-block img-fluid" src="" alt="" id="about-difference-img">
             <div class="content-picture-contenido row align-items-center no-gutters">
             <h2 class="content-picture-title col-12">
                 Our difference
@@ -99,8 +99,8 @@ module.exports = {
             </div>
         </picture>`,
     community: yo`
-        <picture class="content-picture">
-            <img class="d-block img-fluid" src="" alt="" id="about-community">
+        <picture class="content-picture" id="about-community">
+            <img class="d-block img-fluid" src="" alt="" id="about-community-img">
             <div class="content-picture-contenido row align-items-center no-gutters">
             <h2 class="content-picture-title col-12">
                 Community Reach

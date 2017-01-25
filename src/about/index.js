@@ -30,7 +30,7 @@ var el = yo`
     </article>
     <article class="row no-gutters about-items" id="about-items">
       <div class="col-12 about-banner-item" id="about-banner-why">
-        <div class="row no-gutters justify-content-center">
+        <div class="opportunities-carousel opportunities-carousel-mobile row no-gutters justify-content-around">
           ${picture.about.why}
           ${picture.about.difference}
           ${picture.about.community}
@@ -88,9 +88,13 @@ export default () => {
   breadcrumbItems[5].style.display = 'none'
 
   // Section why - difference - community
-  document.getElementById('about-why').setAttribute('src', `${data.pictures.about.why}`)
-  document.getElementById('about-difference').setAttribute('src', `${data.pictures.about.difference}`)
-  document.getElementById('about-community').setAttribute('src', `${data.pictures.about.community}`)
+  document.getElementById('about-why-img').setAttribute('src', `${data.pictures.about.why}`)
+  document.getElementById('about-difference-img').setAttribute('src', `${data.pictures.about.difference}`)
+  document.getElementById('about-community-img').setAttribute('src', `${data.pictures.about.community}`)
+
+  document.getElementById('about-why').classList.add('col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+  document.getElementById('about-difference').classList.add('col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+  document.getElementById('about-community').classList.add('col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
 
   // Banner Staff
 /*
