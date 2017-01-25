@@ -1,5 +1,5 @@
 import header from './components/navbar-top'
-// import homepage from './homepage'
+import homepage from './homepage'
 import about from './about'
 import footer from './components/footer'
 import navigation from './lib/navigation.js'
@@ -12,7 +12,7 @@ import navigation from './lib/navigation.js'
   function onDOMLoad () {
     header()
     about()
-    // homepage()
+    homepage()
     footer()
     navigation()
   }

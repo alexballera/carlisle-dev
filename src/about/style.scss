@@ -16,4 +16,14 @@
       max-width: 360px;
     }
   }
+
+  &-why-background {
+    background-color: $background-color-transparent;
+    height: 70%;
+    left: 0;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: 1;        
+  }
 }

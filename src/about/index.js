@@ -62,6 +62,10 @@ export default () => {
   let breadcrumbItems = document.querySelectorAll('li.breadcrumb-item')
   let breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link')
 
+  let aboutWhy = document.getElementById('about-why')
+  let aboutDifference = document.getElementById('about-difference')
+  let aboutCommunity = document.getElementById('about-community')
+
   // Banner Header
   bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_us}`)
   bannerHeader.innerHTML = 'About us'
@@ -92,9 +96,21 @@ export default () => {
   document.getElementById('about-difference-img').setAttribute('src', `${data.pictures.about.difference}`)
   document.getElementById('about-community-img').setAttribute('src', `${data.pictures.about.community}`)
 
-  document.getElementById('about-why').classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
-  document.getElementById('about-difference').classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
-  document.getElementById('about-community').classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+  aboutWhy.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+  aboutDifference.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+  aboutCommunity.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+
+  var div1 = document.createElement('div')
+  var div2 = document.createElement('div')
+  var div3 = document.createElement('div')
+
+  div1.setAttribute('class', 'about-why-background')
+  div2.setAttribute('class', 'about-why-background')
+  div3.setAttribute('class', 'about-why-background')
+
+  aboutWhy.appendChild(div1)
+  aboutDifference.appendChild(div2)
+  aboutCommunity.appendChild(div3)
 
   // Banner Staff
 /*
