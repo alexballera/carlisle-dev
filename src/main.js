@@ -2,6 +2,7 @@ import header from './components/navbar-top'
 import homepage from './homepage'
 import about from './about'
 import footer from './components/footer'
+import navigation from './lib/navigation.js'
 
 (() => {
   'use strict'
@@ -10,8 +11,9 @@ import footer from './components/footer'
 
   function onDOMLoad () {
     header()
-    homepage()
     about()
+    homepage()
     footer()
+    navigation()
   }
 })()

@@ -6,10 +6,11 @@ import bannerHeader from '../components/banner-header'
 import navbarHeader from '../components/navbar-header'
 import breadcrumb from '../components/breadcrumb'
 import data from '../data'
+// import $ from 'jquery'
 
 var el = yo`
 <section class="about" id="about">
-  <header class="banner" id="banner-about">${bannerHeader.template}</header>
+  <header class="banner" id="banner-about">${bannerHeader.about}</header>
   <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header">${navbarHeader.template}</nav>
   <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header">${breadcrumb.template}</nav>
   <section class="about-content" id="about-content">
@@ -37,19 +38,19 @@ var el = yo`
 </section>
 `
 
-var main = document.getElementById('main')
+var aboutpage = document.getElementById('aboutpage')
 
 export default () => {
-  empty(main).appendChild(el)
+  empty(aboutpage).appendChild(el)
 /*
   let nameBanner = document.getElementById('nameBanner')
   let cargoBanner = document.getElementById('cargoBanner')
   let avatarBanner = document.getElementById('avatarBanner')
   let bannerWorkBgimage = document.getElementById('banner-work-bgimage')
 */
-  let bannerHeaderImage = document.getElementById('banner-header-image')
-  let bannerHeader = document.getElementById('banner-header-title')
-  let bannerHeaderContenido = document.getElementById('banner-header-contenido')
+  let bannerHeaderImage = document.getElementById('banner-header-image-about')
+  let bannerHeader = document.getElementById('banner-header-title-about')
+  let bannerHeaderContenido = document.getElementById('banner-header-contenido-about')
   let bannerHeaderBoton = document.getElementById('banner-header-boton')
   let BannerHeaderBgBottom = document.getElementById('banner-header-bg-bottom')
   let navItems = document.querySelectorAll('a.nav-link-header')

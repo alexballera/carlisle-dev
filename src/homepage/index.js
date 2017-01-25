@@ -11,7 +11,7 @@ import data from '../data'
 
 var el = yo`
 <section class="home" id="home">
-  <header class="banner" id="banner">${header.template}</header>
+  <header class="banner" id="banner">${header.home}</header>
   <section class="content" id="content">
     <article class="opportunities" id="opportunities">${opportunities.template}</article>
     <article class="team" id="team">${team.template}</article>
@@ -21,14 +21,14 @@ var el = yo`
 </section>
 `
 
-var main = document.getElementById('main')
+var homepage = document.getElementById('homepage')
 
 export default () => {
-  empty(main).appendChild(el)
+  empty(homepage).appendChild(el)
 
-  let bannerHeaderImage = document.getElementById('banner-header-image')
-  let bannerHeader = document.getElementById('banner-header-title')
-  let bannerHeaderContenido = document.getElementById('banner-header-contenido')
+  let bannerHeaderImage = document.getElementById('banner-header-image-home')
+  let bannerHeader = document.getElementById('banner-header-title-home')
+  let bannerHeaderContenido = document.getElementById('banner-header-contenido-home')
   let staffImage = document.querySelectorAll('img.staff-miembro-img')
   let staffNombre = document.querySelectorAll('span.staff-miembro-nombre')
   let staffCargo = document.querySelectorAll('span.staff-miembro-cargo')
