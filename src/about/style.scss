@@ -9,4 +9,11 @@
     color: $grey;
     text-align: justify;
   }
+
+  &-why-picture {
+    @include media-breakpoint-up(md) {
+      height: 500px;
+      max-width: 360px;
+    }
+  }
 }

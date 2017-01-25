@@ -92,9 +92,9 @@ export default () => {
   document.getElementById('about-difference-img').setAttribute('src', `${data.pictures.about.difference}`)
   document.getElementById('about-community-img').setAttribute('src', `${data.pictures.about.community}`)
 
-  document.getElementById('about-why').classList.add('col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
-  document.getElementById('about-difference').classList.add('col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
-  document.getElementById('about-community').classList.add('col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+  document.getElementById('about-why').classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+  document.getElementById('about-difference').classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+  document.getElementById('about-community').classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
 
   // Banner Staff
 /*
