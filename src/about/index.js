@@ -5,6 +5,7 @@ import empty from 'empty-element'
 import bannerHeader from '../components/banner-header'
 import navbarHeader from '../components/navbar-header'
 import breadcrumb from '../components/breadcrumb'
+import picture from '../components/picture-about'
 import data from '../data'
 // import $ from 'jquery'
 
@@ -28,9 +29,15 @@ var el = yo`
       </p>
     </article>
     <article class="row no-gutters about-items" id="about-items">
-      <div class="col-12 about-banner-item" id="about-banner-why"></div>
-      <div class="col-12 about-banner-item" id="about-banner-difference"></div>
-      <div class="col-12 about-banner-item" id="about-banner-community"></div>
+      <div class="col-12 about-banner-item" id="about-banner-why">
+        ${picture.why}
+      </div>
+      <div class="col-12 about-banner-item" id="about-banner-difference">
+        ${picture.difference}
+      </div>
+      <div class="col-12 about-banner-item" id="about-banner-community">
+        ${picture.community}
+      </div>
     </article>
     <article class="study" id="study"></article>
   </section>
