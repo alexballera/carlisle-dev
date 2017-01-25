@@ -9,21 +9,21 @@ import study from './components/study'
 import footer from './components/footer'
 import data from '../data'
 
-var el = yo`
-<section class="home" id="home">
-  <header class="banner" id="banner">${header.home}</header>
-  <section class="content" id="content">
-    <article class="opportunities" id="opportunities">${opportunities.template}</article>
-    <article class="team" id="team">${team.template}</article>
-    <article class="study" id="study">${study.template}</article>
-  </section>
-  <footer class="home-footer" id="home-footer">${footer.template}</footer>
-</section>
-`
-
-var homepage = document.getElementById('homepage')
-
 export default () => {
+  let el = yo`
+  <section class="home" id="home">
+    <header class="banner" id="banner">${header.home}</header>
+    <section class="content" id="content">
+      <article class="opportunities" id="opportunities">${opportunities.template}</article>
+      <article class="team" id="team">${team.template}</article>
+      <article class="study" id="study">${study.template}</article>
+    </section>
+    <footer class="home-footer" id="home-footer">${footer.template}</footer>
+  </section>
+  `
+
+  let homepage = document.getElementById('homepage')
+
   empty(homepage).appendChild(el)
 
   let bannerHeaderImage = document.getElementById('banner-header-image-home')
@@ -66,20 +66,20 @@ export default () => {
   document.getElementById('home-difference').setAttribute('src', `${data.pictures.home.about.difference}`)
   document.getElementById('home-community').setAttribute('src', `${data.pictures.home.about.community}`)
 
-  // Team Avatar
+  // TEAM Avatar
   staffImage[0].setAttribute('src', `${data.staff.victor.avatar}`)
   staffImage[1].setAttribute('src', `${data.staff.jose.avatar}`)
   staffImage[2].setAttribute('src', `${data.staff.phillip.avatar}`)
   staffImage[3].setAttribute('src', `${data.staff.tim.avatar}`)
   staffImage[4].setAttribute('src', `${data.staff.xavier.avatar}`)
 
-  // Team Nombre
+  // TEAM Nombre
   staffNombre[0].innerHTML = `${data.staff.jose.nombre}`
   staffNombre[1].innerHTML = `${data.staff.phillip.nombre}`
   staffNombre[2].innerHTML = `${data.staff.tim.nombre}`
   staffNombre[3].innerHTML = `${data.staff.xavier.nombre}`
 
-  // Team Cargo
+  // TEAM Cargo
   staffCargo[0].innerHTML = `${data.staff.jose.cargo}`
   staffCargo[1].innerHTML = `${data.staff.phillip.cargo}`
   staffCargo[2].innerHTML = `${data.staff.tim.cargo}`
