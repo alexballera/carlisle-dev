@@ -69,6 +69,11 @@ module.exports = {
         difference1: './images/about-difference.jpg',
         community1: './images/about-community.jpg'
       }
+    },
+    about: {
+      why: './images/about-why.jpg',
+      difference: './images/about-difference.jpg',
+      community: './images/about-community.jpg'
     }
   }
 }

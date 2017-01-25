@@ -11,24 +11,24 @@ var nav = yo`
     <span>Menu </span> <i class="fa fa-bars" aria-hidden="true"></i>
   </button>
   <a class="navbar-brand" href="#">
-    <img src="./images/logo.png" alt="">
+    <img src="./images/logo.png" alt="Carlisle">
   </a>
   <div class="collapse navbar-collapse justify-content-end navbar-top" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link align-middle" href="#">About Us <span class="sr-only">(current)</span></a>
+        <a class="nav-link align-middle" href="">About Us <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Team</a>
+        <a class="nav-link" href="">Team</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Our Services</a>
+        <a class="nav-link" href="">Our Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Carrers</a>
+        <a class="nav-link" href="">Carrers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="">Contact</a>
       </li>
     </ul>
   </div>
