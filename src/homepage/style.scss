@@ -11,3 +11,13 @@
     }
   }
 }
+
+.home-why-background {
+  background-color: $background-color-transparent;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 80%;
+  z-index: 1;
+}

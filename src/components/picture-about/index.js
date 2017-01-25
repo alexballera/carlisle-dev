@@ -5,8 +5,8 @@ import yo from 'yo-yo'
 module.exports = {
   home: {
     why: yo`
-        <picture class="content-picture">
-            <img class="d-block img-fluid" src="" alt="" id="home-why">
+        <picture class="content-picture" id="home-why">
+            <img class="d-block img-fluid" src="" alt="" id="home-why-img">
             <div class="content-picture-contenido row align-items-center no-gutters">
             <h2 class="content-picture-title col-12">
                 Why Carlisle?
@@ -35,8 +35,8 @@ module.exports = {
             </div>
         </picture>`,
     difference: yo`
-        <picture class="content-picture">
-            <img class="d-block img-fluid" src="" alt="" id="home-difference">
+        <picture class="content-picture" id="home-difference">
+            <img class="d-block img-fluid" src="" alt="" id="home-difference-img">
             <div class="content-picture-contenido row align-items-center no-gutters">
             <h2 class="content-picture-title col-12">
                 Our difference
@@ -50,8 +50,8 @@ module.exports = {
             </div>
         </picture>`,
     community: yo`
-        <picture class="content-picture">
-            <img class="d-block img-fluid" src="" alt="" id="home-community">
+        <picture class="content-picture" id="home-community">
+            <img class="d-block img-fluid" src="" alt="" id="home-community-img">
             <div class="content-picture-contenido row align-items-center no-gutters">
             <h2 class="content-picture-title col-12">
                 Community Reach

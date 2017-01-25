@@ -92,9 +92,9 @@ export default () => {
   breadcrumbItems[5].style.display = 'none'
 
   // Section why - difference - community
-  document.getElementById('about-why-img').setAttribute('src', `${data.pictures.about.why}`)
-  document.getElementById('about-difference-img').setAttribute('src', `${data.pictures.about.difference}`)
-  document.getElementById('about-community-img').setAttribute('src', `${data.pictures.about.community}`)
+  aboutWhy.childNodes[1].setAttribute('src', `${data.pictures.about.why}`)
+  aboutDifference.childNodes[1].setAttribute('src', `${data.pictures.about.difference}`)
+  aboutCommunity.childNodes[1].setAttribute('src', `${data.pictures.about.community}`)
 
   aboutWhy.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
   aboutDifference.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
