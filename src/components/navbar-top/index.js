@@ -8,7 +8,7 @@ var nav = yo`
   <button class="navbar-toggler navbar-toggler-right navbar-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span>Menu </span> <i class="fa fa-bars" aria-hidden="true"></i>
   </button>
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="" id="linkHome">
     <img src="./images/logo.png" alt="Carlisle">
   </a>
   <div class="collapse navbar-collapse justify-content-end navbar-top" id="navbarNav">

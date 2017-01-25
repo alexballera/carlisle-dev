@@ -29,7 +29,7 @@ export default () => {
   function showHome () {
     home.show('slow')
     about.hide()
-    navbarNav.removeClass('show')
+    // navbarNav.removeClass('show')
   }
 
   linkAbout.on('click', (e) => {
