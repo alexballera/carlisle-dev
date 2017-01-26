@@ -16,13 +16,13 @@ var el = yo`
   <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header">${breadcrumb.template}</nav>
   <section class="about-content" id="about-content">
     <article class="about-description row no-gutters justify-content-center">
-      <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8">
+      <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
         Headquartered in Luxembourg, our state-of-the-art facilities and statistical modeling systems incorporate
         knowledge gained from 30+ years of investment experience. While the market for alternative assets is based
         on a finite set of criteria, investors have long demanded a leaner, more efficient alternative investment
         opportunities. 
       </p>
-      <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8">
+      <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
         Our clients acces our investment expertise across numerous areas whitin the alternative asset space. We operate
         independently, allowing us to focus solely on investor needs, whithout conflicts of interest. Our goal is to add
         value with personalized service and a relentless commitment to quality and responsiveness. 
