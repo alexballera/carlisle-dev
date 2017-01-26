@@ -18,7 +18,7 @@ export default () => {
       <article class="team" id="team">${team.template}</article>
       <article class="study" id="study">${study.template}</article>
     </section>
-    <footer class="home-footer" id="home-footer">${footer.template}</footer>
+    <footer class="home-footer" id="home-footer">${footer.homepage}</footer>
   </section>
   `
 
