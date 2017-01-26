@@ -7,6 +7,8 @@ export default () => {
   var bannerHeaderImage = document.getElementById('banner-header-image-about')
   var aboutContent = document.getElementById('about-content')
   var aboutItems = document.getElementById('about-items')
+  var breadcrumbItems = document.querySelectorAll('li.breadcrumb-item')
+  // var breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link')
 
   var titleWhy = document.createElement('h2')
   titleWhy.setAttribute('class', 'content-title')
@@ -21,9 +23,27 @@ export default () => {
     setTimeout(() => {
       bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_why}`)
       aboutContent.insertBefore(titleWhy, sectionDescription)
-      parraphs()
       aboutItems.style.display = 'none'
+      linkWhy.style.color = '#F8A308'
+      breadcrumbs()
+      parraphs()
     }, 700)
+
+    function breadcrumbs () {
+      var newlink = document.createElement('a')
+      newlink.setAttribute('href', '#')
+      newlink.setAttribute('class', 'breadcrumb-link')
+      newlink.setAttribute('id', 'breadcrumb-link-2')
+      newlink.innerHTML = 'About Us'
+
+      // newlink.addEventListener('click', showAbout)
+
+      breadcrumbItems[1].innerHTML = ''
+      breadcrumbItems[1].appendChild(newlink)
+      breadcrumbItems[2].style.display = 'block'
+      breadcrumbItems[2].innerHTML = 'Why Carlisle?'
+      breadcrumbItems[2].classList.add('active')
+    }
 
     function parraphs () {
       var aboutDescription = aboutContent.childNodes[2]
