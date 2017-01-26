@@ -18,7 +18,7 @@ module.exports = {
       <div class="banner-bg-bottom hidden-xs-down" id="banner-header-bg-bottom"></div>
   </div>`,
   about: yo `
-  <div class="banner-container">
+  <div class="banner-container" id="banner-header-about">
       <div class="banner-header hidden-xs-down">
           <picture class="banner-picture">
               <img src="" alt="" class="banner-picture-img" id="banner-header-image-about">

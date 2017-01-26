@@ -9,6 +9,7 @@ import picture from '../components/picture-about'
 import footer from '../components/banner-footer'
 import data from '../data'
 import banner from '../components/banner-staff'
+import why from './why'
 // import $ from 'jquery'
 
 var el = yo`
@@ -51,12 +52,7 @@ var aboutpage = document.getElementById('aboutpage')
 
 export default () => {
   empty(aboutpage).appendChild(el)
-/*
-  let nameBanner = document.getElementById('nameBanner')
-  let cargoBanner = document.getElementById('cargoBanner')
-  let avatarBanner = document.getElementById('avatarBanner')
-  let bannerWorkBgimage = document.getElementById('banner-work-bgimage')
-*/
+
   let bannerHeaderImage = document.getElementById('banner-header-image-about')
   let bannerHeader = document.getElementById('banner-header-title-about')
   let bannerHeaderContenido = document.getElementById('banner-header-contenido-about')
@@ -100,13 +96,6 @@ export default () => {
   aboutDifference.childNodes[1].setAttribute('src', `${data.pictures.about.difference}`)
   aboutCommunity.childNodes[1].setAttribute('src', `${data.pictures.about.community}`)
 
-  /* aboutWhy.childNodes[3].childNodes[1].classList.add('align-self-end')
-  aboutWhy.childNodes[3].childNodes[3].classList.add('align-self-end')
-  aboutDifference.childNodes[3].childNodes[1].classList.add('align-self-end')
-  aboutDifference.childNodes[3].childNodes[3].classList.add('align-self-end')
-  aboutCommunity.childNodes[3].childNodes[1].classList.add('align-self-end')
-  aboutCommunity.childNodes[3].childNodes[3].classList.add('align-self-end') */
-
   aboutWhy.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
   aboutDifference.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
   aboutCommunity.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
@@ -127,11 +116,5 @@ export default () => {
   aboutDifference.appendChild(div2)
   aboutCommunity.appendChild(div3)
 
-  // Banner Staff
-/*
-  nameBanner.innerHTML = 'Lucy Mcnazza'
-  cargoBanner.innerHTML = 'Chief Developer At Company'
-  avatarBanner.setAttribute('src', './images/lucy-mcnazza.jpg')
-  bannerWorkBgimage.setAttribute('src', 'http://lorempixel.com/1400/400/city/')
-*/
+  why()
 }
