@@ -1,7 +1,7 @@
 'use strict'
 
 import yo from 'yo-yo'
-import data from '../../../data'
+import data from '../../data'
 
 module.exports = {
   template: yo `
