@@ -94,7 +94,7 @@ export default () => {
 
   homeWhy.appendChild(div5)
   homeDifference.appendChild(div6)
-  homeDifference.appendChild(div7)
+  homeCommunity.appendChild(div7)
 
   // TEAM Avatar
   staffImage[0].setAttribute('src', `${data.staff.victor.avatar}`)

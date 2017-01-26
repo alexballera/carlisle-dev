@@ -1,4 +1,5 @@
 'use strict'
+import yo from 'yo-yo'
 import data from '../../data'
 
 export default () => {
@@ -8,7 +9,27 @@ export default () => {
   var aboutContent = document.getElementById('about-content')
   var aboutItems = document.getElementById('about-items')
   var breadcrumbItems = document.querySelectorAll('li.breadcrumb-item')
-  // var breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link')
+
+  var picture = yo`
+  <picture class="content-picture about-why-picture row no-gutters hidden-sm-up justify-content-center" id="about-why">
+    <img class="d-block img-fluid" src="${data.staff.lucy.avatar}" alt="" id="about-why-img">
+    <div class="row align-items-center no-gutters about-why-picture-container">
+      <h2 class="content-picture-title col-6">
+          Get In Touch
+      </h2>
+      <p class="content-picture-parrafo col-12">
+          When you need an investment solution for your next business opportunity or challenge,
+          please get in touch.
+      </p>
+      <div class="col-8">
+        <div class="row no-gutters justify-content-start about-why-picture-contacto">
+          <a href="#" class="content-picture-boton col-6">Call Us</a>
+          <span class="col-4 about-why-picture-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="about-why-picture-bgtransparent"></div>
+  </picture>`
 
   var titleWhy = document.createElement('h2')
   titleWhy.setAttribute('class', 'content-title')
@@ -27,23 +48,8 @@ export default () => {
       linkWhy.style.color = '#F8A308'
       breadcrumbs()
       parraphs()
+      addPicture()
     }, 700)
-
-    function breadcrumbs () {
-      var newlink = document.createElement('a')
-      newlink.setAttribute('href', '#')
-      newlink.setAttribute('class', 'breadcrumb-link')
-      newlink.setAttribute('id', 'breadcrumb-link-2')
-      newlink.innerHTML = 'About Us'
-
-      // newlink.addEventListener('click', showAbout)
-
-      breadcrumbItems[1].innerHTML = ''
-      breadcrumbItems[1].appendChild(newlink)
-      breadcrumbItems[2].style.display = 'block'
-      breadcrumbItems[2].innerHTML = 'Why Carlisle?'
-      breadcrumbItems[2].classList.add('active')
-    }
 
     function parraphs () {
       var aboutDescription = aboutContent.childNodes[2]
@@ -71,5 +77,37 @@ export default () => {
       parrafo1.style.fontSize = '1.45rem'
       parrafo3.style.fontSize = '1.45rem'
     }
+  }
+
+  function addPicture () {
+    document.getElementById('about-content').childNodes[2].appendChild(picture)
+  }
+
+  var newlink = document.createElement('a')
+  newlink.addEventListener('click', breadcrumbShowAbout)
+
+  function breadcrumbs () {
+    newlink.setAttribute('href', '#')
+    newlink.setAttribute('class', 'breadcrumb-link')
+    newlink.setAttribute('id', 'breadcrumb-link-2')
+    newlink.innerHTML = 'About Us'
+
+    breadcrumbItems[1].innerHTML = ''
+    breadcrumbItems[1].appendChild(newlink)
+    breadcrumbItems[2].style.display = 'block'
+    breadcrumbItems[2].innerHTML = 'Why Carlisle?'
+    breadcrumbItems[2].classList.add('active')
+  }
+
+  function breadcrumbShowAbout (e) {
+    console.log('Hicieron click en About Us')
+    e.preventDefault()
+    aboutBreadcrumbs()
+  }
+
+  function aboutBreadcrumbs () {
+    breadcrumbItems[1].innerHTML = 'About Us'
+    breadcrumbItems[1].classList.add('active')
+    breadcrumbItems[2].style.display = 'none'
   }
 }
