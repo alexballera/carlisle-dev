@@ -20,7 +20,7 @@ module.exports = {
       ${picture.home.community}
     </div>
     <div class="opportunities-banner">
-      ${banner.template}
+      ${banner.homepage}
     </div>
   </div>`
 }

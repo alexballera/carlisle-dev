@@ -7,6 +7,7 @@ import navbarHeader from '../components/navbar-header'
 import breadcrumb from '../components/breadcrumb'
 import picture from '../components/picture-about'
 import data from '../data'
+import banner from '../components/banner-staff'
 // import $ from 'jquery'
 
 var el = yo`
@@ -37,7 +38,9 @@ var el = yo`
         </div>
       </div>      
     </article>
-    <article class="study" id="study"></article>
+    <section class="opportunities-banner">
+      ${banner.about}
+    </section>
   </section>
   <footer class="home-footer" id="about-footer"></footer>
 </section>
@@ -96,12 +99,12 @@ export default () => {
   aboutDifference.childNodes[1].setAttribute('src', `${data.pictures.about.difference}`)
   aboutCommunity.childNodes[1].setAttribute('src', `${data.pictures.about.community}`)
 
-  /*aboutWhy.childNodes[3].childNodes[1].classList.add('align-self-end')
+  /* aboutWhy.childNodes[3].childNodes[1].classList.add('align-self-end')
   aboutWhy.childNodes[3].childNodes[3].classList.add('align-self-end')
   aboutDifference.childNodes[3].childNodes[1].classList.add('align-self-end')
   aboutDifference.childNodes[3].childNodes[3].classList.add('align-self-end')
   aboutCommunity.childNodes[3].childNodes[1].classList.add('align-self-end')
-  aboutCommunity.childNodes[3].childNodes[3].classList.add('align-self-end')*/
+  aboutCommunity.childNodes[3].childNodes[3].classList.add('align-self-end') */
 
   aboutWhy.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
   aboutDifference.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
