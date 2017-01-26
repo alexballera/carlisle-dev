@@ -79,7 +79,7 @@ module.exports = {
                 Our experience gives us the insight and patience to identify opportunities with consistence absolute returns.
             </p>
             <a href="#" class="content-picture-boton col-8">
-                Get in touch
+                Read more
             </a>
             </div>
         </picture>`,
@@ -94,7 +94,7 @@ module.exports = {
                 Carlisle is a financial structuring and consulting firm specializing in alternative asset classes.
             </p>
             <a href="#" class="content-picture-boton col-8">
-                Get in touch
+                Read more
             </a>
             </div>
         </picture>`,
@@ -111,7 +111,7 @@ module.exports = {
                 homelessness. By creating a team
             </p>
             <a href="#" class="content-picture-boton col-8">
-                Get in touch
+                Read more
             </a>
             </div>
         </picture>`

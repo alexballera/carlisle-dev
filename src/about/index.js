@@ -28,8 +28,8 @@ var el = yo`
         value with personalized service and a relentless commitment to quality and responsiveness. 
       </p>
     </article>
-    <article class="row no-gutters about-items" id="about-items">
-      <div class="col-12 about-banner-item" id="about-banner-why">
+    <article class="row no-gutters justify-content-center about-items" id="about-items">
+      <div class="col-12 col-xl-9 about-banner-item" id="about-banner-why">
         <div class="opportunities-carousel opportunities-carousel-mobile row no-gutters justify-content-around">
           ${picture.about.why}
           ${picture.about.difference}
@@ -96,9 +96,20 @@ export default () => {
   aboutDifference.childNodes[1].setAttribute('src', `${data.pictures.about.difference}`)
   aboutCommunity.childNodes[1].setAttribute('src', `${data.pictures.about.community}`)
 
-  aboutWhy.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
-  aboutDifference.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
-  aboutCommunity.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-4')
+  /*aboutWhy.childNodes[3].childNodes[1].classList.add('align-self-end')
+  aboutWhy.childNodes[3].childNodes[3].classList.add('align-self-end')
+  aboutDifference.childNodes[3].childNodes[1].classList.add('align-self-end')
+  aboutDifference.childNodes[3].childNodes[3].classList.add('align-self-end')
+  aboutCommunity.childNodes[3].childNodes[1].classList.add('align-self-end')
+  aboutCommunity.childNodes[3].childNodes[3].classList.add('align-self-end')*/
+
+  aboutWhy.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
+  aboutDifference.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
+  aboutCommunity.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
+
+  aboutWhy.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-3')
+  aboutDifference.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-3')
+  aboutCommunity.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-3')
 
   var div1 = document.createElement('div')
   var div2 = document.createElement('div')
