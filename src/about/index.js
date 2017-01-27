@@ -8,7 +8,7 @@ import breadcrumb from '../components/breadcrumb'
 import picture from '../components/picture-about'
 import footer from './templates/banner-footer'
 import data from '../data'
-import banner from '../components/banner-staff'
+import banner from './templates/carousel-staff'
 // import why from './why'
 
 var el = yo`

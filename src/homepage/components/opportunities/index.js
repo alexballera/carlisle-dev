@@ -1,7 +1,7 @@
 'use strict'
 
 import yo from 'yo-yo'
-import banner from '../../../components/banner-staff'
+import banner from '../../templates/carousel-staff'
 import carousel from '../../../components/carousel'
 import picture from '../../../components/picture-about'
 
