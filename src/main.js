@@ -2,6 +2,7 @@ import header from './components/navbar-top'
 import homepage from './homepage'
 import about from './about'
 import why from './why'
+import differences from './differences'
 import footer from './components/footer'
 import navigation from './navigation'
 
@@ -15,6 +16,7 @@ import navigation from './navigation'
     about()
     homepage()
     why()
+    differences()
     footer()
     navigation()
   }

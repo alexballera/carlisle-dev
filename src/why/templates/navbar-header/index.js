@@ -3,7 +3,7 @@
 import yo from 'yo-yo'
 
 module.exports = {
-  why: yo`  
+  template: yo`  
   <ul class="nav" id="navbar-header-why">
     <li class="nav-item nav-item-why">
       <a class="nav-link nav-link-why nav-link-home" href="" id="link-about-7"></a>

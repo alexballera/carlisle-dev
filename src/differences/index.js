@@ -11,13 +11,13 @@ import data from '../data'
 import banner from './templates/carousel-staff'
 
 var el = yo`
-<section class="about" id="why">
-  <header class="banner" id="banner-about">${bannerHeader.template}</header>
-  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header">${navbarHeader.template}</nav>
-  <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header">${breadcrumb.template}</nav>
+<section class="about" id="difference">
+  <header class="banner" id="banner-about-difference">${bannerHeader.template}</header>
+  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header-difference">${navbarHeader.template}</nav>
+  <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header-difference">${breadcrumb.template}</nav>
   <section class="about-content" id="about-content">
     <div class="opportunities-title col-12 col-md-8 col-lg-7 col-xl-6">
-        <h2 class="content-title">Why Carlisle?</h2>
+        <h2 class="content-title">Our Difference</h2>
     </div>
     <article class="about-description row no-gutters justify-content-center">
       <div class="col-10 col-lg-6">
@@ -49,7 +49,7 @@ var el = yo`
       </div>
     </article>
     <article class="row no-gutters justify-content-center about-items" id="about-items">
-      <div class="col-12 col-xl-9 about-banner-item" id="about-banner-why">
+      <div class="col-12 col-xl-9 about-banner-item" id="about-banner-difference">
         <div class="opportunities-carousel opportunities-carousel-mobile row no-gutters justify-content-around">         
         </div>
       </div>      
@@ -62,26 +62,26 @@ var el = yo`
 </section>
 `
 
-var whypage = document.getElementById('whypage')
+var differencepage = document.getElementById('differencepage')
 
 export default () => {
-  empty(whypage).appendChild(el)
+  empty(differencepage).appendChild(el)
   // Banner Header
-  let bannerHeaderImage = document.getElementById('banner-header-image-why')
-  let bannerHeader = document.getElementById('banner-header-title-why')
-  let bannerHeaderContenido = document.getElementById('banner-header-contenido-why')
-  let bannerHeaderBoton = document.getElementById('banner-header-boton-why')
-  let BannerHeaderBgBottom = document.getElementById('banner-header-bg-bottom-why')
+  let bannerHeaderImage = document.getElementById('banner-header-image-difference')
+  let bannerHeader = document.getElementById('banner-header-title-difference')
+  let bannerHeaderContenido = document.getElementById('banner-header-contenido-difference')
+  let bannerHeaderBoton = document.getElementById('banner-header-boton-difference')
+  let BannerHeaderBgBottom = document.getElementById('banner-header-bg-bottom-difference')
 
   // Navbar Header
-  let navItemsHeader = document.querySelectorAll('a.nav-link-why')
+  let navItemsHeader = document.querySelectorAll('a.nav-link-difference')
 
   // Breadcrumb
-  let breadcrumbItems = document.querySelectorAll('li.breadcrumb-item-why')
-  let breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link-why')
+  let breadcrumbItems = document.querySelectorAll('li.breadcrumb-item-difference')
+  let breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link-difference')
 
   // Parrafos
-  let parrafo = document.getElementById('why').childNodes[7].childNodes[3].childNodes[1].childNodes[1]
+  let parrafo = document.getElementById('difference').childNodes[7].childNodes[3].childNodes[1].childNodes[1]
 
   // Banner Header
   bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_why}`)
@@ -94,7 +94,7 @@ export default () => {
 
   // Navbar Header
   navItemsHeader[0].innerHTML = 'Why Carlisle'
-  navItemsHeader[0].style.color = '#F8A308'
+  navItemsHeader[1].style.color = '#F8A308'
   navItemsHeader[1].innerHTML = 'Our difference'
   navItemsHeader[2].innerHTML = 'Community reach'
   navItemsHeader[3].style.display = 'none'
@@ -104,7 +104,7 @@ export default () => {
   // Breadcrumb
   breadcrumbLinks[0].innerHTML = 'Home'
   breadcrumbLinks[1].innerHTML = 'About Us'
-  breadcrumbItems[2].innerHTML = 'Why Carlisle'
+  breadcrumbItems[2].innerHTML = 'Our Difference'
   breadcrumbItems[2].classList.add('active')
   breadcrumbItems[3].style.display = 'none'
   breadcrumbItems[4].style.display = 'none'

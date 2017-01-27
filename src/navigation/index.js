@@ -11,6 +11,7 @@ export default () => {
   var about = main.find('#about')
   var home = main.find('#home')
   var why = main.find('#why')
+  var difference = main.find('#difference')
 
   // Top Navbar
   var topNavbar = $('#topNavbar')
@@ -20,7 +21,16 @@ export default () => {
 
   // Header Navbar
   var navbarHeaderAbout = main.find('#navbar-header-about')
-  var linkAboutHeaderWhy = navbarHeaderAbout.find('#link-about-1')
+  var linkAboutHeaderWhyWhy = navbarHeaderAbout.find('#link-about-1')
+  var linkAboutHeaderWhyDifference = navbarHeaderAbout.find('#link-about-2')
+
+  var navbarHeaderWhy = main.find('#navbar-header-why')
+  var linkAboutWhyWhy = navbarHeaderWhy.find('#link-about-7')
+  var linkAboutWhyDifference = navbarHeaderWhy.find('#link-about-8')
+
+  var navbarHeaderDifference = main.find('#navbar-header-difference')
+  var linkAboutHeaderDifferenceWhy = navbarHeaderDifference.find('#link-about-13')
+  var linkAboutHeaderDifferenceDifference = navbarHeaderDifference.find('#link-about-14')
 
   // BREADCRUMB
   // About Page
@@ -30,35 +40,51 @@ export default () => {
   var breadcrumbWhy = $('#breadcrumb-why')
   var linkBreadcrumbWhyHome = breadcrumbWhy.find('#breadcrumb-link-7')
   var linkBreadcrumbWhyAbout = breadcrumbWhy.find('#breadcrumb-link-8')
+  // Difference Page
+  var breadcrumbDifference = $('#breadcrumb-difference')
+  var linkBreadcrumbDifferenceHome = breadcrumbDifference.find('#breadcrumb-link-13')
+  var linkBreadcrumbDifferenceAbout = breadcrumbDifference.find('#breadcrumb-link-14')
 
   // mediaQuery.addListener()
 
   function hiDefault () {
     about.hide()
     why.hide()
+    difference.hide()
   }
   hiDefault()
 
   // Functions Show Views
-  function showAbout () {
-    home.hide()
-    about.show('slow')
-    why.hide()
+  function showDifference () {
     navbarNav.removeClass('show')
+    home.hide()
+    about.hide()
+    why.hide()
+    difference.show('slow')
   }
 
   function showWhy () {
+    navbarNav.removeClass('show')
     home.hide()
     about.hide()
+    difference.hide()
     why.show('slow')
+  }
+
+  function showAbout () {
     navbarNav.removeClass('show')
+    home.hide()
+    why.hide()
+    difference.hide()
+    about.show('slow')
   }
 
   function showHome () {
-    home.show('slow')
+    navbarNav.removeClass('show')
     about.hide()
     why.hide()
-    navbarNav.removeClass('show')
+    difference.hide()
+    home.show('slow')
   }
 
   // Top Navbar
@@ -74,9 +100,35 @@ export default () => {
   })
 
   // Header Navbar
-  linkAboutHeaderWhy.on('click', (e) => {
+  linkAboutHeaderWhyWhy.on('click', (e) => {
     e.preventDefault()
     showWhy()
+  })
+
+  linkAboutHeaderWhyDifference.on('click', (e) => {
+    e.preventDefault()
+    showDifference()
+  })
+
+  linkAboutWhyWhy.on('click', (e) => {
+    e.preventDefault()
+    showWhy()
+  })
+
+  linkAboutWhyDifference.on('click', (e) => {
+    e.preventDefault()
+    showDifference()
+  })
+
+  linkAboutHeaderDifferenceWhy.on('click', (e) => {
+    e.preventDefault()
+    showWhy()
+  })
+
+  linkAboutHeaderDifferenceDifference.on('click', (e) => {
+    e.preventDefault()
+    console.log('Click en our difference')
+    showDifference()
   })
 
   // BREADCRUMB
@@ -92,6 +144,16 @@ export default () => {
     showHome()
   })
   linkBreadcrumbWhyAbout.on('click', (e) => {
+    e.preventDefault()
+    showAbout()
+  })
+
+  // Difference Page
+  linkBreadcrumbDifferenceHome.on('click', (e) => {
+    e.preventDefault()
+    showHome()
+  })
+  linkBreadcrumbDifferenceAbout.on('click', (e) => {
     e.preventDefault()
     showAbout()
   })

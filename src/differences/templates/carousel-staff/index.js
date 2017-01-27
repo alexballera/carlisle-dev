@@ -4,7 +4,7 @@ import data from '../../../data'
 
 module.exports = {
   template: yo`
-    <div id="carouselStaffWhy" class="carousel slide carouselStaff" data-ride="carouselStaffWhy" data-interval="6000">
+    <div id="carouselStaffDifference" class="carousel slide carouselStaff" data-ride="carouselStaffDifference" data-interval="6000">
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <picture class="carousel-picture">
@@ -55,11 +55,11 @@ module.exports = {
           </picture>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselStaffWhy" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselStaffDifference" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselStaffWhy" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselStaffDifference" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
