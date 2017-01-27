@@ -59,7 +59,7 @@ export default () => {
   let BannerHeaderBgBottom = document.getElementById('banner-header-bg-bottom')
 
   // Navbar Header
-  let navItems = document.querySelectorAll('a.nav-link-header')
+  let navItemsAbout = document.querySelectorAll('a.nav-link-about')
 
   // Breadcrumb
   let breadcrumbItems = document.querySelectorAll('li.breadcrumb-item-about')
@@ -79,12 +79,12 @@ export default () => {
   BannerHeaderBgBottom.style.display = 'none'
 
   // Navbar Header
-  navItems[0].innerHTML = 'Why Carlisle'
-  navItems[1].innerHTML = 'Our difference'
-  navItems[2].innerHTML = 'Community reach'
-  navItems[3].style.display = 'none'
-  navItems[4].style.display = 'none'
-  navItems[5].style.display = 'none'
+  navItemsAbout[0].innerHTML = 'Why Carlisle'
+  navItemsAbout[1].innerHTML = 'Our difference'
+  navItemsAbout[2].innerHTML = 'Community reach'
+  navItemsAbout[3].style.display = 'none'
+  navItemsAbout[4].style.display = 'none'
+  navItemsAbout[5].style.display = 'none'
 
   // Breadcrumb
   breadcrumbLinks[0].innerHTML = 'Home'

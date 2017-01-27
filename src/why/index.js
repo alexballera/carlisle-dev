@@ -74,14 +74,14 @@ export default () => {
   let BannerHeaderBgBottom = document.getElementById('banner-header-bg-bottom-why')
 
   // Navbar Header
-  let navItems = document.querySelectorAll('a.nav-link-header')
+  let navItemsHeader = document.querySelectorAll('a.nav-link-why')
 
   // Breadcrumb
   let breadcrumbItems = document.querySelectorAll('li.breadcrumb-item-why')
   let breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link-why')
 
   // Parrafos
-  let parrafos = document.getElementById('why').childNodes[7].childNodes[3].childNodes[1].childNodes[1]
+  let parrafo = document.getElementById('why').childNodes[7].childNodes[3].childNodes[1].childNodes[1]
 
   // Banner Header
   bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_why}`)
@@ -93,12 +93,12 @@ export default () => {
   BannerHeaderBgBottom.style.display = 'none'
 
   // Navbar Header
-  navItems[6].innerHTML = 'Why Carlisle'
-  navItems[7].innerHTML = 'Our difference'
-  navItems[8].innerHTML = 'Community reach'
-  navItems[9].style.display = 'none'
-  navItems[10].style.display = 'none'
-  navItems[11].style.display = 'none'
+  navItemsHeader[0].innerHTML = 'Why Carlisle'
+  navItemsHeader[1].innerHTML = 'Our difference'
+  navItemsHeader[2].innerHTML = 'Community reach'
+  navItemsHeader[3].style.display = 'none'
+  navItemsHeader[4].style.display = 'none'
+  navItemsHeader[5].style.display = 'none'
 
   // Breadcrumb
   breadcrumbLinks[0].innerHTML = 'Home'
@@ -110,6 +110,6 @@ export default () => {
   breadcrumbItems[5].style.display = 'none'
 
   // Parrafos
-  parrafos.childNodes[1].style.fontSize = '1.25rem'
-  parrafos.childNodes[5].style.fontSize = '1.25rem'
+  parrafo.childNodes[1].style.fontSize = '1.25rem'
+  parrafo.childNodes[5].style.fontSize = '1.25rem'
 }
