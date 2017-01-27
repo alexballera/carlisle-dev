@@ -94,6 +94,7 @@ export default () => {
 
   // Navbar Header
   navItemsHeader[0].innerHTML = 'Why Carlisle'
+  navItemsHeader[0].style.color = '#F8A308'
   navItemsHeader[1].innerHTML = 'Our difference'
   navItemsHeader[2].innerHTML = 'Community reach'
   navItemsHeader[3].style.display = 'none'
