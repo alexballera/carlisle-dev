@@ -9,6 +9,12 @@ export default () => {
   var aboutContent = document.getElementById('about-content')
   var aboutItems = document.getElementById('about-items')
   var breadcrumbItems = document.querySelectorAll('li.breadcrumb-item')
+  var newlink = document.createElement('a')
+  var titleWhy = document.createElement('h2')
+  var sectionDescription = aboutContent.childNodes[1]
+
+  linkWhy.addEventListener('click', showWhy)
+  newlink.addEventListener('click', breadcrumbShowAbout)
 
   var picture = yo`
   <picture class="content-picture about-why-picture row no-gutters hidden-sm-up justify-content-center" id="about-why">
@@ -31,25 +37,31 @@ export default () => {
     <div class="about-why-picture-bgtransparent"></div>
   </picture>`
 
-  var titleWhy = document.createElement('h2')
-  titleWhy.setAttribute('class', 'content-title')
-  titleWhy.innerHTML = 'Why Carlisle'
-
-  var sectionDescription = aboutContent.childNodes[1]
-
-  linkWhy.addEventListener('click', showWhy)
-
   function showWhy (e) {
     e.preventDefault()
     setTimeout(() => {
-      bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_why}`)
-      aboutContent.insertBefore(titleWhy, sectionDescription)
-      aboutItems.style.display = 'none'
-      linkWhy.style.color = '#F8A308'
+      headerNavbar()
+      addTitle()
+      addHeaderWhy()
       breadcrumbs()
       parraphs()
       addPicture()
     }, 700)
+
+    function addTitle () {
+      titleWhy.setAttribute('class', 'content-title')
+      titleWhy.innerHTML = 'Why Carlisle'
+      aboutContent.insertBefore(titleWhy, sectionDescription)
+    }
+
+    function addHeaderWhy () {
+      bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_why}`)
+    }
+
+    function headerNavbar () {
+      aboutItems.style.display = 'none'
+      linkWhy.style.color = '#F8A308'
+    }
 
     function parraphs () {
       var aboutDescription = aboutContent.childNodes[2]
@@ -83,9 +95,6 @@ export default () => {
     document.getElementById('about-content').childNodes[2].appendChild(picture)
   }
 
-  var newlink = document.createElement('a')
-  newlink.addEventListener('click', breadcrumbShowAbout)
-
   function breadcrumbs () {
     newlink.setAttribute('href', '#')
     newlink.setAttribute('class', 'breadcrumb-link')
@@ -100,7 +109,6 @@ export default () => {
   }
 
   function breadcrumbShowAbout (e) {
-    console.log('Hicieron click en About Us')
     e.preventDefault()
     aboutBreadcrumbs()
   }

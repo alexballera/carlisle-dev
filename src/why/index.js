@@ -5,17 +5,16 @@ import empty from 'empty-element'
 import bannerHeader from './templates/banner-header'
 import navbarHeader from '../components/navbar-header'
 import breadcrumb from '../components/breadcrumb'
-import picture from '../components/picture-about'
+// import picture from '../components/picture-about'
 import footer from '../components/banner-footer'
 import data from '../data'
 import banner from '../components/banner-staff'
-// import why from './why'
 
 var el = yo`
-<section class="about" id="about">
-  <header class="banner" id="banner-about">${bannerHeader.about}</header>
-  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header">${navbarHeader.about}</nav>
-  <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header">${breadcrumb.about}</nav>
+<section class="about" id="why">
+  <header class="banner" id="banner-about">${bannerHeader.why}</header>
+  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header">${navbarHeader.why}</nav>
+  <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header">${breadcrumb.why}</nav>
   <section class="about-content" id="about-content">
     <article class="about-description row no-gutters justify-content-center">
       <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
@@ -32,45 +31,42 @@ var el = yo`
     </article>
     <article class="row no-gutters justify-content-center about-items" id="about-items">
       <div class="col-12 col-xl-9 about-banner-item" id="about-banner-why">
-        <div class="opportunities-carousel opportunities-carousel-mobile row no-gutters justify-content-around">
-          ${picture.about.why}
-          ${picture.about.difference}
-          ${picture.about.community}
+        <div class="opportunities-carousel opportunities-carousel-mobile row no-gutters justify-content-around">         
         </div>
       </div>      
     </article>
     <section class="opportunities-banner">
-      ${banner.about}
+      ${banner.why}
     </section>
   </section>
   <footer class="home-footer" id="home-footer">${footer.about}</footer>
 </section>
 `
 
-var aboutpage = document.getElementById('aboutpage')
+var whypage = document.getElementById('whypage')
 
 export default () => {
-  empty(aboutpage).appendChild(el)
+  empty(whypage).appendChild(el)
   // Banner Header
-  let bannerHeaderImage = document.getElementById('banner-header-image-about')
-  let bannerHeader = document.getElementById('banner-header-title-about')
-  let bannerHeaderContenido = document.getElementById('banner-header-contenido-about')
-  let bannerHeaderBoton = document.getElementById('banner-header-boton')
-  let BannerHeaderBgBottom = document.getElementById('banner-header-bg-bottom')
+  let bannerHeaderImage = document.getElementById('banner-header-image-why')
+  let bannerHeader = document.getElementById('banner-header-title-why')
+  let bannerHeaderContenido = document.getElementById('banner-header-contenido-why')
+  let bannerHeaderBoton = document.getElementById('banner-header-boton-why')
+  let BannerHeaderBgBottom = document.getElementById('banner-header-bg-bottom-why')
 
   // Navbar Header
   let navItems = document.querySelectorAll('a.nav-link-header')
 
   // Breadcrumb
-  let breadcrumbItems = document.querySelectorAll('li.breadcrumb-item-about')
-  let breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link-about')
+  let breadcrumbItems = document.querySelectorAll('li.breadcrumb-item-why')
+  let breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link-why')
 
   let aboutWhy = document.getElementById('about-why')
   let aboutDifference = document.getElementById('about-difference')
   let aboutCommunity = document.getElementById('about-community')
 
   // Banner Header
-  bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_us}`)
+  bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_why}`)
   bannerHeader.innerHTML = 'About us'
   bannerHeaderContenido.innerHTML = `Carlisle was established to provide minimally
                                     correlated fund options in the alternative asset space`
@@ -79,17 +75,18 @@ export default () => {
   BannerHeaderBgBottom.style.display = 'none'
 
   // Navbar Header
-  navItems[0].innerHTML = 'Why Carlisle'
-  navItems[1].innerHTML = 'Our difference'
-  navItems[2].innerHTML = 'Community reach'
-  navItems[3].style.display = 'none'
-  navItems[4].style.display = 'none'
-  navItems[5].style.display = 'none'
+  navItems[6].innerHTML = 'Why Carlisle'
+  navItems[7].innerHTML = 'Our difference'
+  navItems[8].innerHTML = 'Community reach'
+  navItems[9].style.display = 'none'
+  navItems[10].style.display = 'none'
+  navItems[11].style.display = 'none'
 
   // Breadcrumb
   breadcrumbLinks[0].innerHTML = 'Home'
-  breadcrumbItems[1].innerHTML = 'About Us'
-  breadcrumbItems[1].classList.add('active')
+  breadcrumbLinks[1].innerHTML = 'About Us'
+  breadcrumbItems[2].innerHTML = 'Why Carlisle'
+  breadcrumbItems[2].classList.add('active')
   breadcrumbItems[3].style.display = 'none'
   breadcrumbItems[4].style.display = 'none'
   breadcrumbItems[5].style.display = 'none'
@@ -118,6 +115,4 @@ export default () => {
   aboutWhy.appendChild(div1)
   aboutDifference.appendChild(div2)
   aboutCommunity.appendChild(div3)
-
-  // why()
 }

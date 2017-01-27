@@ -2,7 +2,7 @@
 
 import yo from 'yo-yo'
 import empty from 'empty-element'
-import header from '../components/banner-header'
+import header from './templates/banner-header'
 import opportunities from './components/opportunities'
 import team from './components/team'
 import study from './components/study'
