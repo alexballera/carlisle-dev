@@ -173,7 +173,6 @@ export default () => {
     e.preventDefault()
     showHome()
   })
-
   // Why Page
   linkBreadcrumbWhyHome.on('click', (e) => {
     e.preventDefault()
@@ -183,7 +182,6 @@ export default () => {
     e.preventDefault()
     showAbout()
   })
-
   // Difference Page
   linkBreadcrumbDifferenceHome.on('click', (e) => {
     e.preventDefault()
@@ -193,7 +191,6 @@ export default () => {
     e.preventDefault()
     showAbout()
   })
-
   // Community Page
   linkBreadcrumbCommunityHome.on('click', (e) => {
     e.preventDefault()
