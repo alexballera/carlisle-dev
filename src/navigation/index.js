@@ -12,6 +12,7 @@ export default () => {
   var home = main.find('#home')
   var why = main.find('#why')
   var difference = main.find('#difference')
+  var community = main.find('#community')
 
   // Top Navbar
   var topNavbar = $('#topNavbar')
@@ -51,6 +52,7 @@ export default () => {
     about.hide()
     why.hide()
     difference.hide()
+    community.hide()
   }
   hiDefault()
 
