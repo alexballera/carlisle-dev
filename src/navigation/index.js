@@ -61,57 +61,43 @@ export default () => {
 
   // mediaQuery.addListener()
 
-  function hiDefault () {
+  function hideDefault () {
     about.hide()
     why.hide()
     difference.hide()
     community.hide()
   }
-  hiDefault()
+  hideDefault()
+
+  function hideAllViews () {
+    navbarNav.removeClass('show')
+    home.hide()
+    hideDefault()
+  }
 
   // Functions Show Views
   function showCommunity () {
-    navbarNav.removeClass('show')
-    home.hide()
-    about.hide()
-    why.hide()
-    difference.hide()
+    hideAllViews()
     community.show('slow')
   }
 
   function showDifference () {
-    navbarNav.removeClass('show')
-    home.hide()
-    about.hide()
-    why.hide()
-    community.hide()
+    hideAllViews()
     difference.show('slow')
   }
 
   function showWhy () {
-    navbarNav.removeClass('show')
-    home.hide()
-    about.hide()
-    difference.hide()
-    community.hide()
+    hideAllViews()
     why.show('slow')
   }
 
   function showAbout () {
-    navbarNav.removeClass('show')
-    home.hide()
-    why.hide()
-    difference.hide()
-    community.hide()
+    hideAllViews()
     about.show('slow')
   }
 
   function showHome () {
-    navbarNav.removeClass('show')
-    about.hide()
-    why.hide()
-    difference.hide()
-    community.hide()
+    hideAllViews()
     home.show('slow')
   }
 
