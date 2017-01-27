@@ -5,7 +5,7 @@ import empty from 'empty-element'
 import bannerHeader from './templates/banner-header'
 import navbarHeader from '../components/navbar-header'
 import breadcrumb from '../components/breadcrumb'
-import picture from '../components/picture-about'
+import picture from './templates/pictures-about'
 import footer from './templates/banner-footer'
 import data from '../data'
 import banner from './templates/carousel-staff'
@@ -33,9 +33,9 @@ var el = yo`
     <article class="row no-gutters justify-content-center about-items" id="about-items">
       <div class="col-12 col-xl-9 about-banner-item" id="about-banner-why">
         <div class="opportunities-carousel opportunities-carousel-mobile row no-gutters justify-content-around">
-          ${picture.about.why}
-          ${picture.about.difference}
-          ${picture.about.community}
+          ${picture.why}
+          ${picture.difference}
+          ${picture.community}
         </div>
       </div>      
     </article>

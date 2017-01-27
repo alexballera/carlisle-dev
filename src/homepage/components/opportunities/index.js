@@ -3,7 +3,7 @@
 import yo from 'yo-yo'
 import banner from '../../templates/carousel-staff'
 import carousel from '../../templates/carousel'
-import picture from '../../../components/picture-about'
+import picture from '../../templates/pictures-about'
 
 module.exports = {
   template: yo `
@@ -15,9 +15,9 @@ module.exports = {
       ${carousel.template}
     </div>
     <div id="opportunities-carousel" class="opportunities-carousel opportunities-carousel-mobile hidden-md-up row no-gutters justify-content-center">
-      ${picture.home.why}
-      ${picture.home.difference}
-      ${picture.home.community}
+      ${picture.why}
+      ${picture.difference}
+      ${picture.community}
     </div>
     <div class="opportunities-banner">
       ${banner.homepage}
