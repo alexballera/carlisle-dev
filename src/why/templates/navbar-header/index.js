@@ -6,7 +6,7 @@ module.exports = {
   why: yo`  
   <ul class="nav" id="navbar-header-why">
     <li class="nav-item nav-item-why">
-      <a class="nav-link nav-link-why" href="" id="link-about-7"></a>
+      <a class="nav-link nav-link-why nav-link-home" href="" id="link-about-7"></a>
     </li>
     <li class="nav-item nav-item-why">
       <a class="nav-link nav-link-why" href="" id="link-about-8">About Us</a>

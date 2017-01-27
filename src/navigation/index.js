@@ -7,18 +7,31 @@ export default () => {
   // var mq = mediaQuery.matches
   var main = $('#main')
 
-  var topNavbar = $('#topNavbar')
-  var navbarNav = topNavbar.find('#navbarNav')
-  var linkHome = topNavbar.find('#linkHome')
-  var linkAbout = topNavbar.find('a#linkAbout')
+  // Views
   var about = main.find('#about')
   var home = main.find('#home')
   var why = main.find('#why')
 
-  var navbarHeaderAbout = main.find('#navbar-header-about')
-  var linkWhy1 = navbarHeaderAbout.find('#link-about-1')
+  // Top Navbar
+  var topNavbar = $('#topNavbar')
+  var navbarNav = topNavbar.find('#navbarNav')
+  var linkHomeTop = topNavbar.find('#linkHome')
+  var linkAboutTop = topNavbar.find('a#linkAbout')
 
-  var breadcrumb = $('#breadcrumb')
+  // Header Navbar
+  var navbarHeaderAbout = main.find('#navbar-header-about')
+  var linkAboutHeaderWhy = navbarHeaderAbout.find('#link-about-1')
+
+  // BREADCRUMB
+  // About Page
+  var breadcrumbAbout = $('#breadcrumb-about')
+  var linkBreadcrumbAboutHome = breadcrumbAbout.find('#breadcrumb-link-1')
+  var linkBreadcrumbAboutAbout = breadcrumbAbout.find('#breadcrumb-link-2')
+  // Why Page
+  var breadcrumbWhy = $('#breadcrumb-why')
+  var linkBreadcrumbWhyHome = breadcrumbAbout.find('#breadcrumb-link-7')
+  var linkBreadcrumbWhyAbout = breadcrumbWhy.find('#breadcrumb-link-8')
+  var linkBreadcrumbWhyWhy = breadcrumbWhy.find('#breadcrumb-link-9')
 
   // mediaQuery.addListener()
 
@@ -28,6 +41,7 @@ export default () => {
   }
   hiDefault()
 
+  // Functions Show Views
   function showAbout () {
     home.hide()
     about.show('slow')
@@ -51,26 +65,44 @@ export default () => {
 
   // Top Navbar
 
-  linkAbout.on('click', (e) => {
+  linkAboutTop.on('click', (e) => {
     e.preventDefault()
     showAbout()
   })
 
-  linkHome.on('click', (e) => {
+  linkHomeTop.on('click', (e) => {
     e.preventDefault()
     showHome()
   })
 
   // Header Navbar
-  linkWhy1.on('click', (e) => {
+  linkAboutHeaderWhy.on('click', (e) => {
     e.preventDefault()
     showWhy()
   })
 
-  // Breadcrumb
-
-  breadcrumb.find('#breadcrumb-link-1').on('click', (e) => {
+  // BREADCRUMB
+  // About Page
+  linkBreadcrumbAboutHome.on('click', (e) => {
     e.preventDefault()
     showHome()
+  })
+  linkBreadcrumbAboutAbout.on('click', (e) => {
+    e.preventDefault()
+    showAbout()
+  })
+
+  // Why Page
+  linkBreadcrumbWhyHome.on('click', (e) => {
+    e.preventDefault()
+    showHome()
+  })
+  linkBreadcrumbWhyAbout.on('click', (e) => {
+    e.preventDefault()
+    showAbout()
+  })
+  linkBreadcrumbWhyWhy.on('click', (e) => {
+    e.preventDefault()
+    showWhy()
   })
 }
