@@ -1,9 +1,9 @@
 'use strict'
 
 import yo from 'yo-yo'
-import banner from '../../templates/carousel-staff'
-import carousel from '../../templates/carousel'
-import picture from '../../templates/pictures-about'
+import banner from '../carousel-staff'
+import carousel from '../carousel'
+import picture from '../pictures-about'
 
 module.exports = {
   template: yo `

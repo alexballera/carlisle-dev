@@ -5,7 +5,7 @@ import empty from 'empty-element'
 import bannerHeader from './templates/banner-header'
 import navbarHeader from './templates/navbar-header'
 import breadcrumb from './templates/breadcrumbs'
-// import picture from '../components/picture-about'
+import picture from './templates/pictures-about'
 import footer from './templates/banner-footer'
 import data from '../data'
 import banner from './templates/carousel-staff'
@@ -16,18 +16,37 @@ var el = yo`
   <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header">${navbarHeader.why}</nav>
   <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header">${breadcrumb.template}</nav>
   <section class="about-content" id="about-content">
+    <div class="opportunities-title col-12 col-md-8 col-lg-7 col-xl-6">
+        <h2 class="content-title">Why Carlisle?</h2>
+    </div>
     <article class="about-description row no-gutters justify-content-center">
-      <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
-        Headquartered in Luxembourg, our state-of-the-art facilities and statistical modeling systems incorporate
-        knowledge gained from 30+ years of investment experience. While the market for alternative assets is based
-        on a finite set of criteria, investors have long demanded a leaner, more efficient alternative investment
-        opportunities. 
-      </p>
-      <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
-        Our clients acces our investment expertise across numerous areas whitin the alternative asset space. We operate
-        independently, allowing us to focus solely on investor needs, whithout conflicts of interest. Our goal is to add
-        value with personalized service and a relentless commitment to quality and responsiveness. 
-      </p>
+      <div class="col-10 col-lg-6">
+        <div class="row no-gutters justify-content-center">
+          <p class="about-parrafo col-12">
+            Our experience gives us the insight and patience 
+          to identify opportunities with consistent absolute returns.
+          </p>
+          <p class="about-parrafo col-12">
+            To capitalize on tomorrowś opportunity, we uncover
+          meaningful insights that transcend today's markets. We collaborate with 
+          our clients to define opportunities together. The opportunity to innovate,
+          perform, and excel. 
+          </p>
+          <p class="about-parrafo col-12">
+            The opportunity to set new standards of market efficiency,
+          client succes, and institutional excellence. The opportunity to see in new ways
+          and excecute upon new ideas.
+          </p>
+          <p class="about-parrafo col-12">
+            For our clients. For our partners. For the market is a 
+          whole. In every business relationship. Carlisle strives to be a trusted partner.
+          We move to wherever opportunity exists, bringing our clients and partners with us. 
+          </p>
+        </div>
+      </div>
+      <div class="col-10 col-md-5 col-lg-4 about-why-container-picture">
+        ${picture.template}
+      </div>
     </article>
     <article class="row no-gutters justify-content-center about-items" id="about-items">
       <div class="col-12 col-xl-9 about-banner-item" id="about-banner-why">
@@ -61,9 +80,8 @@ export default () => {
   let breadcrumbItems = document.querySelectorAll('li.breadcrumb-item-why')
   let breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link-why')
 
-  let aboutWhy = document.getElementById('about-why')
-  let aboutDifference = document.getElementById('about-difference')
-  let aboutCommunity = document.getElementById('about-community')
+  // Parrafos
+  let parrafos = document.getElementById('why').childNodes[7].childNodes[3].childNodes[1].childNodes[1]
 
   // Banner Header
   bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_why}`)
@@ -91,28 +109,7 @@ export default () => {
   breadcrumbItems[4].style.display = 'none'
   breadcrumbItems[5].style.display = 'none'
 
-  // Section why - difference - community
-  aboutWhy.childNodes[1].setAttribute('src', `${data.pictures.about.why}`)
-  aboutDifference.childNodes[1].setAttribute('src', `${data.pictures.about.difference}`)
-  aboutCommunity.childNodes[1].setAttribute('src', `${data.pictures.about.community}`)
-
-  aboutWhy.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
-  aboutDifference.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
-  aboutCommunity.childNodes[3].classList.remove('row', 'align-items-center', 'no-gutters')
-
-  aboutWhy.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-3')
-  aboutDifference.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-3')
-  aboutCommunity.classList.add('about-why-picture', 'col-10', 'col-sm-9', 'col-md-5', 'col-xl-3')
-
-  var div1 = document.createElement('div')
-  var div2 = document.createElement('div')
-  var div3 = document.createElement('div')
-
-  div1.setAttribute('class', 'about-why-background')
-  div2.setAttribute('class', 'about-why-background')
-  div3.setAttribute('class', 'about-why-background')
-
-  aboutWhy.appendChild(div1)
-  aboutDifference.appendChild(div2)
-  aboutCommunity.appendChild(div3)
+  // Parrafos
+  parrafos.childNodes[1].style.fontSize = '1.25rem'
+  parrafos.childNodes[5].style.fontSize = '1.25rem'
 }
