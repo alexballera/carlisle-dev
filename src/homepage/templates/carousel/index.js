@@ -1,7 +1,7 @@
 'user strict'
 
 import yo from 'yo-yo'
-import picture from '../picture-about'
+import picture from '../../../components/picture-about'
 
 module.exports = {
   template: yo`

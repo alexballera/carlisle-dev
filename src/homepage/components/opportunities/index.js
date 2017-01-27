@@ -2,7 +2,7 @@
 
 import yo from 'yo-yo'
 import banner from '../../templates/carousel-staff'
-import carousel from '../../../components/carousel'
+import carousel from '../../templates/carousel'
 import picture from '../../../components/picture-about'
 
 module.exports = {
