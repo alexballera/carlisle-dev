@@ -26,12 +26,10 @@ export default () => {
   // About Page
   var breadcrumbAbout = $('#breadcrumb-about')
   var linkBreadcrumbAboutHome = breadcrumbAbout.find('#breadcrumb-link-1')
-  var linkBreadcrumbAboutAbout = breadcrumbAbout.find('#breadcrumb-link-2')
   // Why Page
   var breadcrumbWhy = $('#breadcrumb-why')
-  var linkBreadcrumbWhyHome = breadcrumbAbout.find('#breadcrumb-link-7')
+  var linkBreadcrumbWhyHome = breadcrumbWhy.find('#breadcrumb-link-7')
   var linkBreadcrumbWhyAbout = breadcrumbWhy.find('#breadcrumb-link-8')
-  var linkBreadcrumbWhyWhy = breadcrumbWhy.find('#breadcrumb-link-9')
 
   // mediaQuery.addListener()
 
@@ -87,10 +85,6 @@ export default () => {
     e.preventDefault()
     showHome()
   })
-  linkBreadcrumbAboutAbout.on('click', (e) => {
-    e.preventDefault()
-    showAbout()
-  })
 
   // Why Page
   linkBreadcrumbWhyHome.on('click', (e) => {
@@ -100,9 +94,5 @@ export default () => {
   linkBreadcrumbWhyAbout.on('click', (e) => {
     e.preventDefault()
     showAbout()
-  })
-  linkBreadcrumbWhyWhy.on('click', (e) => {
-    e.preventDefault()
-    showWhy()
   })
 }
