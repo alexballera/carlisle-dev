@@ -6,7 +6,7 @@ import bannerHeader from './templates/banner-header'
 import navbarHeader from '../components/navbar-header'
 import breadcrumb from '../components/breadcrumb'
 // import picture from '../components/picture-about'
-import footer from '../components/banner-footer'
+import footer from './templates/banner-footer'
 import data from '../data'
 import banner from '../components/banner-staff'
 
@@ -39,7 +39,7 @@ var el = yo`
       ${banner.why}
     </section>
   </section>
-  <footer class="home-footer" id="home-footer">${footer.about}</footer>
+  <footer class="home-footer" id="home-footer">${footer.why}</footer>
 </section>
 `
 

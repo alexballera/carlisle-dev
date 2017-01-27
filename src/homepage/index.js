@@ -6,7 +6,7 @@ import header from './templates/banner-header'
 import opportunities from './components/opportunities'
 import team from './components/team'
 import study from './components/study'
-import footer from '../components/banner-footer'
+import footer from './templates/banner-footer'
 import data from '../data'
 
 export default () => {
