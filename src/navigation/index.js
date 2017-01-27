@@ -20,18 +20,27 @@ export default () => {
   var linkHomeTop = topNavbar.find('#linkHome')
   var linkAboutTop = topNavbar.find('a#linkAbout')
 
-  // Header Navbar
+  // HEADER NAVBAR
+  // About
   var navbarHeaderAbout = main.find('#navbar-header-about')
   var linkAboutHeaderWhyWhy = navbarHeaderAbout.find('#link-about-1')
   var linkAboutHeaderWhyDifference = navbarHeaderAbout.find('#link-about-2')
-
+  var linkAboutHeaderWhyCommunity = navbarHeaderAbout.find('#link-about-3')
+  // Why
   var navbarHeaderWhy = main.find('#navbar-header-why')
   var linkAboutWhyWhy = navbarHeaderWhy.find('#link-about-7')
   var linkAboutWhyDifference = navbarHeaderWhy.find('#link-about-8')
-
+  var linkAboutWhyCommunity = navbarHeaderWhy.find('#link-about-9')
+  // Difference
   var navbarHeaderDifference = main.find('#navbar-header-difference')
   var linkAboutHeaderDifferenceWhy = navbarHeaderDifference.find('#link-about-13')
   var linkAboutHeaderDifferenceDifference = navbarHeaderDifference.find('#link-about-14')
+  var linkAboutHeaderDifferenceCommunity = navbarHeaderDifference.find('#link-about-15')
+  // Community
+  var navbarHeaderCommunity = main.find('#navbar-header-community')
+  var linkAboutHeaderCommunityWhy = navbarHeaderCommunity.find('#link-about-19')
+  var linkAboutHeaderCommunityDifference = navbarHeaderCommunity.find('#link-about-20')
+  var linkAboutHeaderCommunityCommunity = navbarHeaderCommunity.find('#link-about-21')
 
   // BREADCRUMB
   // About Page
@@ -45,6 +54,10 @@ export default () => {
   var breadcrumbDifference = $('#breadcrumb-difference')
   var linkBreadcrumbDifferenceHome = breadcrumbDifference.find('#breadcrumb-link-13')
   var linkBreadcrumbDifferenceAbout = breadcrumbDifference.find('#breadcrumb-link-14')
+  // Community Page
+  var breadcrumbCommunity = $('#breadcrumb-community')
+  var linkBreadcrumbCommunityHome = breadcrumbCommunity.find('#breadcrumb-link-13')
+  var linkBreadcrumbCommunityAbout = breadcrumbCommunity.find('#breadcrumb-link-14')
 
   // mediaQuery.addListener()
 
@@ -57,11 +70,21 @@ export default () => {
   hiDefault()
 
   // Functions Show Views
+  function showCommunity () {
+    navbarNav.removeClass('show')
+    home.hide()
+    about.hide()
+    why.hide()
+    difference.hide()
+    community.show('slow')
+  }
+
   function showDifference () {
     navbarNav.removeClass('show')
     home.hide()
     about.hide()
     why.hide()
+    community.hide()
     difference.show('slow')
   }
 
@@ -70,6 +93,7 @@ export default () => {
     home.hide()
     about.hide()
     difference.hide()
+    community.hide()
     why.show('slow')
   }
 
@@ -78,6 +102,7 @@ export default () => {
     home.hide()
     why.hide()
     difference.hide()
+    community.hide()
     about.show('slow')
   }
 
@@ -86,10 +111,11 @@ export default () => {
     about.hide()
     why.hide()
     difference.hide()
+    community.hide()
     home.show('slow')
   }
 
-  // Top Navbar
+  // TOP NAVBAR
 
   linkAboutTop.on('click', (e) => {
     e.preventDefault()
@@ -101,36 +127,58 @@ export default () => {
     showHome()
   })
 
-  // Header Navbar
+  // HEADER NAVBAR
+  // About
   linkAboutHeaderWhyWhy.on('click', (e) => {
     e.preventDefault()
     showWhy()
   })
-
   linkAboutHeaderWhyDifference.on('click', (e) => {
     e.preventDefault()
     showDifference()
   })
-
+  linkAboutHeaderWhyCommunity.on('click', (e) => {
+    e.preventDefault()
+    showCommunity()
+  })
+  // Why
   linkAboutWhyWhy.on('click', (e) => {
     e.preventDefault()
     showWhy()
   })
-
   linkAboutWhyDifference.on('click', (e) => {
     e.preventDefault()
     showDifference()
   })
-
+  linkAboutWhyCommunity.on('click', (e) => {
+    e.preventDefault()
+    showCommunity()
+  })
+  // Difference
   linkAboutHeaderDifferenceWhy.on('click', (e) => {
     e.preventDefault()
     showWhy()
   })
-
   linkAboutHeaderDifferenceDifference.on('click', (e) => {
     e.preventDefault()
-    console.log('Click en our difference')
     showDifference()
+  })
+  linkAboutHeaderDifferenceCommunity.on('click', (e) => {
+    e.preventDefault()
+    showCommunity()
+  })
+  // Community
+  linkAboutHeaderCommunityWhy.on('click', (e) => {
+    e.preventDefault()
+    showWhy()
+  })
+  linkAboutHeaderCommunityDifference.on('click', (e) => {
+    e.preventDefault()
+    showDifference()
+  })
+  linkAboutHeaderCommunityCommunity.on('click', (e) => {
+    e.preventDefault()
+    showCommunity()
   })
 
   // BREADCRUMB
@@ -156,6 +204,16 @@ export default () => {
     showHome()
   })
   linkBreadcrumbDifferenceAbout.on('click', (e) => {
+    e.preventDefault()
+    showAbout()
+  })
+
+  // Community Page
+  linkBreadcrumbCommunityHome.on('click', (e) => {
+    e.preventDefault()
+    showHome()
+  })
+  linkBreadcrumbCommunityAbout.on('click', (e) => {
     e.preventDefault()
     showAbout()
   })
