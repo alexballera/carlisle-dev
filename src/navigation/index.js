@@ -12,6 +12,7 @@ export default () => {
   var home = main.find('#home')
   var why = main.find('#why')
   var difference = main.find('#difference')
+  var community = main.find('#community')
 
   // Top Navbar
   var topNavbar = $('#topNavbar')
@@ -19,18 +20,27 @@ export default () => {
   var linkHomeTop = topNavbar.find('#linkHome')
   var linkAboutTop = topNavbar.find('a#linkAbout')
 
-  // Header Navbar
+  // HEADER NAVBAR
+  // About
   var navbarHeaderAbout = main.find('#navbar-header-about')
   var linkAboutHeaderWhyWhy = navbarHeaderAbout.find('#link-about-1')
   var linkAboutHeaderWhyDifference = navbarHeaderAbout.find('#link-about-2')
-
+  var linkAboutHeaderWhyCommunity = navbarHeaderAbout.find('#link-about-3')
+  // Why
   var navbarHeaderWhy = main.find('#navbar-header-why')
   var linkAboutWhyWhy = navbarHeaderWhy.find('#link-about-7')
   var linkAboutWhyDifference = navbarHeaderWhy.find('#link-about-8')
-
+  var linkAboutWhyCommunity = navbarHeaderWhy.find('#link-about-9')
+  // Difference
   var navbarHeaderDifference = main.find('#navbar-header-difference')
   var linkAboutHeaderDifferenceWhy = navbarHeaderDifference.find('#link-about-13')
   var linkAboutHeaderDifferenceDifference = navbarHeaderDifference.find('#link-about-14')
+  var linkAboutHeaderDifferenceCommunity = navbarHeaderDifference.find('#link-about-15')
+  // Community
+  var navbarHeaderCommunity = main.find('#navbar-header-community')
+  var linkAboutHeaderCommunityWhy = navbarHeaderCommunity.find('#link-about-19')
+  var linkAboutHeaderCommunityDifference = navbarHeaderCommunity.find('#link-about-20')
+  var linkAboutHeaderCommunityCommunity = navbarHeaderCommunity.find('#link-about-21')
 
   // BREADCRUMB
   // About Page
@@ -44,50 +54,54 @@ export default () => {
   var breadcrumbDifference = $('#breadcrumb-difference')
   var linkBreadcrumbDifferenceHome = breadcrumbDifference.find('#breadcrumb-link-13')
   var linkBreadcrumbDifferenceAbout = breadcrumbDifference.find('#breadcrumb-link-14')
+  // Community Page
+  var breadcrumbCommunity = $('#breadcrumb-community')
+  var linkBreadcrumbCommunityHome = breadcrumbCommunity.find('#breadcrumb-link-13')
+  var linkBreadcrumbCommunityAbout = breadcrumbCommunity.find('#breadcrumb-link-14')
 
   // mediaQuery.addListener()
 
-  function hiDefault () {
+  function hideDefault () {
     about.hide()
     why.hide()
     difference.hide()
+    community.hide()
   }
-  hiDefault()
+  hideDefault()
 
-  // Functions Show Views
-  function showDifference () {
+  function hideAllViews () {
     navbarNav.removeClass('show')
     home.hide()
-    about.hide()
-    why.hide()
+    hideDefault()
+  }
+
+  // Functions Show Views
+  function showCommunity () {
+    hideAllViews()
+    community.show('slow')
+  }
+
+  function showDifference () {
+    hideAllViews()
     difference.show('slow')
   }
 
   function showWhy () {
-    navbarNav.removeClass('show')
-    home.hide()
-    about.hide()
-    difference.hide()
+    hideAllViews()
     why.show('slow')
   }
 
   function showAbout () {
-    navbarNav.removeClass('show')
-    home.hide()
-    why.hide()
-    difference.hide()
+    hideAllViews()
     about.show('slow')
   }
 
   function showHome () {
-    navbarNav.removeClass('show')
-    about.hide()
-    why.hide()
-    difference.hide()
+    hideAllViews()
     home.show('slow')
   }
 
-  // Top Navbar
+  // TOP NAVBAR
 
   linkAboutTop.on('click', (e) => {
     e.preventDefault()
@@ -99,36 +113,58 @@ export default () => {
     showHome()
   })
 
-  // Header Navbar
+  // HEADER NAVBAR
+  // About
   linkAboutHeaderWhyWhy.on('click', (e) => {
     e.preventDefault()
     showWhy()
   })
-
   linkAboutHeaderWhyDifference.on('click', (e) => {
     e.preventDefault()
     showDifference()
   })
-
+  linkAboutHeaderWhyCommunity.on('click', (e) => {
+    e.preventDefault()
+    showCommunity()
+  })
+  // Why
   linkAboutWhyWhy.on('click', (e) => {
     e.preventDefault()
     showWhy()
   })
-
   linkAboutWhyDifference.on('click', (e) => {
     e.preventDefault()
     showDifference()
   })
-
+  linkAboutWhyCommunity.on('click', (e) => {
+    e.preventDefault()
+    showCommunity()
+  })
+  // Difference
   linkAboutHeaderDifferenceWhy.on('click', (e) => {
     e.preventDefault()
     showWhy()
   })
-
   linkAboutHeaderDifferenceDifference.on('click', (e) => {
     e.preventDefault()
-    console.log('Click en our difference')
     showDifference()
+  })
+  linkAboutHeaderDifferenceCommunity.on('click', (e) => {
+    e.preventDefault()
+    showCommunity()
+  })
+  // Community
+  linkAboutHeaderCommunityWhy.on('click', (e) => {
+    e.preventDefault()
+    showWhy()
+  })
+  linkAboutHeaderCommunityDifference.on('click', (e) => {
+    e.preventDefault()
+    showDifference()
+  })
+  linkAboutHeaderCommunityCommunity.on('click', (e) => {
+    e.preventDefault()
+    showCommunity()
   })
 
   // BREADCRUMB
@@ -137,7 +173,6 @@ export default () => {
     e.preventDefault()
     showHome()
   })
-
   // Why Page
   linkBreadcrumbWhyHome.on('click', (e) => {
     e.preventDefault()
@@ -147,13 +182,21 @@ export default () => {
     e.preventDefault()
     showAbout()
   })
-
   // Difference Page
   linkBreadcrumbDifferenceHome.on('click', (e) => {
     e.preventDefault()
     showHome()
   })
   linkBreadcrumbDifferenceAbout.on('click', (e) => {
+    e.preventDefault()
+    showAbout()
+  })
+  // Community Page
+  linkBreadcrumbCommunityHome.on('click', (e) => {
+    e.preventDefault()
+    showHome()
+  })
+  linkBreadcrumbCommunityAbout.on('click', (e) => {
     e.preventDefault()
     showAbout()
   })

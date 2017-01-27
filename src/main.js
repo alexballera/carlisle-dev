@@ -3,6 +3,7 @@ import homepage from './homepage'
 import about from './about'
 import why from './why'
 import differences from './differences'
+import community from './community'
 import footer from './components/footer'
 import navigation from './navigation'
 
@@ -17,6 +18,7 @@ import navigation from './navigation'
     homepage()
     why()
     differences()
+    community()
     footer()
     navigation()
   }
