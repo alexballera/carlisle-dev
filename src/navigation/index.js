@@ -1,6 +1,7 @@
 'use strict'
 
 import $ from 'jquery'
+import hideViews from './hideViews'
 
 export default () => {
   // var mediaQuery = window.matchMedia('screen and (min-width: 998px)')
@@ -16,7 +17,6 @@ export default () => {
 
   // Top Navbar
   var topNavbar = $('#topNavbar')
-  var navbarNav = topNavbar.find('#navbarNav')
   var linkHomeTop = topNavbar.find('#linkHome')
   var linkAboutTop = topNavbar.find('a#linkAbout')
 
@@ -61,43 +61,32 @@ export default () => {
 
   // mediaQuery.addListener()
 
-  function hideDefault () {
-    about.hide()
-    why.hide()
-    difference.hide()
-    community.hide()
-  }
-  hideDefault()
-
-  function hideAllViews () {
-    navbarNav.removeClass('show')
-    home.hide()
-    hideDefault()
-  }
+  hideViews()
+  home.show()
 
   // Functions Show Views
   function showCommunity () {
-    hideAllViews()
+    hideViews()
     community.show('slow')
   }
 
   function showDifference () {
-    hideAllViews()
+    hideViews()
     difference.show('slow')
   }
 
   function showWhy () {
-    hideAllViews()
+    hideViews()
     why.show('slow')
   }
 
   function showAbout () {
-    hideAllViews()
+    hideViews()
     about.show('slow')
   }
 
   function showHome () {
-    hideAllViews()
+    hideViews()
     home.show('slow')
   }
 

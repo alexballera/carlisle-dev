@@ -2,6 +2,7 @@
 
 import yo from 'yo-yo'
 import empty from 'empty-element'
+import showAbout from '../../navigation/showAbout'
 
 var nav = yo`
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded center" id="topNavbar">
@@ -17,7 +18,7 @@ var nav = yo`
         <a class="nav-link align-middle" href="" id="linkAbout">About Us <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="" id="linkTeam">Team</a>
+        <a class="nav-link" href="" id="linkTeam" onclick=${showAbout}>Team</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="" id="linkServices">Our Services</a>
