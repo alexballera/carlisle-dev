@@ -1,7 +1,6 @@
 'use strict'
 
 import $ from 'jquery'
-// import showHome from './showHome'
 
 export default () => {
   var main = $('#main')

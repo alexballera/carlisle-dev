@@ -6,7 +6,7 @@ module.exports = {
   template: yo`  
   <ul class="nav" id="navbar-header-difference">
     <li class="nav-item nav-item-difference">
-      <a class="nav-link nav-link-difference nav-link-home" href="" id="link-about-13"></a>
+      <a class="nav-link nav-link-difference nav-link-home" href="" id="link-about-13">Why Carlisle?</a>
     </li>
     <li class="nav-item nav-item-difference">
       <a class="nav-link nav-link-difference" href="" id="link-about-14">About Us</a>
