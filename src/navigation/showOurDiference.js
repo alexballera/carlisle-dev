@@ -2,8 +2,8 @@
 import $ from 'jquery'
 import hideViews from './hideViews'
 
-module.exports = function showAbout (e) {
+module.exports = function showDifference (e) {
   e.preventDefault()
   hideViews()
-  $('#about').show('slow')
+  $('#difference').show('slow')
 }

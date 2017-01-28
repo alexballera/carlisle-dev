@@ -3,19 +3,20 @@
 import yo from 'yo-yo'
 import empty from 'empty-element'
 import showAbout from '../../navigation/showAbout'
+import showHome from '../../navigation/showHome'
 
 var nav = yo`
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded center" id="topNavbar">
   <button class="navbar-toggler navbar-toggler-right navbar-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span>Menu </span> <i class="fa fa-bars" aria-hidden="true"></i>
   </button>
-  <a class="navbar-brand" href="" id="linkHome">
+  <a class="navbar-brand" href="" id="linkHome" onclick=${showHome}>
     <img src="./images/logo.png" alt="Carlisle">
   </a>
   <div class="collapse navbar-collapse justify-content-end navbar-top" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link align-middle" href="" id="linkAbout">About Us <span class="sr-only">(current)</span></a>
+        <a class="nav-link align-middle" href="" id="linkAbout" onclick=${showAbout}>About Us <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="" id="linkTeam" onclick=${showAbout}>Team</a>

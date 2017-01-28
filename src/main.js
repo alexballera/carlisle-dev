@@ -14,8 +14,8 @@ import navigation from './navigation'
 
   function onDOMLoad () {
     header()
-    about()
     homepage()
+    about()
     why()
     differences()
     community()

@@ -2,8 +2,8 @@
 import $ from 'jquery'
 import hideViews from './hideViews'
 
-module.exports = function showAbout (e) {
+module.exports = function showCommunity (e) {
   e.preventDefault()
   hideViews()
-  $('#about').show('slow')
+  $('#community').show('slow')
 }
