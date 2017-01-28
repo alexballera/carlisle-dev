@@ -1,18 +1,21 @@
 'use strict'
 
 import yo from 'yo-yo'
+import showWhy from '../../../navigation/showWhy'
+import showDifference from '../../../navigation/showOurDifference'
+import showCommunity from '../../../navigation/showCommunity'
 
 module.exports = {
   template: yo`  
   <ul class="nav" id="navbar-header-why">
     <li class="nav-item nav-item-why">
-      <a class="nav-link nav-link-why nav-link-home" href="" id="link-about-7"></a>
+      <a class="nav-link nav-link-why nav-link-home" href="" id="link-about-7" onclick=${showWhy}></a>
     </li>
     <li class="nav-item nav-item-why">
-      <a class="nav-link nav-link-why" href="" id="link-about-8">About Us</a>
+      <a class="nav-link nav-link-why" href="" id="link-about-8" onclick=${showDifference}>About Us</a>
     </li>
     <li class="nav-item nav-item-why">
-      <a class="nav-link nav-link-why" href="" id="link-about-9">Why Carlisle</a>
+      <a class="nav-link nav-link-why" href="" id="link-about-9" onclick=${showCommunity}>Why Carlisle</a>
     </li>
     <li class="nav-item nav-item-why">
       <a class="nav-link nav-link-why" href="" id="link-about-10"></a>
