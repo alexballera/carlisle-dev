@@ -2,6 +2,7 @@
 
 import yo from 'yo-yo'
 import empty from 'empty-element'
+import showAbout from '../../navigation/showAbout'
 
 var footer = document.getElementById('footer')
 
@@ -34,7 +35,7 @@ var el = yo`
         <div class="col-6 col-lg-4 footer-menu menu1">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#" onclick=${showAbout}>About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Team</a>
