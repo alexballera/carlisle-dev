@@ -1,6 +1,9 @@
 'use strict'
 
 import yo from 'yo-yo'
+import showWhy from '../../../navigation/showWhy'
+import showDifference from '../../../navigation/showOurDifference'
+import showCommunity from '../../../navigation/showCommunity'
 
 module.exports = {
   why: yo`
@@ -13,7 +16,7 @@ module.exports = {
           <p class="content-picture-parrafo col-12">
               Our experience gives us the insight and patience to identify opportunities with consistence absolute returns.
           </p>
-          <a href="#" class="content-picture-boton col-8">
+          <a href="#" class="content-picture-boton col-8" onclick=${showWhy}>
               Get in touch
           </a>
           </div>
@@ -28,7 +31,7 @@ module.exports = {
           <p class="content-picture-parrafo col-12">
               Our experience gives us the insight and patience to identify opportunities with consistence absolute returns.
           </p>
-          <a href="#" class="content-picture-boton col-8">
+          <a href="#" class="content-picture-boton col-8" onclick=${showWhy}>
               Get in touch
           </a>
           </div>
@@ -43,7 +46,7 @@ module.exports = {
           <p class="content-picture-parrafo col-12">
               Carlisle is a financial structuring and consulting firm specializing in alternative asset classes.
           </p>
-          <a href="#" class="content-picture-boton col-8">
+          <a href="#" class="content-picture-boton col-8" onclick=${showDifference}>
               Get in touch
           </a>
           </div>
@@ -58,7 +61,7 @@ module.exports = {
           <p class="content-picture-parrafo col-12">
               Carlisle is a financial structuring and consulting firm specializing in alternative asset classes.
           </p>
-          <a href="#" class="content-picture-boton col-8">
+          <a href="#" class="content-picture-boton col-8" onclick=${showDifference}>
               Get in touch
           </a>
           </div>
@@ -73,7 +76,7 @@ module.exports = {
           <p class="content-picture-parrafo col-12">
               Carlisle is a financial structuring and consulting firm specializing in alternative asset classes.
           </p>
-          <a href="#" class="content-picture-boton col-8">
+          <a href="#" class="content-picture-boton col-8" onclick=${showDifference}>
               Get in touch
           </a>
           </div>
@@ -90,7 +93,7 @@ module.exports = {
               that uses sports to help adults and youths (ages 15+) get out of
               homelessness. By creating a team
           </p>
-          <a href="#" class="content-picture-boton col-8">
+          <a href="#" class="content-picture-boton col-8" onclick=${showCommunity}>
               Get in touch
           </a>
           </div>
@@ -107,7 +110,7 @@ module.exports = {
               that uses sports to help adults and youths (ages 15+) get out of
               homelessness. By creating a team
           </p>
-          <a href="#" class="content-picture-boton col-8">
+          <a href="#" class="content-picture-boton col-8" onclick=${showCommunity}>
               Get in touch
           </a>
           </div>
