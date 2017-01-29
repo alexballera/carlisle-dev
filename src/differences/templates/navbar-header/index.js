@@ -17,14 +17,5 @@ module.exports = {
     <li class="nav-item nav-item-difference">
       <a class="nav-link nav-link-difference" href="" id="link-about-15" onclick=${showCommunity}>Our Difference</a>
     </li>
-    <li class="nav-item nav-item-difference">
-      <a class="nav-link nav-link-difference" href="" id="link-about-16"></a>
-    </li>
-    <li class="nav-item nav-item-difference">
-      <a class="nav-link nav-link-difference" href="" id="link-about-17"></a>
-    </li>
-    <li class="nav-item nav-item-difference">
-      <a class="nav-link nav-link-difference" href="" id="link-about-18"></a>
-    </li>
   </ul>`
 }
