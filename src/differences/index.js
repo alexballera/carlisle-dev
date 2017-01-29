@@ -13,8 +13,8 @@ import banner from './templates/carousel-staff'
 var el = yo`
 <section class="about" id="difference">
   <header class="banner" id="banner-about-difference">${bannerHeader.template}</header>
-  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header-difference">${navbarHeader.template}</nav>
-  <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header-difference">${breadcrumb.template}</nav>
+  <nav class="navbar-header" id="navbar-header-difference">${navbarHeader.template}</nav>
+  <nav class="breadcrumb-header" id="breadcrumb-header-difference">${breadcrumb.template}</nav>
   <section class="about-content" id="about-content">
     <div class="opportunities-title col-12 col-md-8 col-lg-7 col-xl-6">
         <h2 class="content-title">Our Difference</h2>

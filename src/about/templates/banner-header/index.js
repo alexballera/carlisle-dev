@@ -15,6 +15,5 @@ module.exports = {
               </div>
           </picture>
       </div>
-      <div class="banner-bg-bottom hidden-xs-down" id="banner-header-bg-bottom"></div>
   </div>`
 }

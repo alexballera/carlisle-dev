@@ -15,5 +15,6 @@ gulp.watch([
   './src/navigation/**/*.js',
   './src/team/**/*.js',
   './src/careers/**/*.js',
-  './src/contact/**/*.js'
+  './src/contact/**/*.js',
+  './src/services/**/*.js'
 ]).on('change', browserSync.reload)

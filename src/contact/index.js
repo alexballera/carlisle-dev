@@ -10,7 +10,7 @@ import footer from './templates/banner-footer'
 var el = yo`
 <section class="about" id="contact">
   <header class="banner">${bannerHeader.template}</header>
-  <nav class="row no-gutters align-items-center breadcrumb-header">${breadcrumb.template}</nav>
+  <nav class="breadcrumb-header">${breadcrumb.template}</nav>
   <section class="about-content">
     <article class="about-description row no-gutters justify-content-center">
     </article>

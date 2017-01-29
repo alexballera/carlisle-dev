@@ -6,11 +6,13 @@ import bannerHeader from './templates/banner-header'
 import breadcrumb from './templates/breadcrumbs'
 import banner from './templates/carousel-staff'
 import footer from './templates/banner-footer'
+import navbar from './templates/navbar-header'
 
 var el = yo`
 <section class="about" id="services">
   <header class="banner">${bannerHeader.template}</header>
-  <nav class="row no-gutters align-items-center breadcrumb-header">${breadcrumb.template}</nav>
+  <nav class="navbar-header row no-gutters" id="navbar-header">${navbar.template}</nav>
+  <nav class="breadcrumb-header">${breadcrumb.template}</nav>
   <section class="about-content">
     <article class="about-description row no-gutters justify-content-center">
     </article>

@@ -14,8 +14,8 @@ import banner from './templates/carousel-staff'
 var el = yo`
 <section class="about" id="about">
   <header class="banner" id="banner-about">${bannerHeader.template}</header>
-  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header">${navbarHeader.template}</nav>
-  <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header">${breadcrumb.template}</nav>
+  <nav class="navbar-header" id="navbar-header">${navbarHeader.template}</nav>
+  <nav class="breadcrumb-header" id="breadcrumb-header">${breadcrumb.template}</nav>
   <section class="about-content" id="about-content">
     <article class="about-description row no-gutters justify-content-center">
       <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">

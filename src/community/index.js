@@ -13,8 +13,8 @@ import banner from './templates/carousel-staff'
 var el = yo`
 <section class="about" id="community">
   <header class="banner" id="banner-about-community">${bannerHeader.template}</header>
-  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header-community">${navbarHeader.template}</nav>
-  <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header-community">${breadcrumb.template}</nav>
+  <nav class="navbar-header" id="navbar-header-community">${navbarHeader.template}</nav>
+  <nav class="breadcrumb-header" id="breadcrumb-header-community">${breadcrumb.template}</nav>
   <section class="about-content" id="about-content">
     <div class="opportunities-title col-12 col-md-8 col-lg-7 col-xl-6">
         <h2 class="content-title">Community reach</h2>
