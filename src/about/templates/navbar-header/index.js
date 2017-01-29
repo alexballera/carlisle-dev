@@ -9,13 +9,13 @@ module.exports = {
   about: yo`  
   <ul class="nav" id="navbar-header-about">
     <li class="nav-item">
-      <a class="nav-link nav-link-about" href="" id="link-about-1" onclick=${showWhy}>Why Carlisle</a>
+      <a class="nav-link nav-link-about" href="" onclick=${showWhy}>Why Carlisle</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link nav-link-about" href="" id="link-about-2" onclick=${showDifference}>Our Difference</a>
+      <a class="nav-link nav-link-about" href="" onclick=${showDifference}>Our Difference</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link nav-link-about" href="" id="link-about-3" onclick=${showCommunity}>Community Reach</a>
+      <a class="nav-link nav-link-about" href="" onclick=${showCommunity}>Community Reach</a>
     </li>
   </ul>`
 }
