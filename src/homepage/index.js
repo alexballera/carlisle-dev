@@ -1,7 +1,6 @@
 'use strict'
 
 import yo from 'yo-yo'
-import empty from 'empty-element'
 import header from './templates/banner-header'
 import opportunities from './templates/opportunities'
 import team from './templates/team'
@@ -22,9 +21,9 @@ export default () => {
   </section>
   `
 
-  let homepage = document.getElementById('homepage')
+  let main = document.getElementById('main')
 
-  empty(homepage).appendChild(el)
+  main.appendChild(el)
 
   let bannerHeaderImage = document.getElementById('banner-header-image-home')
   let bannerHeader = document.getElementById('banner-header-title-home')
