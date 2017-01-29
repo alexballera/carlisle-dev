@@ -11,6 +11,7 @@ export default () => {
   var community = main.find('#community')
   var team = main.find('#team')
   var services = main.find('#services')
+  var careers = main.find('#careers')
 
   about.hide()
   why.hide()
@@ -18,5 +19,6 @@ export default () => {
   community.hide()
   team.hide()
   services.hide()
+  careers.hide()
   home.show()
 }

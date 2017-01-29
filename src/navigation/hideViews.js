@@ -11,6 +11,7 @@ module.exports = function hideViews () {
   var community = main.find('#community')
   var team = main.find('#team')
   var services = main.find('#services')
+  var careers = main.find('#careers')
 
   navbarNav.removeClass('show')
   home.hide()
@@ -19,5 +20,6 @@ module.exports = function hideViews () {
   difference.hide()
   community.hide()
   team.hide()
+  careers.hide()
   services.hide()
 }
