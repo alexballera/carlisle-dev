@@ -6,7 +6,7 @@ import showDifference from '../../../navigation/showOurDifference'
 import showCommunity from '../../../navigation/showCommunity'
 
 module.exports = {
-  about: yo`  
+  template: yo`  
   <ul class="nav" id="navbar-header-about">
     <li class="nav-item">
       <a class="nav-link nav-link-about" href="" onclick=${showWhy}>Why Carlisle</a>

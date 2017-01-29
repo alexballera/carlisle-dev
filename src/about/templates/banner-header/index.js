@@ -3,7 +3,7 @@
 import yo from 'yo-yo'
 
 module.exports = {
-  about: yo `
+  template: yo `
   <div class="banner-container" id="banner-header-about">
       <div class="banner-header hidden-xs-down">
           <picture class="banner-picture">

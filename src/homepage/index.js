@@ -15,7 +15,7 @@ export default () => {
     <header class="banner" id="banner">${header.home}</header>
     <section class="content" id="content">
       <article class="opportunities" id="opportunities">${opportunities.template}</article>
-      <article class="team" id="team">${team.template}</article>
+      <article class="team" id="staff">${team.template}</article>
       <article class="study" id="study">${study.template}</article>
     </section>
     <footer class="home-footer" id="home-footer">${footer.homepage}</footer>

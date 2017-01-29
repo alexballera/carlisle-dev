@@ -13,8 +13,8 @@ import banner from './templates/carousel-staff'
 
 var el = yo`
 <section class="about" id="about">
-  <header class="banner" id="banner-about">${bannerHeader.about}</header>
-  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header">${navbarHeader.about}</nav>
+  <header class="banner" id="banner-about">${bannerHeader.template}</header>
+  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header">${navbarHeader.template}</nav>
   <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header">${breadcrumb.template}</nav>
   <section class="about-content" id="about-content">
     <article class="about-description row no-gutters justify-content-center">
@@ -40,10 +40,10 @@ var el = yo`
       </div>      
     </article>
     <section class="opportunities-banner">
-      ${banner.about}
+      ${banner.template}
     </section>
   </section>
-  <footer class="home-footer" id="home-footer">${footer.about}</footer>
+  <footer class="home-footer">${footer.template}</footer>
 </section>
 `
 

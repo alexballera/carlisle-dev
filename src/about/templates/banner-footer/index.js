@@ -4,7 +4,7 @@ import yo from 'yo-yo'
 import data from '../../../data'
 
 module.exports = {
-  about: yo `
+  template: yo `
   <div class="row no-gutters home-footer-container">
       <picture class="col-12 home-footer-banner">
           <div class="home-footer-opacity"></div>

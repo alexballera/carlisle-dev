@@ -58,7 +58,7 @@ var el = yo`
       ${banner.template}
     </section>
   </section>
-  <footer class="home-footer" id="home-footer">${footer.template}</footer>
+  <footer class="home-footer">${footer.template}</footer>
 </section>
 `
 

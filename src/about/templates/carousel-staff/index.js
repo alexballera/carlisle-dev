@@ -3,7 +3,7 @@ import yo from 'yo-yo'
 import data from '../../../data'
 
 module.exports = {
-  about: yo`
+  template: yo`
     <div id="carouselStaffAbout" class="carousel slide carouselStaff" data-ride="carouselStaffAbout" data-interval="6000">
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
