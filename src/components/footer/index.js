@@ -59,16 +59,16 @@ var el = yo`
         <div class="col-6 col-lg-4 footer-menu menu2">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#" onclick=${showContact}>Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Newsletter</a>
+                    <a class="nav-link" href="#" onclick=${showHome}>Newsletter</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Private Statement</a>
+                    <a class="nav-link" href="#" onclick=${showHome}>Private Statement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Terms of Use</a>
+                    <a class="nav-link" href="#" onclick=${showHome}>Terms of Use</a>
                 </li>
             </ul>
         </div>
