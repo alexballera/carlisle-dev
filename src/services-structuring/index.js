@@ -11,8 +11,8 @@ import navbar from './templates/navbar-header'
 var el = yo`
 <section class="about" id="servicesStructuring">
   <header class="banner">${bannerHeader.template}</header>
-  <nav class="navbar-header row no-gutters" id="navbar-header">${navbar.template}</nav>
-  <nav class="breadcrumb-header">${breadcrumb.template}</nav>
+  <nav class="navbar-header row no-gutters" id="navbarHeader-services-structuring">${navbar.template}</nav>
+  <nav class="breadcrumb-header" id="breadcrumb-services-structuring">${breadcrumb.template}</nav>
   <section class="about-content">
     <div class="opportunities-title row no-gutters">
         <h2 class="content-title col-12 col-md-8 col-lg-7 col-xl-6">Structuring</h2>
@@ -29,4 +29,8 @@ var servicesStructuringPage = document.getElementById('servicesStructuringPage')
 
 export default () => {
   empty(servicesStructuringPage).appendChild(el)
+
+  // navbarHeader
+  var navbarHeader = document.getElementById('navbarHeader-services-structuring')
+  navbarHeader.firstChild.childNodes[1].childNodes[1].childNodes[1].style.color = '#F8A308'
 }

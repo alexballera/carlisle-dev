@@ -8,7 +8,7 @@ import showCommunity from '../../../navigation/showCommunity'
 module.exports = {
   template: yo`
   <div class="offset-2 col-10">
-    <ul class="nav row no-gutters justify-content-start" id="navbar-header-services-structuring">
+    <ul class="nav row no-gutters justify-content-start">
       <li class="nav-item col">
         <a class="nav-link nav-link-about" href="" onclick=${showWhy}>Structuring</a>
       </li>
