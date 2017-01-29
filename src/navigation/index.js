@@ -1,28 +1,9 @@
 'use strict'
 
 import $ from 'jquery'
+import hideViews from './hideViews'
 
 export default () => {
-  var main = $('#main')
-  var about = main.find('#about')
-  var home = main.find('#home')
-  var why = main.find('#why')
-  var difference = main.find('#difference')
-  var community = main.find('#community')
-  var team = main.find('#team')
-  var services = main.find('#services')
-  var servicesStructuring = main.find('#servicesStructuring')
-  var careers = main.find('#careers')
-  var contact = main.find('#contact')
-
-  about.hide()
-  why.hide()
-  difference.hide()
-  community.hide()
-  team.hide()
-  services.hide()
-  servicesStructuring.hide()
-  careers.hide()
-  contact.hide()
-  home.show()
+  hideViews()
+  $('#home').show()
 }

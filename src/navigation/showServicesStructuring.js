@@ -5,5 +5,5 @@ import hideViews from './hideViews'
 module.exports = function showServicesStructuring (e) {
   e.preventDefault()
   hideViews()
-  $('#servicesStructuring').show('slow')
+  $('#services-structuring').show('slow')
 }

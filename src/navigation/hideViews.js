@@ -11,7 +11,7 @@ module.exports = function hideViews () {
   var community = main.find('#community')
   var team = main.find('#team')
   var services = main.find('#services')
-  var servicesStructuring = main.find('#servicesStructuring')
+  var servicesStructuring = main.find('#services-structuring')
   var careers = main.find('#careers')
   var contact = main.find('#contact')
 
