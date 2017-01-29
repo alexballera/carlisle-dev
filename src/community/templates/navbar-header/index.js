@@ -17,14 +17,5 @@ module.exports = {
     <li class="nav-item nav-item-community">
       <a class="nav-link nav-link-community" href="" id="link-about-21" onclick=${showCommunity}>Community Reach</a>
     </li>
-    <li class="nav-item nav-item-community">
-      <a class="nav-link nav-link-community" href="" id="link-about-22"></a>
-    </li>
-    <li class="nav-item nav-item-community">
-      <a class="nav-link nav-link-community" href="" id="link-about-23"></a>
-    </li>
-    <li class="nav-item nav-item-community">
-      <a class="nav-link nav-link-community" href="" id="link-about-24"></a>
-    </li>
   </ul>`
 }

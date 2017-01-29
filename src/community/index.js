@@ -97,18 +97,12 @@ export default () => {
   navItemsHeader[1].innerHTML = 'Our difference'
   navItemsHeader[2].innerHTML = 'Community reach'
   navItemsHeader[2].style.color = '#F8A308'
-  navItemsHeader[3].style.display = 'none'
-  navItemsHeader[4].style.display = 'none'
-  navItemsHeader[5].style.display = 'none'
 
   // Breadcrumb
   breadcrumbLinks[0].innerHTML = 'Home'
   breadcrumbLinks[1].innerHTML = 'About Us'
   breadcrumbItems[2].innerHTML = 'Community reach'
   breadcrumbItems[2].classList.add('active')
-  breadcrumbItems[3].style.display = 'none'
-  breadcrumbItems[4].style.display = 'none'
-  breadcrumbItems[5].style.display = 'none'
 
   // Parrafos
   parrafo.childNodes[1].style.fontSize = '1.25rem'
