@@ -9,8 +9,8 @@ module.exports = {
     <li class="breadcrumb-item breadcrumb-item-team offset-2">
       <a href="#" class="breadcrumb-link breadcrumb-link-team" onclick=${showHome}>Home</a>
     </li>
-    <li class="breadcrumb-item breadcrumb-item-team">
-      <a href="#" class="breadcrumb-link breadcrumb-link-team">Carrers</a>
+    <li class="breadcrumb-item breadcrumb-item-team active">
+      Carrers
     </li>  
   </ol>`
 }
