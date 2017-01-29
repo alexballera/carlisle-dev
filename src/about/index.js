@@ -82,17 +82,11 @@ export default () => {
   navItemsAbout[0].innerHTML = 'Why Carlisle'
   navItemsAbout[1].innerHTML = 'Our difference'
   navItemsAbout[2].innerHTML = 'Community reach'
-  navItemsAbout[3].style.display = 'none'
-  navItemsAbout[4].style.display = 'none'
-  navItemsAbout[5].style.display = 'none'
 
   // Breadcrumb
   breadcrumbLinks[0].innerHTML = 'Home'
   breadcrumbItems[1].innerHTML = 'About Us'
   breadcrumbItems[1].classList.add('active')
-  breadcrumbItems[3].style.display = 'none'
-  breadcrumbItems[4].style.display = 'none'
-  breadcrumbItems[5].style.display = 'none'
 
   // Section why - difference - community
   aboutWhy.childNodes[1].setAttribute('src', `${data.pictures.about.why}`)
