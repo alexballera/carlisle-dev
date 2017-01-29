@@ -1,16 +1,16 @@
 'use strict'
 
 import yo from 'yo-yo'
-import showServicesStructuring from '../../../navigation/showServicesStructuring'
+import showWhy from '../../../navigation/showWhy'
 import showDifference from '../../../navigation/showOurDifference'
 import showCommunity from '../../../navigation/showCommunity'
 
 module.exports = {
   template: yo`
   <div class="offset-2 col-10">
-    <ul class="nav row no-gutters justify-content-start" id="navbar-header-services">
+    <ul class="nav row no-gutters justify-content-start" id="navbar-header-services-structuring">
       <li class="nav-item col">
-        <a class="nav-link nav-link-about" href="" onclick=${showServicesStructuring}>Structuring</a>
+        <a class="nav-link nav-link-about" href="" onclick=${showWhy}>Structuring</a>
       </li>
       <li class="nav-item col">
         <a class="nav-link nav-link-about" href="" onclick=${showDifference}>Found Management</a>

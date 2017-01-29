@@ -6,6 +6,7 @@ import differences from './about-differences'
 import community from './about-community'
 import team from './team'
 import services from './services'
+import servicesStructuring from './services-structuring'
 import careers from './careers'
 import contact from './contact'
 import footer from './components/footer'
@@ -25,6 +26,7 @@ import navigation from './navigation'
     community()
     team()
     services()
+    servicesStructuring()
     careers()
     contact()
     footer()
