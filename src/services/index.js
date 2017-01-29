@@ -17,18 +17,25 @@ export default () => {
     <nav class="breadcrumb-header">${breadcrumb.template}</nav>
     <section class="about-content">
       <article class="about-description row no-gutters justify-content-center">
-        <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
+        <p class="about-parrafo col-10">
           Our services are developed by an experienced team of skilled professionals who brings insight
           from multiple industries. We conduct fundamental research and quantitative analysis to develop
           ideas that we make actionable through our proprietary modeling. 
         </p>
-        <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
+        <p class="about-parrafo col-10">
           And we execute our ideas with the systemic assurance that comes from dedicated risk and liquidity
           management and proven technology and information infrastructure. 
         </p>
-      </article>
-      <article class="row no-gutters justify-content-around"">
-        ${pictures.structuring}
+        <div class="col-10">
+          <div class="row no-gutters justify-content-between"">
+            ${pictures.structuring}
+            ${pictures.found}
+            ${pictures.consulting}
+            ${pictures.institutional}
+            ${pictures.administrative}
+            ${pictures.asset}
+          </div>
+        </div>
       </article>
     </section>
     <footer class="home-footer hidden-md-up">${footer.template}</footer>
