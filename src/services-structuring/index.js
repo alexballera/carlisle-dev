@@ -17,6 +17,9 @@ export default () => {
     <nav class="breadcrumb-header">${breadcrumb.template}</nav>
     <section class="about-content">
       <article class="about-description row no-gutters justify-content-center">
+        <div class="opportunities-title col-12 col-md-8 col-lg-7 col-xl-6">
+          <h2 class="content-title">Structuring</h2>
+        </div>
         <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
           Our services are developed by an experienced team of skilled professionals who brings insight
           from multiple industries. We conduct fundamental research and quantitative analysis to develop
@@ -37,4 +40,8 @@ export default () => {
   `
 
   main.appendChild(el)
+
+  let servicesStructuring = document.getElementById('services-structuring')
+  let navbarHeader = servicesStructuring.childNodes[3]
+  navbarHeader.childNodes[0].childNodes[1].childNodes[1].childNodes[1].style.color = 'orange'
 }

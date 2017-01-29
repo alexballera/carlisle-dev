@@ -2,8 +2,6 @@
 
 import yo from 'yo-yo'
 import showServicesStructuring from '../../../navigation/showServicesStructuring'
-import showDifference from '../../../navigation/showOurDifference'
-import showCommunity from '../../../navigation/showCommunity'
 
 module.exports = {
   template: yo`
@@ -13,19 +11,19 @@ module.exports = {
         <a class="nav-link nav-link-about" href="" onclick=${showServicesStructuring}>Structuring</a>
       </li>
       <li class="nav-item col">
-        <a class="nav-link nav-link-about" href="" onclick=${showDifference}>Found Management</a>
+        <a class="nav-link nav-link-about" href="" onclick=${showServicesStructuring}>Found Management</a>
       </li>
       <li class="nav-item col">
-        <a class="nav-link nav-link-about" href="" onclick=${showCommunity}>Consulting Services</a>
+        <a class="nav-link nav-link-about" href="" onclick=${showServicesStructuring}>Consulting Services</a>
       </li>
       <li class="nav-item col">
-        <a class="nav-link nav-link-about" href="" onclick=${showCommunity}>Institutional Services</a>
+        <a class="nav-link nav-link-about" href="" onclick=${showServicesStructuring}>Institutional Services</a>
       </li>
       <li class="nav-item col">
-        <a class="nav-link nav-link-about" href="" onclick=${showCommunity}>Administrative Services</a>
+        <a class="nav-link nav-link-about" href="" onclick=${showServicesStructuring}>Administrative Services</a>
       </li>
       <li class="nav-item col">
-        <a class="nav-link nav-link-about" href="" onclick=${showCommunity}>Asset Acquisition Services</a>
+        <a class="nav-link nav-link-about" href="" onclick=${showServicesStructuring}>Asset Acquisition Services</a>
       </li>
     </ul>
   </div>`

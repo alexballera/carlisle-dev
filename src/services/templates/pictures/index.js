@@ -2,7 +2,7 @@
 
 import yo from 'yo-yo'
 import data from '../../../data/'
-import showWhy from '../../../navigation/showWhy'
+import showServicesStructuring from '../../../navigation/showServicesStructuring'
 
 module.exports = {
   structuring: yo`
@@ -18,7 +18,7 @@ module.exports = {
             you in finding the right solution for your needs as well 
             as to structure said.
         </p>
-        <a href="#" class="content-picture-boton col-8" onclick=${showWhy}>
+        <a href="#" class="content-picture-boton col-8" onclick=${showServicesStructuring}>
             Learn more
         </a>
       </div>
