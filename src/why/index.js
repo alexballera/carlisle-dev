@@ -13,8 +13,8 @@ import banner from './templates/carousel-staff'
 var el = yo`
 <section class="about" id="why">
   <header class="banner" id="banner-about">${bannerHeader.template}</header>
-  <nav class="row no-gutters justify-content-center navbar-header" id="navbar-header">${navbarHeader.template}</nav>
-  <nav class="row no-gutters align-items-center breadcrumb-header" id="breadcrumb-header">${breadcrumb.template}</nav>
+  <nav class="navbar-header" id="navbar-header">${navbarHeader.template}</nav>
+  <nav class="breadcrumb-header" id="breadcrumb-header">${breadcrumb.template}</nav>
   <section class="about-content" id="about-content">
     <div class="opportunities-title col-12 col-md-8 col-lg-7 col-xl-6">
         <h2 class="content-title">Why Carlisle?</h2>
@@ -71,7 +71,6 @@ export default () => {
   let bannerHeader = document.getElementById('banner-header-title-why')
   let bannerHeaderContenido = document.getElementById('banner-header-contenido-why')
   let bannerHeaderBoton = document.getElementById('banner-header-boton-why')
-  let BannerHeaderBgBottom = document.getElementById('banner-header-bg-bottom-why')
 
   // Navbar Header
   let navItemsHeader = document.querySelectorAll('a.nav-link-why')
@@ -90,7 +89,6 @@ export default () => {
                                     correlated fund options in the alternative asset space`
   bannerHeaderImage.style.height = '200px'
   bannerHeaderBoton.style.display = 'none'
-  BannerHeaderBgBottom.style.display = 'none'
 
   // Navbar Header
   navItemsHeader[0].innerHTML = 'Why Carlisle'

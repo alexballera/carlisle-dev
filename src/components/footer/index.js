@@ -3,6 +3,11 @@
 import yo from 'yo-yo'
 import empty from 'empty-element'
 import showAbout from '../../navigation/showAbout'
+import showHome from '../../navigation/showHome'
+import showTeam from '../../navigation/showTeam'
+import showServices from '../../navigation/showServices'
+import showCareers from '../../navigation/showCareers'
+import showContact from '../../navigation/showContact'
 
 var footer = document.getElementById('footer')
 
@@ -38,16 +43,16 @@ var el = yo`
                     <a class="nav-link" href="#" onclick=${showAbout}>About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
+                    <a class="nav-link" href="#" onclick=${showTeam}>Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our Services</a>
+                    <a class="nav-link" href="#" onclick=${showServices}>Our Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Carrers</a>
+                    <a class="nav-link" href="#" onclick=${showCareers}>Carrers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Carlisle Management</a>
+                    <a class="nav-link" href="#" onclick=${showTeam}>Carlisle Management</a>
                 </li>
             </ul>
         </div>

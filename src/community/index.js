@@ -71,7 +71,6 @@ export default () => {
   let bannerHeader = document.getElementById('banner-header-title-community')
   let bannerHeaderContenido = document.getElementById('banner-header-contenido-community')
   let bannerHeaderBoton = document.getElementById('banner-header-boton-community')
-  let BannerHeaderBgBottom = document.getElementById('banner-header-bg-bottom-community')
 
   // Navbar Header
   let navItemsHeader = document.querySelectorAll('a.nav-link-community')
@@ -90,7 +89,6 @@ export default () => {
                                     correlated fund options in the alternative asset space`
   bannerHeaderImage.style.height = '200px'
   bannerHeaderBoton.style.display = 'none'
-  BannerHeaderBgBottom.style.display = 'none'
 
   // Navbar Header
   navItemsHeader[0].innerHTML = 'Why Carlisle'

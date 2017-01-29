@@ -6,8 +6,8 @@ import showHome from '../../../navigation/showHome'
 
 module.exports = {
   template: yo`
-  <ol class="breadcrumb col-10 offset-2" id="breadcrumb-why">
-    <li class="breadcrumb-item breadcrumb-item-why">
+  <ol class="breadcrumb row no-gutters justify-content-start" id="breadcrumb-why">
+    <li class="breadcrumb-item breadcrumb-item-why offset-2">
       <a href="#" class="breadcrumb-link breadcrumb-link-why" onclick=${showHome}></a>
     </li>
     <li class="breadcrumb-item breadcrumb-item-why">
