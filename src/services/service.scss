@@ -1,0 +1,27 @@
+.services {
+  .opportunities-banner {
+    margin-top: 3rem;
+  }
+
+  .about-content {
+      h2.content-picture-title {
+        height: 20%;
+        padding-top: 10%;
+      }
+  }
+
+  @include media-breakpoint-up(md) {
+    .about-content {
+      h2.content-picture-title {
+        height: 50%;
+        padding-top: 60%;
+      }
+
+      p.content.picture-parrafo {
+        height: 25%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+

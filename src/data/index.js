@@ -74,6 +74,14 @@ module.exports = {
       why: './images/about-why.jpg',
       difference: './images/about-difference.jpg',
       community: './images/about-community.jpg'
+    },
+    services: {
+      structuring: './images/about-why.jpg',
+      found: './images/about-difference.jpg',
+      consulting: './images/about-community.jpg',
+      institutional: './images/about-why.jpg',
+      administrative: './images/about-difference.jpg',
+      asset: './images/about-community.jpg'
     }
   }
 }
