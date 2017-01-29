@@ -106,9 +106,6 @@ export default () => {
   breadcrumbLinks[1].innerHTML = 'About Us'
   breadcrumbItems[2].innerHTML = 'Why Carlisle'
   breadcrumbItems[2].classList.add('active')
-  breadcrumbItems[3].style.display = 'none'
-  breadcrumbItems[4].style.display = 'none'
-  breadcrumbItems[5].style.display = 'none'
 
   // Parrafos
   parrafo.childNodes[1].style.fontSize = '1.25rem'

@@ -13,9 +13,8 @@ module.exports = {
     <li class="breadcrumb-item breadcrumb-item-why">
       <a href="#" class="breadcrumb-link breadcrumb-link-why" id="breadcrumb-link-8" onclick=${showAbout}></a>
     </li>
-    <li class="breadcrumb-item breadcrumb-item-why"><a href="#" class="breadcrumb-link breadcrumb-link-why" id="breadcrumb-link-9"></a></li>
-    <li class="breadcrumb-item breadcrumb-item-why"><a href="#" class="breadcrumb-link breadcrumb-link-why" id="breadcrumb-link-10"></a></li>
-    <li class="breadcrumb-item breadcrumb-item-why"><a href="#" class="breadcrumb-link breadcrumb-link-why" id="breadcrumb-link-11"></a></li>
-    <li class="breadcrumb-item breadcrumb-item-why"><a href="#" class="breadcrumb-link breadcrumb-link-why" id="breadcrumb-link-12"></a></li>
+    <li class="breadcrumb-item breadcrumb-item-why">
+      <a href="#" class="breadcrumb-link breadcrumb-link-why" id="breadcrumb-link-9"></a>
+    </li>
   </ol>`
 }
