@@ -11,7 +11,7 @@ import { main } from '../components/main'
 
 export default () => {
   let el = yo`
-  <section class="about services" id="services-structuring">
+  <section class="about services" id="services-asset">
     <header class="banner">${header.template}</header>
     <nav class="navbar-header row no-gutters hidden-md-down" id="navbar-header">${navbar.template}</nav>
     <nav class="breadcrumb-header">${breadcrumb.template}</nav>
