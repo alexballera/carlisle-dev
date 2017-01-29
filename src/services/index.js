@@ -8,7 +8,7 @@ import banner from './templates/carousel-staff'
 import footer from './templates/banner-footer'
 
 var el = yo`
-<section class="about" id="team">
+<section class="about" id="services">
   <header class="banner">${bannerHeader.template}</header>
   <nav class="row no-gutters align-items-center breadcrumb-header">${breadcrumb.template}</nav>
   <section class="about-content">
@@ -20,8 +20,8 @@ var el = yo`
 </section>
 `
 
-var teampage = document.getElementById('teampage')
+var servicespage = document.getElementById('servicespage')
 
 export default () => {
-  empty(teampage).appendChild(el)
+  empty(servicespage).appendChild(el)
 }

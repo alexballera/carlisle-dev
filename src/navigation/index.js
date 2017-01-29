@@ -10,11 +10,13 @@ export default () => {
   var difference = main.find('#difference')
   var community = main.find('#community')
   var team = main.find('#team')
+  var services = main.find('#services')
 
   about.hide()
   why.hide()
   difference.hide()
   community.hide()
   team.hide()
+  services.hide()
   home.show()
 }

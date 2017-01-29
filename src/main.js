@@ -5,6 +5,7 @@ import why from './why'
 import differences from './differences'
 import community from './community'
 import team from './team'
+import services from './services'
 import footer from './components/footer'
 import navigation from './navigation'
 
@@ -21,6 +22,7 @@ import navigation from './navigation'
     differences()
     community()
     team()
+    services()
     footer()
     navigation()
   }
