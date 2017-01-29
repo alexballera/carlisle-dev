@@ -5,7 +5,7 @@ import yo from 'yo-yo'
 module.exports = {
   template: yo `
   <div class="banner-container" id="banner-header-about">
-      <div class="banner-header hidden-xs-down">
+      <div class="banner-header">
           <picture class="banner-picture">
               <img src="" alt="" class="banner-picture-img" id="banner-header-image-about">
               <div class="banner-picture-contenido row align-items-center no-gutters">

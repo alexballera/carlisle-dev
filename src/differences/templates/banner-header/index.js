@@ -5,7 +5,7 @@ import yo from 'yo-yo'
 module.exports = {
   template: yo `
   <div class="banner-container" id="banner-header-difference">
-      <div class="banner-header hidden-xs-down">
+      <div class="banner-header">
           <picture class="banner-picture">
               <img src="" alt="" class="banner-picture-img" id="banner-header-image-difference">
               <div class="banner-picture-contenido row align-items-center no-gutters">
@@ -15,6 +15,5 @@ module.exports = {
               </div>
           </picture>
       </div>
-      <div class="banner-bg-bottom hidden-xs-down" id="banner-header-bg-bottom-difference"></div>
   </div>`
 }

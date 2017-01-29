@@ -6,7 +6,7 @@ import data from '../../../data'
 module.exports = {
   template: yo `
   <div class="banner-container">
-      <div class="banner-header hidden-xs-down">
+      <div class="banner-header">
           <picture class="banner-picture">
               <img src="${data.pictures.banners.header.carrera}" alt="" class="banner-picture-img">
               <div class="banner-picture-contenido row align-items-center no-gutters">
