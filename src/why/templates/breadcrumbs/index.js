@@ -8,13 +8,13 @@ module.exports = {
   template: yo`
   <ol class="breadcrumb col-10 offset-2" id="breadcrumb-why">
     <li class="breadcrumb-item breadcrumb-item-why">
-      <a href="#" class="breadcrumb-link breadcrumb-link-why" id="breadcrumb-link-7" onclick=${showHome}></a>
+      <a href="#" class="breadcrumb-link breadcrumb-link-why" onclick=${showHome}></a>
     </li>
     <li class="breadcrumb-item breadcrumb-item-why">
-      <a href="#" class="breadcrumb-link breadcrumb-link-why" id="breadcrumb-link-8" onclick=${showAbout}></a>
+      <a href="#" class="breadcrumb-link breadcrumb-link-why" onclick=${showAbout}></a>
     </li>
     <li class="breadcrumb-item breadcrumb-item-why">
-      <a href="#" class="breadcrumb-link breadcrumb-link-why" id="breadcrumb-link-9"></a>
+      <a href="#" class="breadcrumb-link breadcrumb-link-why"></a>
     </li>
   </ol>`
 }

@@ -97,9 +97,6 @@ export default () => {
   navItemsHeader[0].style.color = '#F8A308'
   navItemsHeader[1].innerHTML = 'Our difference'
   navItemsHeader[2].innerHTML = 'Community reach'
-  navItemsHeader[3].style.display = 'none'
-  navItemsHeader[4].style.display = 'none'
-  navItemsHeader[5].style.display = 'none'
 
   // Breadcrumb
   breadcrumbLinks[0].innerHTML = 'Home'
