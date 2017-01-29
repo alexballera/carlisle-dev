@@ -7,6 +7,7 @@ import showHome from '../../navigation/showHome'
 import showTeam from '../../navigation/showTeam'
 import showServices from '../../navigation/showServices'
 import showCareers from '../../navigation/showCareers'
+import showContact from '../../navigation/showContact'
 
 var nav = yo`
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded center" id="topNavbar">
@@ -31,7 +32,7 @@ var nav = yo`
         <a class="nav-link" href="" id="linkCarrers" onclick=${showCareers}>Carrers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="" id="linkContact">Contact</a>
+        <a class="nav-link" href="" id="linkContact" onclick=${showContact}>Contact</a>
       </li>
     </ul>
   </div>

@@ -12,6 +12,7 @@ export default () => {
   var team = main.find('#team')
   var services = main.find('#services')
   var careers = main.find('#careers')
+  var contact = main.find('#contact')
 
   about.hide()
   why.hide()
@@ -20,5 +21,6 @@ export default () => {
   team.hide()
   services.hide()
   careers.hide()
+  contact.hide()
   home.show()
 }

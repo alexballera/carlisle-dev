@@ -7,6 +7,7 @@ import community from './community'
 import team from './team'
 import services from './services'
 import careers from './careers'
+import contact from './contact'
 import footer from './components/footer'
 import navigation from './navigation'
 
@@ -25,6 +26,7 @@ import navigation from './navigation'
     team()
     services()
     careers()
+    contact()
     footer()
     navigation()
   }

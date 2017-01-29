@@ -15,6 +15,7 @@ gulp.task('watch', () => {
     './src/community/**/*.js',
     './src/navigation/**/*.js',
     './src/team/**/*.js',
-    './src/careers/**/*.js'
+    './src/careers/**/*.js',
+    './src/contact/**/*.js'
   ], ['scripts'])
 })
