@@ -7,6 +7,7 @@ import team from './templates/team'
 import study from './templates/study'
 import footer from './templates/banner-footer'
 import data from '../data'
+import { main } from '../components/main'
 
 export default () => {
   let el = yo`
@@ -20,8 +21,6 @@ export default () => {
     <footer class="home-footer" id="home-footer">${footer.homepage}</footer>
   </section>
   `
-
-  let main = document.getElementById('main')
 
   main.appendChild(el)
 

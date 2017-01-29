@@ -6,6 +6,7 @@ import breadcrumb from './templates/breadcrumbs'
 import banner from './templates/carousel-staff'
 import footer from './templates/banner-footer'
 import navbar from './templates/navbar-header'
+import { main } from '../components/main'
 
 export default () => {
   let el = yo`
@@ -21,8 +22,6 @@ export default () => {
     <footer class="opportunities-banner hidden-sm-down">${banner.template}</footer>
   </section>
   `
-
-  let main = document.getElementById('main')
 
   main.appendChild(el)
 }

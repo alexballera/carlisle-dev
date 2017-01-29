@@ -8,6 +8,7 @@ import picture from './templates/pictures-about'
 import footer from './templates/banner-footer'
 import data from '../data'
 import banner from './templates/carousel-staff'
+import { main } from '../components/main'
 
 export default () => {
   let el = yo`
@@ -45,7 +46,6 @@ export default () => {
     <footer class="home-footer">${footer.template}</footer>
   </section>
   `
-  let main = document.getElementById('main')
 
   main.appendChild(el)
 
