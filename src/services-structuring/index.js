@@ -15,26 +15,26 @@ export default () => {
     <header class="banner">${header.template}</header>
     <nav class="navbar-header row no-gutters hidden-md-down" id="navbar-header">${navbar.template}</nav>
     <nav class="breadcrumb-header">${breadcrumb.template}</nav>
-    <section class="about-content row no-gutters">
+    <section class="about-content row no-gutters justify-content-center">
       <article class="about-description row no-gutters justify-content-center">
-        <div class="opportunities-title hidden-sm-down col-sm-10 col-md-9 col-lg-8 col-xl-9">
+        <div class="opportunities-title hidden-sm-down col-11">
           <h2 class="content-title">Structuring</h2>
         </div>
-        <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
+        <p class="about-parrafo col-11">
           Our services are developed by an experienced team of skilled professionals who brings insight
           from multiple industries. We conduct fundamental research and quantitative analysis to develop
           ideas that we make actionable through our proprietary modeling. 
         </p>
-        <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
+        <p class="about-parrafo col-11">
           And we execute our ideas with the systemic assurance that comes from dedicated risk and liquidity
           management and proven technology and information infrastructure. 
         </p>
       </article>
       <article class="row no-gutters justify-content-around services-item-picture">
-        <div class="opportunities-title col-11 col-sm-10 col-md-9 hidden-md-up">
+        <div class="opportunities-title col-11 hidden-md-up">
           <h2 class="content-title">Structuring</h2>
         </div>
-        <picture class="col-12">
+        <picture class="col-11">
           <img class="d-block img-fluid" src="${data.pictures.services.structuring}" alt="" id="about-why-img">
         </picture>
       </article>

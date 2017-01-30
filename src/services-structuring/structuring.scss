@@ -3,15 +3,29 @@
   .about-content {
 
     .about-description {
+      @include media-breakpoint-up(md) {
+        width: 50%;
+      }
       order: 1;
     }
 
     .content-title {
+      @include media-breakpoint-up(md) {
+        margin-top: 0;
+      }
       margin: 1rem 0;
     }
   }
 
   &-picture {
+
+    @include media-breakpoint-up(md) {
+      width: 45%;
+    }
+
+    picture {
+      margin-top: 2rem;
+    }
 
     img {
       margin: 0 auto;
