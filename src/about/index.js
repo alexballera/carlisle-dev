@@ -32,7 +32,7 @@ export default () => {
       </article>
       <article class="row no-gutters justify-content-center about-items" id="about-items">
         <div class="col-12 col-xl-9 about-banner-item" id="about-banner-why">
-          <div class="opportunities-carousel opportunities-carousel-mobile row no-gutters justify-content-around">
+          <div class="opportunities-carousel opportunities-carousel-mobile row no-gutters justify-content-between">
             ${picture.why}
             ${picture.difference}
             ${picture.community}
