@@ -76,12 +76,12 @@ module.exports = {
       community: './images/about-community.jpg'
     },
     services: {
-      structuring: './images/about-why.jpg',
-      found: './images/about-difference.jpg',
-      consulting: './images/about-community.jpg',
-      institutional: './images/about-why.jpg',
-      administrative: './images/about-difference.jpg',
-      asset: './images/about-community.jpg'
+      structuring: './images/services-structuring.jpg',
+      found: './images/services-found.jpg',
+      consulting: './images/services-consulting.jpg',
+      institutional: './images/services-institutional.jpg',
+      administrative: './images/services-administrative.jpg',
+      asset: './images/services-asset.jpg'
     }
   }
 }
