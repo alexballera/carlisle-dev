@@ -6,18 +6,18 @@ import breadcrumb from './templates/breadcrumbs'
 import banner from './templates/carousel-staff'
 import footer from './templates/banner-footer'
 import navbar from './templates/navbar-header'
-import pictures from './templates/pictures'
+import data from '../data'
 import { main } from '../components/main'
 
 export default () => {
   let el = yo`
-  <section class="about services" id="services-structuring">
+  <section class="about services services-item" id="services-structuring">
     <header class="banner">${header.template}</header>
     <nav class="navbar-header row no-gutters hidden-md-down" id="navbar-header">${navbar.template}</nav>
     <nav class="breadcrumb-header">${breadcrumb.template}</nav>
-    <section class="about-content">
+    <section class="about-content row no-gutters">
       <article class="about-description row no-gutters justify-content-center">
-        <div class="opportunities-title col-12 col-md-8 col-lg-7 col-xl-6">
+        <div class="opportunities-title hidden-sm-down col-sm-10 col-md-9 col-lg-8 col-xl-9">
           <h2 class="content-title">Structuring</h2>
         </div>
         <p class="about-parrafo col-11 col-sm-10 col-md-9 col-lg-8 col-xl-9">
@@ -30,8 +30,13 @@ export default () => {
           management and proven technology and information infrastructure. 
         </p>
       </article>
-      <article class="row no-gutters justify-content-around"">
-        ${pictures.structuring}
+      <article class="row no-gutters justify-content-around services-item-picture">
+        <div class="opportunities-title col-11 col-sm-10 col-md-9 hidden-md-up">
+          <h2 class="content-title">Structuring</h2>
+        </div>
+        <picture class="col-12">
+          <img class="d-block img-fluid" src="${data.pictures.services.structuring}" alt="" id="about-why-img">
+        </picture>
       </article>
     </section>
     <footer class="home-footer hidden-md-up">${footer.template}</footer>

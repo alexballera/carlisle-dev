@@ -1,0 +1,20 @@
+.services-item {
+
+  .about-content {
+
+    .about-description {
+      order: 1;
+    }
+
+    .content-title {
+      margin: 1rem 0;
+    }
+  }
+
+  &-picture {
+
+    img {
+      margin: 0 auto;
+    }
+  }
+}
