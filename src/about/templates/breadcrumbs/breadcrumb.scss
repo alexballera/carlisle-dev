@@ -10,8 +10,10 @@
       text-transform: uppercase;
     }
 
-    &-link:hover {
-      color: $color-secundario;
+    &-link {
+      &:hover {
+        color: $color-secundario;
+      }
     }
   }
 }

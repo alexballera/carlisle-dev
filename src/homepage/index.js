@@ -24,9 +24,6 @@ export default () => {
 
   main.appendChild(el)
 
-  let bannerHeaderImage = document.getElementById('banner-header-image-home')
-  let bannerHeader = document.getElementById('banner-header-title-home')
-  let bannerHeaderContenido = document.getElementById('banner-header-contenido-home')
   let staffImage = document.querySelectorAll('img.staff-miembro-img')
   let staffNombre = document.querySelectorAll('span.staff-miembro-nombre')
   let staffCargo = document.querySelectorAll('span.staff-miembro-cargo')
@@ -36,29 +33,7 @@ export default () => {
   let homeDifference = document.getElementById('home-difference')
   let homeCommunity = document.getElementById('home-community')
 
-  // Banner Header
-  bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.home}`)
-  bannerHeader.innerHTML = 'Innovations diversified investment solutions'
-  bannerHeaderContenido.innerHTML = `Carlisle is a leading, highly diversified global investment management firm,
-                      Carlisle applies its deep experience and specialized expertise across a range of investment
-                      strategies provate equity, credit, liquid markets and traditional fixed income - on behalf of
-                      investors and private clients wordwide.`
-
   // Carousel opportunities
-  var div1 = document.createElement('div')
-  var div2 = document.createElement('div')
-  var div3 = document.createElement('div')
-  var div4 = document.createElement('div')
-
-  div1.setAttribute('class', 'home-why-background')
-  div2.setAttribute('class', 'home-why-background')
-  div3.setAttribute('class', 'home-why-background')
-  div4.setAttribute('class', 'home-why-background')
-
-  pictureSlide[0].appendChild(div1)
-  pictureSlide[1].appendChild(div2)
-  pictureSlide[2].appendChild(div3)
-  pictureSlide[3].appendChild(div4)
 
   pictureSlide[0].classList.add('col-6', 'col-xl-5')
   pictureSlide[1].classList.add('col-6', 'col-xl-5')

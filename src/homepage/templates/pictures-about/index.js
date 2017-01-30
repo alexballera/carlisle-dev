@@ -20,6 +20,7 @@ module.exports = {
               Get in touch
           </a>
           </div>
+          <div class="home-why-background"></div>
       </picture>`,
   why2: yo`
       <picture class="content-picture col-md-5">
@@ -35,6 +36,7 @@ module.exports = {
               Get in touch
           </a>
           </div>
+          <div class="home-why-background"></div>
       </picture>`,
   difference: yo`
       <picture class="content-picture" id="home-difference">
@@ -50,6 +52,7 @@ module.exports = {
               Get in touch
           </a>
           </div>
+          <div class="home-why-background"></div>
       </picture>`,
   difference2: yo`
       <picture class="content-picture col-md-5">
@@ -65,6 +68,7 @@ module.exports = {
               Get in touch
           </a>
           </div>
+          <div class="home-why-background"></div>
       </picture>`,
   difference3: yo`
       <picture class="content-picture col-md-5">
@@ -80,6 +84,7 @@ module.exports = {
               Get in touch
           </a>
           </div>
+          <div class="home-why-background"></div>
       </picture>`,
   community: yo`
       <picture class="content-picture" id="home-community">
@@ -97,6 +102,7 @@ module.exports = {
               Get in touch
           </a>
           </div>
+          <div class="home-why-background"></div>
       </picture>`,
   community2: yo`
       <picture class="content-picture col-md-5">
@@ -114,5 +120,6 @@ module.exports = {
               Get in touch
           </a>
           </div>
+          <div class="home-why-background"></div>
       </picture>`
 }
