@@ -5,6 +5,7 @@ import header from './templates/banner-header'
 import breadcrumb from './templates/breadcrumbs'
 import banner from './templates/carousel-staff'
 import formulario from './templates/formulario'
+import map from './templates/map'
 import footer from './templates/banner-footer'
 import { main } from '../components/main'
 
@@ -30,7 +31,9 @@ export default () => {
             </address>
           </div>
         </div>
-        <div class="contact-maps col-11">Mapa</div>
+        <div class="contact-maps col-11">
+          ${map.template}
+        </div>
       </article>
     </section>
     <footer class="home-footer hidden-md-up">${footer.template}</footer>
