@@ -1,0 +1,17 @@
+.team {
+  .about-content {
+    .team-title-cargo {
+      border-bottom: 0;
+      color: $color-secundario;
+      text-transform: capitalize;
+    }
+  }
+
+  .about-description {
+    &.change-order {
+      @include media-breakpoint-up(md) {
+        order: 0 !important;
+      }
+    }
+  }
+}

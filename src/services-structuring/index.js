@@ -13,7 +13,7 @@ export default () => {
   let el = yo`
   <section class="about services services-item" id="services-structuring">
     <header class="banner">${header.template}</header>
-    <nav class="navbar-header row no-gutters hidden-md-down" id="navbar-header">${navbar.template}</nav>
+    <nav class="navbar-header row no-gutters hidden-md-down">${navbar.template}</nav>
     <nav class="breadcrumb-header">${breadcrumb.template}</nav>
     <section class="about-content row no-gutters justify-content-center">
       <article class="about-description row no-gutters justify-content-center">

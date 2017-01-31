@@ -1,6 +1,7 @@
 'use strict'
 
 import yo from 'yo-yo'
+import data from '../../../data'
 
 module.exports = {
   template: yo `
@@ -24,22 +25,16 @@ module.exports = {
                                 <h3 class="team-principal-title">Victor Haggelman</h3>
                             </div>
                             <div class="col-10 offset-1 team-principal-inner-container">
-                                <a href="https://us.linkedin.com/" target="_blank" class="red-social linkedin rounded-circle">
+                                <a href="${data.staff.victor.linkedin}" target="_blank" class="red-social linkedin rounded-circle">
                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                                 </a>
-                                <a href="mailto:hola@cambur.com" class="red-social mail rounded-circle">
+                                <a href="mailto:${data.staff.victor.correo}" class="red-social mail rounded-circle">
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </a>
                             </div>
                             <div class="col-10 offset-1 team-principal-inner-container">
                                 <p class="team-principal-bio">
-                                    Mr. Deu created Grupo Misame, a Spanish firm that
-                                    developed a new approach to allow dual ownership of 
-                                    residential real estate by families and investors, and 
-                                    ullow for securitization of such mortgage related product.
-                                    Under Grupo Misame, developed several consulting projects 
-                                    among them for the Government of Andorra and the Government
-                                    of Catalonia in Spain.
+                                    ${data.staff.victor.bio_parrafo1}
                                 </p>
                                 <a href="#" class="team-principal-boton">Read more</a>
                             </div>
