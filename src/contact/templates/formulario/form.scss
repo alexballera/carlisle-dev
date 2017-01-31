@@ -1,0 +1,22 @@
+.contact {
+
+  .form-address {
+    color: $grey;
+  }
+}
+
+.contact-form {
+
+  .form {
+    color: $grey;
+
+    button[type='submit'] {
+      background-color: $color-secundario;
+      color: $white;
+
+      &:hover {
+        background-color: $color-secundario-hover;
+      }
+    }
+  }
+}
