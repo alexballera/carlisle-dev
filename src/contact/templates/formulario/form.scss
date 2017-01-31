@@ -20,3 +20,9 @@
     }
   }
 }
+
+.formulario-container {
+  @include media-breakpoint-up(lg) {
+    margin-right: 2rem;
+  }
+}

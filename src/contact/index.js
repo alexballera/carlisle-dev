@@ -3,7 +3,6 @@
 import yo from 'yo-yo'
 import header from './templates/banner-header'
 import breadcrumb from './templates/breadcrumbs'
-import banner from './templates/carousel-staff'
 import formulario from './templates/formulario'
 import map from './templates/map'
 import footer from './templates/banner-footer'
@@ -15,8 +14,8 @@ export default () => {
     <header class="banner">${header.template}</header>
     <nav class="breadcrumb-header">${breadcrumb.template}</nav>
     <section class="about-content">
-      <article class="about-description row no-gutters justify-content-around">
-        <div class="col-11">
+      <article class="about-description row no-gutters justify-content-center">
+        <div class="formulario-container col-11 col-sm-10 col-md-8 col-lg-4">
           <div class="row no-gutters">
             <div class="contact-form col-12" id="contact-form">
               ${formulario.template}
@@ -31,13 +30,12 @@ export default () => {
             </address>
           </div>
         </div>
-        <div class="contact-maps col-11">
+        <div class="contact-maps col-12 col-lg-6">
           ${map.template}
         </div>
       </article>
     </section>
-    <footer class="home-footer hidden-md-up">${footer.template}</footer>
-    <footer class="opportunities-banner hidden-sm-down">${banner.template}</footer>
+    <footer class="home-footer hidden-lg-up">${footer.template}</footer>
   </section>
   `
 
