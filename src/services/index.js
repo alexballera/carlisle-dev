@@ -27,7 +27,7 @@ export default () => {
           management and proven technology and information infrastructure. 
         </p>
         <div class="col-10">
-          <div class="row no-gutters justify-content-between"">
+          <div class="row no-gutters services-pictures">
             ${pictures.structuring}
             ${pictures.found}
             ${pictures.consulting}
