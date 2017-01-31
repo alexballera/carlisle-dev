@@ -1,0 +1,44 @@
+.careers {
+  .about-why-picture-bgtransparent {
+    height: 100%;
+    top: 0;
+  }
+
+  .banner-work-image {
+    text-align: center;
+
+    > img {
+      @include media-breakpoint-up(md) {
+        position: static;
+      }
+      max-height: 150px;
+      min-height: 150px;
+      width: 150px;
+    }
+  }
+
+  .content-picture-parrafo {
+    color: $grey;
+  }
+
+  .about-why-picture-icon {
+    color: $color-secundario;
+  }
+
+  .content-picture-boton {
+    @include media-breakpoint-up(md) {
+      background-color: transparent;
+      border-color: $color-secundario;
+      color: $color-secundario;
+    }
+    background-color: $white;
+    color: $grey;
+    height: 40px;
+    line-height: 24px;
+
+    &:hover {
+      background-color: $color-secundario;
+      color: $white;
+    }
+  }
+}

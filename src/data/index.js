@@ -157,6 +157,11 @@ module.exports = {
       institutional: './images/services-institutional.jpg',
       administrative: './images/services-administrative.jpg',
       asset: './images/services-asset.jpg'
+    },
+    careers: {
+      principal: './images/careers-principal.png',
+      background: './images/careers-background.jpg',
+      avatar: './images/careers-avatar.png'
     }
   }
 }
