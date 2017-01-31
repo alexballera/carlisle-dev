@@ -49,7 +49,7 @@ var el = yo`
                     <a class="nav-link" href="#" onclick=${showServices}>Our Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick=${showCareers}>Carrers</a>
+                    <a class="nav-link" href="#" onclick=${showCareers}>Careers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" onclick=${showTeam}>Carlisle Management</a>

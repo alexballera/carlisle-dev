@@ -40,7 +40,7 @@ module.exports = {
     },
     jose: {
       nombre: 'José García',
-      cargo: 'Chief Excecutive Officer',
+      cargo: 'Chief Executive Officer',
       avatar: './images/staff-jose-garcia.png',
       bio_parrafo1: `Jose Garcia is Chief Executive Officer at Carlisle Management, a Luxemburgo based
         fund management form focused alternative assets. Having established a fifteen year track record of 

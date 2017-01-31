@@ -17,12 +17,12 @@ module.exports = {
             <div class="col-12 col-xl-7 team-principal">
                 <div class="row no-gutters justify-content-center">
                     <div class="col-10 col-lg-6 team-principal-avatar">
-                        <img class="staff-miembro-img" src="http://lorempixel.com/500/500/people/" alt="">
+                        <img class="staff-miembro-img" src="${data.staff.victor.avatar}" alt="">
                     </div>
                     <div class="col-12 col-lg-6 team-principal-info">
                         <div class="row no-gutters">
                             <div class="col-10 offset-1 team-principal-inner-container">
-                                <h3 class="team-principal-title">Victor Haggelman</h3>
+                                <h3 class="team-principal-title">${data.staff.victor.nombre}</h3>
                             </div>
                             <div class="col-10 offset-1 team-principal-inner-container">
                                 <a href="${data.staff.victor.linkedin}" target="_blank" class="red-social linkedin rounded-circle">
@@ -45,31 +45,31 @@ module.exports = {
             <div class="col-12 col-xl-4 staff">
                 <div class="row no-gutters team-staff justify-content-center">
                     <div class="col-5 team-staff-item">
-                        <img class="staff-miembro-img" src="http://lorempixel.com/400/400/people/" alt="">
+                        <img class="staff-miembro-img" src="${data.staff.jose.avatar}" alt="">
                         <p class="staff-miembro">
-                            <span class="staff-miembro-nombre">José García</span>
-                            <span class="staff-miembro-cargo">Chief Excecutive Officer</span>
+                            <span class="staff-miembro-nombre">${data.staff.jose.nombre}</span>
+                            <span class="staff-miembro-cargo">${data.staff.jose.cargo}</span>
                         </p>
                     </div>
                     <div class="col-5 team-staff-item">
-                        <img class="staff-miembro-img" src="http://lorempixel.com/400/400/people/" alt="">
+                        <img class="staff-miembro-img" src="${data.staff.phillip.avatar}" alt="">
                         <p class="staff-miembro">
-                            <span class="staff-miembro-nombre">Phillip Neuman</span>
-                            <span class="staff-miembro-cargo">President</span>
+                            <span class="staff-miembro-nombre">${data.staff.phillip.nombre}</span>
+                            <span class="staff-miembro-cargo">${data.staff.phillip.cargo}</span>
                         </p>                                
                     </div>
                     <div class="col-5 team-staff-item">
-                        <img class="staff-miembro-img" src="http://lorempixel.com/400/400/people/" alt="">
+                        <img class="staff-miembro-img" src="${data.staff.tim.avatar}" alt="">
                         <p class="staff-miembro">
-                            <span class="staff-miembro-nombre">Tim Mol</span>
-                            <span class="staff-miembro-cargo">Chief Operating Officer</span>
+                            <span class="staff-miembro-nombre">${data.staff.tim.nombre}</span>
+                            <span class="staff-miembro-cargo">${data.staff.tim.cargo}</span>
                         </p>
                     </div>
                     <div class="col-5 team-staff-item">
-                        <img class="staff-miembro-img" src="http://lorempixel.com/400/400/people/" alt="">
+                        <img class="staff-miembro-img" src="${data.staff.xavier.avatar}" alt="">
                         <p class="staff-miembro">
-                            <span class="staff-miembro-nombre">Xavier Deu</span>
-                            <span class="staff-miembro-cargo">Chief Marketing Officer</span>
+                            <span class="staff-miembro-nombre">${data.staff.xavier.nombre}</span>
+                            <span class="staff-miembro-cargo">${data.staff.xavier.cargo}</span>
                         </p>
                     </div>
                 </div>

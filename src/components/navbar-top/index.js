@@ -29,7 +29,7 @@ var nav = yo`
         <a class="nav-link" href="" id="linkServices" onclick=${showServices}>Our Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="" id="linkCarrers" onclick=${showCareers}>Carrers</a>
+        <a class="nav-link" href="" id="linkCarrers" onclick=${showCareers}>Careers</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="" id="linkContact" onclick=${showContact}>Contact</a>
