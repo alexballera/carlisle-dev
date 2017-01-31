@@ -3,3 +3,10 @@
     margin-bottom: 2rem;
   }
 }
+
+.opportunities-carousel {
+  @include media-breakpoint-up(md) {
+    justify-content: space-between;
+  }
+  justify-content: center;
+}
