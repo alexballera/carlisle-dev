@@ -67,41 +67,14 @@ export default () => {
 
   // Banner Header
   let bannerHeaderImage = document.getElementById('banner-header-image-why')
-  let bannerHeader = document.getElementById('banner-header-title-why')
-  let bannerHeaderContenido = document.getElementById('banner-header-contenido-why')
-  let bannerHeaderBoton = document.getElementById('banner-header-boton-why')
+  bannerHeaderImage.style.height = '200px'
 
   // Navbar Header
   let navItemsHeader = document.querySelectorAll('a.nav-link-why')
-
-  // Breadcrumb
-  let breadcrumbItems = document.querySelectorAll('li.breadcrumb-item-why')
-  let breadcrumbLinks = document.querySelectorAll('a.breadcrumb-link-why')
+  navItemsHeader[0].style.color = '#F8A308'
 
   // Parrafos
   let parrafo = document.getElementById('why').childNodes[7].childNodes[3].childNodes[1].childNodes[1]
-
-  // Banner Header
-  bannerHeaderImage.setAttribute('src', `${data.pictures.banners.header.about_why}`)
-  bannerHeader.innerHTML = 'About us'
-  bannerHeaderContenido.innerHTML = `Carlisle was established to provide minimally
-                                    correlated fund options in the alternative asset space`
-  bannerHeaderImage.style.height = '200px'
-  bannerHeaderBoton.style.display = 'none'
-
-  // Navbar Header
-  navItemsHeader[0].innerHTML = 'Why Carlisle'
-  navItemsHeader[0].style.color = '#F8A308'
-  navItemsHeader[1].innerHTML = 'Our difference'
-  navItemsHeader[2].innerHTML = 'Community reach'
-
-  // Breadcrumb
-  breadcrumbLinks[0].innerHTML = 'Home'
-  breadcrumbLinks[1].innerHTML = 'About Us'
-  breadcrumbItems[2].innerHTML = 'Why Carlisle'
-  breadcrumbItems[2].classList.add('active')
-
-  // Parrafos
   parrafo.childNodes[1].style.fontSize = '1.25rem'
   parrafo.childNodes[5].style.fontSize = '1.25rem'
 }

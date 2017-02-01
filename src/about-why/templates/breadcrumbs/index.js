@@ -8,13 +8,11 @@ module.exports = {
   template: yo`
   <ol class="breadcrumb row no-gutters justify-content-start" id="breadcrumb-why">
     <li class="breadcrumb-item breadcrumb-item-why offset-2">
-      <a href="#" class="breadcrumb-link breadcrumb-link-why" onclick=${showHome}></a>
+      <a href="#" class="breadcrumb-link breadcrumb-link-why" onclick=${showHome}>Home</a>
     </li>
     <li class="breadcrumb-item breadcrumb-item-why">
-      <a href="#" class="breadcrumb-link breadcrumb-link-why" onclick=${showAbout}></a>
+      <a href="#" class="breadcrumb-link breadcrumb-link-why" onclick=${showAbout}>About Us</a>
     </li>
-    <li class="breadcrumb-item breadcrumb-item-why">
-      <a href="#" class="breadcrumb-link breadcrumb-link-why"></a>
-    </li>
+    <li class="breadcrumb-item breadcrumb-item-why active">Why Carlisle?</li>
   </ol>`
 }
