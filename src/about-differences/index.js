@@ -6,7 +6,6 @@ import navbarHeader from './templates/navbar-header'
 import breadcrumb from './templates/breadcrumbs'
 import picture from './templates/pictures-about'
 import footer from './templates/banner-footer'
-import data from '../data'
 import banner from './templates/carousel-staff'
 import { main } from '../components/main'
 
