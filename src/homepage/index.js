@@ -6,7 +6,6 @@ import opportunities from './templates/opportunities'
 import team from './templates/team'
 import study from './templates/study'
 import footer from './templates/banner-footer'
-import data from '../data'
 import { main } from '../components/main'
 
 export default () => {
@@ -23,68 +22,4 @@ export default () => {
   `
 
   main.appendChild(el)
-
-  let staffImage = document.querySelectorAll('img.staff-miembro-img')
-  let staffNombre = document.querySelectorAll('span.staff-miembro-nombre')
-  let staffCargo = document.querySelectorAll('span.staff-miembro-cargo')
-  let pictureSlide = document.querySelectorAll('picture.content-picture')
-  let picturesAbout = document.getElementById('opportunities-carousel').childNodes
-  let homeWhy = document.getElementById('home-why')
-  let homeDifference = document.getElementById('home-difference')
-  let homeCommunity = document.getElementById('home-community')
-
-  // Carousel opportunities
-
-  pictureSlide[0].classList.add('col-6', 'col-xl-5')
-  pictureSlide[1].classList.add('col-6', 'col-xl-5')
-  pictureSlide[2].classList.add('col-6', 'col-xl-5')
-  pictureSlide[3].classList.add('col-6', 'col-xl-5')
-
-  pictureSlide[0].childNodes[1].setAttribute('src', `${data.pictures.home.slide.why}`)
-  pictureSlide[1].childNodes[1].setAttribute('src', `${data.pictures.home.slide.difference}`)
-  pictureSlide[2].childNodes[1].setAttribute('src', `${data.pictures.home.slide.difference}`)
-  pictureSlide[3].childNodes[1].setAttribute('src', `${data.pictures.home.slide.community}`)
-
-  // Section why - difference - community
-  picturesAbout[1].classList.remove('col-6', 'col-xl-5')
-  picturesAbout[3].classList.remove('col-6', 'col-xl-5')
-  picturesAbout[5].classList.remove('col-6', 'col-xl-5')
-  picturesAbout[1].classList.add('col-10')
-  picturesAbout[3].classList.add('col-10')
-  picturesAbout[5].classList.add('col-10')
-
-  homeWhy.childNodes[1].setAttribute('src', `${data.pictures.home.about.why}`)
-  homeDifference.childNodes[1].setAttribute('src', `${data.pictures.home.about.difference}`)
-  homeCommunity.childNodes[1].setAttribute('src', `${data.pictures.home.about.community}`)
-
-  var div5 = document.createElement('div')
-  var div6 = document.createElement('div')
-  var div7 = document.createElement('div')
-
-  div5.setAttribute('class', 'home-why-background')
-  div6.setAttribute('class', 'home-why-background')
-  div7.setAttribute('class', 'home-why-background')
-
-  homeWhy.appendChild(div5)
-  homeDifference.appendChild(div6)
-  homeCommunity.appendChild(div7)
-
-  // TEAM Avatar
-  staffImage[0].setAttribute('src', `${data.staff.victor.avatar}`)
-  staffImage[1].setAttribute('src', `${data.staff.jose.avatar}`)
-  staffImage[2].setAttribute('src', `${data.staff.phillip.avatar}`)
-  staffImage[3].setAttribute('src', `${data.staff.tim.avatar}`)
-  staffImage[4].setAttribute('src', `${data.staff.xavier.avatar}`)
-
-  // TEAM Nombre
-  staffNombre[0].innerHTML = `${data.staff.jose.nombre}`
-  staffNombre[1].innerHTML = `${data.staff.phillip.nombre}`
-  staffNombre[2].innerHTML = `${data.staff.tim.nombre}`
-  staffNombre[3].innerHTML = `${data.staff.xavier.nombre}`
-
-  // TEAM Cargo
-  staffCargo[0].innerHTML = `${data.staff.jose.cargo}`
-  staffCargo[1].innerHTML = `${data.staff.phillip.cargo}`
-  staffCargo[2].innerHTML = `${data.staff.tim.cargo}`
-  staffCargo[3].innerHTML = `${data.staff.xavier.cargo}`
 }

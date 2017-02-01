@@ -8,12 +8,12 @@ module.exports = {
   <div id="carouselAbout" class="carousel carouselAbout carousel-opportunities slide" data-ride="carouselAbout" data-interval="7000">
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active content-opportunities row no-gutters justify-content-center">
-        ${picture.why2}
-        ${picture.difference2}
+        ${picture.slide1_why}
+        ${picture.slide1_difference}
       </div>
       <div class="carousel-item content-opportunities row no-gutters justify-content-center">
-        ${picture.difference3}
-        ${picture.community2}
+        ${picture.slide2_difference}
+        ${picture.slide2_community}
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselAbout" role="button" data-slide="prev">
