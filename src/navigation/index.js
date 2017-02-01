@@ -1,9 +1,7 @@
 'use strict'
 
-import $ from 'jquery'
-import hideViews from './hideViews'
+import initHome from './initHome'
 
 export default () => {
-  hideViews()
-  $('#home').show()
+  initHome()
 }

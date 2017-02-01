@@ -1,11 +1,7 @@
 'use strict'
-import $ from 'jquery'
-import hideViews from './hideViews'
-import title from 'title'
+import initHome from './initHome'
 
 module.exports = function showHome (e) {
   e.preventDefault()
-  hideViews()
-  title('Carlisle - Innovations Diversified Investment Solutions')
-  $('#home').show('slow')
+  initHome()
 }
