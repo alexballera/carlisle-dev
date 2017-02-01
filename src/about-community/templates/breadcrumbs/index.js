@@ -11,10 +11,8 @@ module.exports = {
       <a href="#" class="breadcrumb-link breadcrumb-link-community" onclick=${showHome}>Home</a>
     </li>
     <li class="breadcrumb-item breadcrumb-item-community">
-      <a href="#" class="breadcrumb-link breadcrumb-link-community" onclick=${showAbout}></a>
+      <a href="#" class="breadcrumb-link breadcrumb-link-community" onclick=${showAbout}>About Us</a>
     </li>
-    <li class="breadcrumb-item breadcrumb-item-community">
-      <a href="#" class="breadcrumb-link breadcrumb-link-community"></a>
-    </li>
+    <li class="breadcrumb-item breadcrumb-item-community active">Community reach </li>
   </ol>`
 }
