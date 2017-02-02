@@ -1,4 +1,5 @@
 import header from './components/navbar-top'
+import loader from './components/loader'
 import homepage from './homepage'
 import about from './about'
 import why from './about-why'
@@ -19,6 +20,7 @@ import navigation from './navigation'
 
   function onDOMLoad () {
     header()
+    loader()
     homepage()
     about()
     why()

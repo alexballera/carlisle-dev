@@ -12,5 +12,5 @@ module.exports = function showHome (e) {
   setTimeout(() => {
     loader.hide()
     main$.find('#home').show('slow')
-  }, 1000)
+  }, 1500)
 }
