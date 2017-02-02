@@ -1,11 +1,11 @@
 'use strict'
-import $ from 'jquery'
 import hideViews from './hideViews'
 import title from 'title'
+import { main$ } from '../components/main'
 
 module.exports = function showServicesStructuring (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Services: Structuring')
-  $('#services-structuring').show('slow')
+  main$.find('#services-structuring').show('slow')
 }

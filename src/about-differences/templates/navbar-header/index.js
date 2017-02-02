@@ -12,10 +12,10 @@ module.exports = {
       <a class="nav-link nav-link-difference nav-link-home" href="" onclick=${showWhy}>Why Carlisle?</a>
     </li>
     <li class="nav-item nav-item-difference col-3 col-md-2">
-      <a class="nav-link nav-link-difference" href="" onclick=${showDifference}>About Us</a>
+      <a class="nav-link nav-link-difference" href="" onclick=${showDifference}>Our Difference</a>
     </li>
     <li class="nav-item nav-item-difference col-3 col-md-2">
-      <a class="nav-link nav-link-difference" href="" onclick=${showCommunity}>Our Difference</a>
+      <a class="nav-link nav-link-difference" href="" onclick=${showCommunity}>Community Reach</a>
     </li>
   </ul>`
 }

@@ -1,10 +1,16 @@
 'use strict'
-import $ from 'jquery'
 import hideViews from './hideViews'
 import title from 'title'
+import { main$ } from '../components/main'
 
 module.exports = function showHome (e) {
   hideViews()
   title('Carlisle - Innovations Diversified Investment Solutions')
-  $('#home').show('slow')
+  var loader = main$.find('.loader')
+  loader.show()
+
+  setTimeout(() => {
+    loader.hide()
+    main$.find('#home').show('slow')
+  }, 1000)
 }

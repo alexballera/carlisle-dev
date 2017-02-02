@@ -1,5 +1,5 @@
 'use strict'
-import $ from 'jquery'
+import { main$ } from '../components/main'
 import hideViews from './hideViews'
 import title from 'title'
 
@@ -7,5 +7,5 @@ module.exports = function showCareers (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Careers')
-  $('#careers').show('slow')
+  main$.find('#careers').show('slow')
 }
