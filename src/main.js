@@ -1,3 +1,6 @@
+global.jQuery = require('jquery')
+import tether from 'tether'
+global.Tether = tether
 require('bootstrap')
 import header from './components/navbar-top'
 import loader from './components/loader'
