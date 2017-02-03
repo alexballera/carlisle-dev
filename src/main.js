@@ -1,3 +1,4 @@
+require('bootstrap')
 import header from './components/navbar-top'
 import loader from './components/loader'
 import homepage from './homepage'
