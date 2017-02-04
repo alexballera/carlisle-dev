@@ -1,4 +1,5 @@
 global.jQuery = require('jquery')
+require('jquery-ui-dist/jquery-ui')
 import tether from 'tether'
 global.Tether = tether
 require('bootstrap')
