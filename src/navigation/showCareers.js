@@ -7,5 +7,5 @@ module.exports = function showCareers (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Careers')
-  main$.find('#careers').show('slow')
+  main$.find('#careers').show('explode', 700)
 }

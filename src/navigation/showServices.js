@@ -7,5 +7,5 @@ module.exports = function showServices (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Services')
-  main$.find('#services').show('slow')
+  main$.find('#services').show('explode', 700)
 }

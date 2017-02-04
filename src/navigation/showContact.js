@@ -7,5 +7,5 @@ module.exports = function showContact (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Contact')
-  main$.find('#contact').show('slow')
+  main$.find('#contact').show('explode', 700)
 }

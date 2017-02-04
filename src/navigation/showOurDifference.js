@@ -7,5 +7,5 @@ module.exports = function showDifference (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Our Difference')
-  main$.find('#difference').show('slow')
+  main$.find('#difference').show('explode', 700)
 }

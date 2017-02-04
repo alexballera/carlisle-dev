@@ -7,5 +7,5 @@ module.exports = function showWhy (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Why Carlisle')
-  main$.find('#why').show('slow')
+  main$.find('#why').show('explode', 700)
 }

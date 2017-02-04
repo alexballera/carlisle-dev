@@ -7,5 +7,5 @@ module.exports = function showTeam (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Team')
-  main$.find('#team').show('slow')
+  main$.find('#team').show('explode', 700)
 }

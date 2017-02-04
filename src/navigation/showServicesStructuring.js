@@ -7,5 +7,5 @@ module.exports = function showServicesStructuring (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Services: Structuring')
-  main$.find('#services-structuring').show('slow')
+  main$.find('#services-structuring').show('explode', 700)
 }

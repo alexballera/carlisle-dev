@@ -7,5 +7,5 @@ module.exports = function showHome (e) {
   e.preventDefault()
   hideViews()
   title('Carlisle - Innovations Diversified Investment Solutions')
-  main$.find('#home').show('slow')
+  main$.find('#home').show('explode', 700)
 }
